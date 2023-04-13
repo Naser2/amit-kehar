@@ -1,0 +1,843 @@
+import istaImg1 from '../../public/amit-index-images/gallery-img-1.jpeg'
+import istaImg2 from '../../public/amit-index-images/gallery-img-2.png'
+import istaImg3 from '../../public/amit-index-images/gallery-img-3.jpeg'
+import istaImg4 from '../../public/amit-index-images/gallery-img-4.png'
+import istaImg5 from '../../public/amit-index-images/gallery-img-5.jpeg'
+import istaImg6 from '../../public/amit-index-images/gallery-img-6.jpeg'
+import istaImg7 from '../../public/amit-index-images/gallery-img-7.png'
+import istaImg8 from '../../public/amit-index-images/gallery-img-8.png'
+import istaImg9 from '../../public/amit-index-images/gallery-img-9.jpg'
+import istaImg10 from '../../public/amit-index-images/gallery-img-10.jpeg'
+import istaImg11 from '../../public/amit-index-images/gallery-img-11.jpg'
+import istaImg12 from '../../public/amit-index-images/gallery-img-12.jpeg'
+import istaImg13 from '../../public/amit-index-images/gallery-img-13.jpeg'
+import istaImg14 from '../../public/amit-index-images/gallery-img-14.png'
+///////
+import istaImg15 from '../../public/amit-index-images/gallery-img-15.jpeg'
+import istaImg16 from '../../public/amit-index-images/gallery-img-16.png'
+import istaImg17 from '../../public/amit-index-images/gallery-img-17.jpg'
+import istaImg18 from '../../public/amit-index-images/gallery-img-18.jpeg'
+import istaImg19 from '../../public/amit-index-images/gallery-img-19.jpeg'
+import istaImg20 from '../../public/amit-index-images/gallery-img-20.png'
+import istaImg21 from '../../public/amit-index-images/gallery-img-21.jpeg'
+import istaImg22 from '../../public/amit-index-images/gallery-img-22.png'
+import istaImg23 from '../../public/amit-index-images/gallery-img-23.png'
+import istaImg24 from '../../public/amit-index-images/gallery-img-24.jpeg'
+import istaImg25 from '../../public/amit-index-images/gallery-img-25.jpeg'
+import istaImgChelsea from '../../public/amit-index-images/gallery-Img-chelsea.jpeg'
+import istaImgVelour from '../../public/amit-index-images/gallery-velour.png'
+import istaImgBaby from '../../public/amit-index-images/gallery-baby.png'
+
+export const data = [
+  {
+    title: 'A Warm Hug',
+    tag: 'art',
+    content: `<div id="container-content" class="container-content" data-content-field="main-content">
+          
+    <!-- Project Detail -->
+<div id="project">
+
+
+<div class="project-item clearfix visually-hidden" data-dynamic-href="/a-warm-hug/" data-type-name="page" id="yui_3_17_2_1_1681273877572_344">
+<div class="meta">
+  <h1 data-shrink-original-size="42">A Warm Hug</h1>
+  
+
+  <div class="body"></div>
+  <div class="share-like">
+    <span class="squarespace-social-buttons inline-style" data-system-data-id="5c3651964ae2371d9ea566d0" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063702630-JY20367K4PETWUVTJXQY/Sequence+01.00_00_04_22.Still004.jpg" data-record-type="" data-full-url="/a-warm-hug" data-title="A Warm Hug"><div id="social-yui_3_17_2_1_1681273877572_1726" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681273877572_1734" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+  </div>
+</div>
+<div class="gallery" id="detail_5c364a71575d1f827fb27aad"></div>
+</div>
+
+<div class="project-item clearfix visually-hidden" data-dynamic-href="/doodlesillustrations/" data-type-name="gallery" id="yui_3_17_2_1_1681273877572_735">
+<div class="meta">
+  <h1 data-shrink-original-size="42" style="font-size: 37px;">Doodles/Illustrations</h1>
+  
+
+  <div class="body"></div>
+  <div class="share-like">
+    <span class="squarespace-social-buttons inline-style" data-system-data-id="5c3f565f4d7a9c53a5c8575a" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg" data-record-type="" data-full-url="/doodlesillustrations" data-title="Doodles/Illustrations"><div id="social-yui_3_17_2_1_1681273877572_1727" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681273877572_1748" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+  </div>
+</div>
+<div class="gallery sqs-dynamic-data-ready" id="detail_5c3f54bd1ae6cf74baf96418" data-dynamic-data-link="doodlesillustrations"><a class="gallery-item" id="yui_3_17_2_1_1681273877572_999">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg" data-image-dimensions="1617x2048" data-image-focal-point="0.5,0.5" data-image-stretch="false" class="" style="" alt="From Within" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg?format=1500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1001">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654580066-DTTDY4Y3MFWJ5KGU9I59/10561705_10152190263625938_3887034032327375268_n.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654580066-DTTDY4Y3MFWJ5KGU9I59/10561705_10152190263625938_3887034032327375268_n.jpg" data-image-dimensions="960x960" data-image-focal-point="0.5,0.5" data-image-stretch="false" class="" style="" alt="Breath" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654580066-DTTDY4Y3MFWJ5KGU9I59/10561705_10152190263625938_3887034032327375268_n.jpg?format=1500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1003">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654711556-OHS1BYMFW3815BZ030Y4/12028720_10152986146945938_81800959136173503_o.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654711556-OHS1BYMFW3815BZ030Y4/12028720_10152986146945938_81800959136173503_o.jpg" data-image-dimensions="1545x2048" data-image-focal-point="0.5,0.5" data-image-stretch="false" class="" style="" alt="Spirits " data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654711556-OHS1BYMFW3815BZ030Y4/12028720_10152986146945938_81800959136173503_o.jpg?format=1500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a></div>
+</div>
+
+<div class="project-item clearfix visually-hidden" data-dynamic-href="/the-light-in-the-shadows/" data-type-name="gallery" id="yui_3_17_2_1_1681273877572_1026">
+<div class="meta">
+  <h1 data-shrink-original-size="42">The Light In The Shadows</h1>
+  
+
+  <div class="body"><p style="white-space: pre-wrap;"><em>In 2017, 12 Trees</em>&nbsp;exhibition focuses on light as a potent symbol of hope that many cultures share. Created in collaboration with Kanika Gupta,&nbsp;<em>The Light in the Shadows</em>&nbsp;in an installation that focuses on the light within the shadows.&nbsp;</p><p style="white-space: pre-wrap;">​In times of darkness when we are feeling lost or helpless there is a desire to look for the light, something to guide our way through uncertainty, hardship, and/or despair. There will always be times when we find ourselves in the shadows with nothing external to turn to, nothing that we are able to grab hold of, to direct, to light and illuminate our path out of the darkness. Rather than seek a way out – it is precisely in these times, when we are in the shadows, that we must open our eyes and our hearts to the magnificence that surrounds us within these </p></div>
+  <div class="share-like">
+    <span class="squarespace-social-buttons inline-style" data-system-data-id="5c36525dc2241b494bd8d57d" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg" data-record-type="" data-full-url="/the-light-in-the-shadows" data-title="The Light In The Shadows"><div id="social-yui_3_17_2_1_1681273877572_1728" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681273877572_1762" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+  </div>
+</div>
+<div class="gallery sqs-dynamic-data-ready" id="detail_5c0847bf575d1f79d81c23b4" data-dynamic-data-link="the-light-in-the-shadows"><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1229">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1544046760309-HHWD0C66TVNK356M1QF6/img-3486_orig.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1544046760309-HHWD0C66TVNK356M1QF6/img-3486_orig.jpg" data-image-dimensions="1067x800" data-image-focal-point="0.5,0.5" data-image-stretch="false" class="" style="" alt="img-3486_orig.jpg" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1544046760309-HHWD0C66TVNK356M1QF6/img-3486_orig.jpg?format=1500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1231">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1546523566837-Z2IFJVFD3Y0I3XADJWD9/C0009T01.JPG" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1546523566837-Z2IFJVFD3Y0I3XADJWD9/C0009T01.JPG" data-image-dimensions="1280x720" data-image-focal-point="0.3225806451612903,0.7267857142857143" data-image-stretch="false" class="" style="" alt="C0009T01.JPG" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1546523566837-Z2IFJVFD3Y0I3XADJWD9/C0009T01.JPG?format=1500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1233">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1544047451197-OIJOGE0CYFWJNJVIRJLG/lantern.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1544047451197-OIJOGE0CYFWJNJVIRJLG/lantern.jpg" data-image-dimensions="2454x1391" data-image-focal-point="0.5,0.5" data-image-stretch="false" class="" style="" alt="lantern.jpg" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1544047451197-OIJOGE0CYFWJNJVIRJLG/lantern.jpg?format=1500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a></div>
+</div>
+
+<div class="project-item clearfix" data-dynamic-href="/from-home-to-anywhere/" data-type-name="gallery" id="yui_3_17_2_1_1681273877572_1256">
+<div class="meta">
+  <h1 data-shrink-original-size="42">From Home to Anywhere</h1>
+  
+
+  <div class="body"><p class="" style="white-space:pre-wrap;">Every journey begins with a starting point. It is with the nurturing support of our home, our cocoon, that we can then excel and reach our fullest potential. From Home to Anywhere is an Art Installation that invites passers-by to step up to it and experience the cocoon for themselves, serving as a reminder that while our world is a big place, home begins with where you are.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">Upon entering a nest, participants will be surrounded by birds fluttering overhead and invited to project their hopes and desires onto the birds flying above them, taking a moment to imagine how they would feel if they too could fly.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">From Home to Anywhere encourages human interactions that are designed to inspire connection and to evoke the sentiment of possibility and hope. This body of work is particularly relevant today where we are displaced from our realities and caught up in our daily routines. Where our relentless pursuit of ‘success’ comes at the expense of forgotten aspirations and dreams. This Installation grounds participants in the current moment, giving them an escape from the chaos to rekindle and reimagine possibilities. The act of simply looking at these birds is a prompt for mindful reflection and presence.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">Participants are encouraged to take a moment to reflect on possibilities and share their visions with the world using #fromhometoanywhere</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">______________________</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">Amit and Kanika collaboratively realize Installations that push the boundaries of their individual practices.They intend for all collaborations to embody themes of hope and unity.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">This installation is produced in collaboration with Kelly Robinson and Navnith Ravindran.</p></div>
+  <div class="share-like">
+    <span class="squarespace-social-buttons inline-style" data-system-data-id="5f36d182d280a4643947af82" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg" data-record-type="" data-full-url="/from-home-to-anywhere" data-title="From Home to Anywhere"><div id="social-yui_3_17_2_1_1681273877572_1729" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681273877572_1776" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+  </div>
+</div>
+<div class="gallery sqs-dynamic-data-ready" id="detail_5e34488acfecda584de94cd2" data-dynamic-data-link="from-home-to-anywhere" style="min-height: 1468px;"><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1879">
+
+  <img data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg" data-image-dimensions="1639x1276" data-image-focal-point="0.5,0.5" data-image-stretch="false" class="" style="" alt="From Home to Anywhere" data-image-resolution="2500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg?format=2500w">
+  
+  <div class="sqs-spin"></div>
+
+  </a><a class="gallery-item" id="yui_3_17_2_1_1681273877572_1660">
+
+  
+  <div class="sqs-video-wrapper video-none" data-html="<iframe allow=&quot;autoplay; fullscreen&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot; src=&quot;//cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F478IDDGH7CI%3Ffeature%3Doembed&amp;amp;display_name=YouTube&amp;amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D478IDDGH7CI&amp;amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F478IDDGH7CI%2Fhqdefault.jpg&amp;amp;key=61d05c9d54e8455ea7a9677c366be814&amp;amp;type=text%2Fhtml&amp;amp;schema=youtube&amp;amp;wmode=opaque&quot; width=&quot;854&quot; frameborder=&quot;0&quot; title=&quot;YouTube embed&quot; class=&quot;embedly-embed&quot; height=&quot;480&quot;></iframe>" data-provider-name="YouTube" id="yui_3_17_2_1_1681273877572_1666"><div class="intrinsic" id="yui_3_17_2_1_1681273877572_1881"><div class="intrinsic-inner" style="padding-bottom: 56.2061%;" id="yui_3_17_2_1_1681273877572_1880"><div class="sqs-video-overlay" style="opacity: 1; overflow: hidden; visibility: hidden;" id="yui_3_17_2_1_1681273877572_1687"><img data-load="false" data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1597428077742-01RX4AQ0VG9E2TTYVHCY/image-asset.jpeg" data-image-dimensions="480x360" data-image-focal-point="0.5,0.5" data-parent-ratio="1.8" style="left: 0px; top: -84.5px; width: 900px; height: 675px; position: relative;" class="loaded" data-image-resolution="2500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1597428077742-01RX4AQ0VG9E2TTYVHCY/image-asset.jpeg?format=2500w"><div class="sqs-video-opaque" style="opacity: 0;"> </div><div class="sqs-video-icon" tabindex="0" role="button" aria-label="Play" id="yui_3_17_2_1_1681273877572_1919" style=""></div></div><iframe allow="autoplay; fullscreen" scrolling="no" allowfullscreen="true" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2F478IDDGH7CI%3Ffeature%3Doembed&amp;display_name=YouTube&amp;url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3D478IDDGH7CI&amp;image=https%3A%2F%2Fi.ytimg.com%2Fvi%2F478IDDGH7CI%2Fhqdefault.jpg&amp;key=61d05c9d54e8455ea7a9677c366be814&amp;type=text%2Fhtml&amp;schema=youtube&amp;wmode=opaque&amp;autoplay=1&amp;enablejsapi=1" width="854" frameborder="0" title="YouTube embed" class="embedly-embed" height="480" id="yui_3_17_2_1_1681273877572_1672" style="opacity: 1;"></iframe></div></div></div>
+  <div class="sqs-spin"></div>
+
+  </a></div>
+</div>
+
+
+<!-- Navigation -->
+<div class="switcher" style="top: 198px;" id="yui_3_17_2_1_1681273877572_714">
+<div class="switcher-content" id="yui_3_17_2_1_1681273877572_713">
+  <a class="projectPrev"></a>
+  <a class="projectHome"></a>
+  <a class="projectNext"></a>
+</div>
+</div>
+
+</div>
+
+<script type="module">
+Y.use('squarespace-ui-base', function(Y) {
+Y.all(".project-item .meta h1").each(function (current) {
+  current.plug(Y.Squarespace.TextShrink);
+});
+});
+</script>
+
+<!-- Main Grid -->
+<div id="grid" data-collection-id="5c08428daa4a99b3d7b9c341" class="sqs-gallery-design-autocolumns" style="height: 683px;">
+
+
+<div class="item sqs-gallery-design-autocolumns-slide sqs-active-slide" id="yui_3_17_2_1_1681273877572_194" data-type="image" style="top: 0px; left: 0px; width: 510px; height: 286px;" overlaydelay="579">
+<a href="/a-warm-hug/" data-dynamic-load="" data-dynamic-receiver="#detail_5c364a71575d1f827fb27aad" id="yui_3_17_2_1_1681273877572_306" class="">
+  <div class="wrapper" id="yui_3_17_2_1_1681273877572_361">
+    <div class="project-title" id="yui_3_17_2_1_1681273877572_360">
+      <h2 id="yui_3_17_2_1_1681273877572_359">A Warm Hug</h2>
+      <h3 id="yui_3_17_2_1_1681273877572_1594">— view —</h3>
+    </div>
+  </div>
+  
+    <img class="thumbnail loaded" data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063702630-JY20367K4PETWUVTJXQY/Sequence+01.00_00_04_22.Still004.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063702630-JY20367K4PETWUVTJXQY/Sequence+01.00_00_04_22.Still004.jpg" data-image-dimensions="1920x1080" data-image-focal-point="0.5,0.5" data-load="false" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063702630-JY20367K4PETWUVTJXQY/Sequence+01.00_00_04_22.Still004.jpg?format=1500w">
+    <noscript><img src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063702630-JY20367K4PETWUVTJXQY/Sequence+01.00_00_04_22.Still004.jpg?format=original"></noscript>
+  
+</a>
+</div>
+
+
+
+<div class="item sqs-gallery-design-autocolumns-slide slide-stretched" id="yui_3_17_2_1_1681273877572_196" data-type="image" style="top: 0px; left: 510px; width: 510px; height: 645px;" overlaydelay="685">
+<a href="/doodlesillustrations/" data-dynamic-load="" data-dynamic-receiver="#detail_5c3f54bd1ae6cf74baf96418" id="yui_3_17_2_1_1681273877572_312" class="">
+  <div class="wrapper" id="yui_3_17_2_1_1681273877572_675">
+    <div class="project-title" id="yui_3_17_2_1_1681273877572_674">
+      <h2 id="yui_3_17_2_1_1681273877572_1587">Doodles/Illustrations</h2>
+      <h3 id="yui_3_17_2_1_1681273877572_1585">— view —</h3>
+    </div>
+  </div>
+  
+    <img class="thumbnail loaded" data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg" data-image-dimensions="1617x2048" data-image-focal-point="0.5,0.5" data-load="false" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg?format=1500w">
+    <noscript><img src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg?format=original"></noscript>
+  
+</a>
+</div>
+
+
+
+<div class="item sqs-gallery-design-autocolumns-slide slide-stretched" id="yui_3_17_2_1_1681273877572_198" data-type="image" style="top: 0px; left: 1020px; width: 512px; height: 286px;" overlaydelay="646">
+<a href="/the-light-in-the-shadows/" data-dynamic-load="" data-dynamic-receiver="#detail_5c0847bf575d1f79d81c23b4" id="yui_3_17_2_1_1681273877572_318" class="">
+  <div class="wrapper" id="yui_3_17_2_1_1681273877572_1592">
+    <div class="project-title" id="yui_3_17_2_1_1681273877572_1591">
+      <h2 id="yui_3_17_2_1_1681273877572_1590">The Light In The Shadows</h2>
+      <h3>— view —</h3>
+    </div>
+  </div>
+  
+    <img class="thumbnail loaded" data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg" data-image-dimensions="1280x720" data-image-focal-point="0.5,0.5" data-load="false" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg?format=1500w">
+    <noscript><img src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg?format=original"></noscript>
+  
+</a>
+</div>
+
+
+
+<div class="item sqs-gallery-design-autocolumns-slide" id="yui_3_17_2_1_1681273877572_200" data-type="image" style="top: 286px; left: 0px; width: 510px; height: 397px;" overlaydelay="580">
+<a href="/from-home-to-anywhere/" data-dynamic-load="" data-dynamic-receiver="#detail_5e34488acfecda584de94cd2" id="yui_3_17_2_1_1681273877572_324" class="sqs-dynamic-data-active">
+  <div class="wrapper" id="yui_3_17_2_1_1681273877572_1584">
+    <div class="project-title" id="yui_3_17_2_1_1681273877572_1583">
+      <h2 id="yui_3_17_2_1_1681273877572_1596">From Home to Anywhere</h2>
+      <h3>— view —</h3>
+    </div>
+  </div>
+  
+    <img class="thumbnail loaded" data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg" data-image="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg" data-image-dimensions="1639x1276" data-image-focal-point="0.5,0.5" data-load="false" data-image-resolution="1500w" src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg?format=1500w">
+    <noscript><img src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1580484822299-BJKYE2LSYA5UKN6XQUMF/image-asset.jpeg?format=original"></noscript>
+  
+</a>
+</div>
+
+
+</div>
+
+<div class="hidden">
+
+
+
+
+
+
+
+
+
+</div>
+  </div>`,
+  },
+]
+
+export const siteArticles = [
+  {
+    id: 1,
+    name: 'National Gallery of Canada - Brand Film',
+    href: '#',
+    source: istaImg1,
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'National Gallery of Canada - Brand Film',
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: 'My Glimpses of India',
+    href: '#',
+    source: istaImg2,
+    imageAlt: 'this podcast was built.....',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'My Glimpses of India',
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: 'The Stillness Within You',
+    href: '#',
+    source: istaImg3,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'The Stillness Within You',
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: 'The Canvas Of Our Minds',
+    href: '#',
+    source: istaImg4,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'The Canvas Of Our Minds',
+      },
+    ],
+  },
+  {
+    id: 5,
+    name: 'Piaget x Ryan Reynolds',
+    href: '#',
+    source: istaImg5,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Piaget x Ryan Reynolds',
+      },
+    ],
+  },
+  {
+    id: 6,
+    name: 'Food in Motion',
+    href: '#',
+    source: istaImg6,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Food in motion',
+      },
+    ],
+  },
+  {
+    id: 7,
+    name: 'Dancing With The Sun',
+    href: '#',
+    source: istaImg7,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Dancing in the Sun',
+      },
+    ],
+  },
+  {
+    id: 8,
+    name: 'Google Maps',
+    href: '#',
+    source: istaImg8,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Google Maps',
+      },
+    ],
+  },
+  {
+    id: 9,
+    name: 'Lifestyle',
+    href: '#',
+    source: istaImg9,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Lifestyle',
+      },
+    ],
+  },
+  {
+    id: 10,
+    name: 'National Gallery of Canada',
+    href: '#',
+    source: istaImg10,
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Arfie Laalani',
+      },
+    ],
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+  {
+    id: 11,
+    name: 'Arfie Lalani',
+    href: '#',
+    source: istaImg11,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Arfie Laalani',
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: 'McGill Redmen',
+    href: '#',
+    source: istaImg12,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Arfie Laalani',
+      },
+    ],
+  },
+  {
+    id: 13,
+    name: 'The Shopping Channel',
+    href: '#',
+    source: istaImg13,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Shopping with Channel',
+      },
+    ],
+  },
+  {
+    id: 12,
+    name: 'Knix',
+    href: '#',
+    source: istaImg14,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Knix',
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: 'Human Touch ',
+    href: '#',
+    source: istaImg15,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Human Touch',
+      },
+    ],
+  },
+  {
+    id: 34,
+    name: 'Fashio &  Beauty ',
+    href: '#',
+    source: istaImg15,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'still',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Human Touch',
+      },
+    ],
+  },
+  {
+    id: 34,
+    name: 'Lifestyle / Still ',
+    href: '#',
+    source: istaImg15,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'still',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Human Touch',
+      },
+    ],
+  },
+  {
+    id: 15,
+    name: 'Shoppers x Dundas Square ',
+    href: '#',
+    source: istaImg16,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Shoper X',
+      },
+    ],
+  },
+  {
+    id: 16,
+    name: "Hudson's Bay Company",
+    href: '#',
+    source: istaImg17,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+  {
+    id: 17,
+    name: 'Chelsea',
+    href: '#',
+    source: istaImgChelsea,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+
+  {
+    id: 18,
+    name: 'Garnier Olia',
+    href: '#',
+    source: istaImg18,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+
+  {
+    id: 19,
+    name: 'Color Of Love',
+    href: '#',
+    source: istaImg16,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Color of Love',
+      },
+    ],
+  },
+  {
+    id: 20,
+    name: 'Col. Chris Hadfield',
+    href: '#',
+    source: istaImg19,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Col Chris',
+      },
+    ],
+  },
+  {
+    id: 21,
+    name: "Makin' A Pizza + French Fries or Onion Rings | Rap Recipe Music Videos",
+    href: '#',
+    source: istaImg20,
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: "Makin' A Pizza | Rap Recipe Music Video",
+      },
+    ],
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+  {
+    id: 22,
+    name: 'Music Video',
+    href: '#',
+    source: istaImg21,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+  {
+    id: 23,
+    name: 'Velour Lashes',
+    href: '#',
+    source: istaImgVelour,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Velour Lashes',
+      },
+    ],
+  },
+  {
+    id: 24,
+    name: 'Walmart',
+    href: '#',
+    source: istaImgBaby,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'WalMart',
+      },
+    ],
+  },
+  {
+    id: 25,
+    name: 'Rethink Recovery',
+    href: '#',
+    source: istaImg23,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Rethink recovery',
+      },
+    ],
+  },
+  {
+    id: 26,
+    name: 'Reel',
+    href: '#',
+    source: istaImg24,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Reel',
+      },
+    ],
+  },
+  {
+    id: 27,
+    name: 'ReThink Recovery',
+    href: '#',
+    source: istaImg15,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+  {
+    id: 28,
+    name: 'ReThink Winners',
+    href: '#',
+    source: istaImg22,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+    ],
+  },
+  {
+    id: 29,
+    name: 'RW & CO - P.K Subban and Karl Subban',
+    href: '#',
+    source: istaImg25,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'RW & Co',
+      },
+    ],
+  },
+  {
+    id: 30,
+    name: 'Warm Hug',
+    href: '#',
+    source: istaImg22,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'art',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'image',
+        source: '/art/warm-hug',
+        title: 'Winners',
+      },
+    ],
+  },
+  {
+    id: 31,
+    name: 'Doodles / Illustrations',
+    href: '#',
+    source: istaImg22,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'art',
+    medias: [
+      {
+        type: 'image',
+        source: '/art/doodles-1.jpeg',
+        title: 'Doodles-1',
+      },
+      // {
+      //   type: 'image',
+      //   source: '/warm-hug/warm-hug-2.jpeg',
+      //   title: 'Doodles-3',
+      // },
+      {
+        type: 'image',
+        source: '/art/doodles-2.jpeg',
+        title: 'Doodles-1',
+      },
+      {
+        type: 'image',
+        source: '/art/doodles-3.jpeg',
+        title: 'Doodles / Illustrations-2',
+      },
+    ],
+  },
+  {
+    // href: 'the-light-in-the-shadows',
+    id: 32,
+    name: 'The Light In The Shadows',
+    href: '#',
+    source: istaImg22,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'art',
+    medias: [
+      {
+        type: 'image',
+        source: '/art/from-home/fromhome-1.jpeg',
+        title: 'Winners',
+      },
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'The Light In The Shadows',
+      },
+    ],
+  },
+  {
+    // href: ' from-home-to-anywhere',
+
+    id: 34,
+    name: 'From Home to Anywhere',
+    href: '#',
+    source: istaImg22,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'art',
+    medias: [
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'video',
+        source: 'UTbYyqAwvio',
+        title: 'Winners',
+      },
+      {
+        type: 'image',
+        source: '/art/warm-hug',
+        title: 'Winners',
+      },
+    ],
+  },
+]
