@@ -14,7 +14,7 @@ import { getArt } from '@/lib/getArt'
 import { getMotion } from '@/lib/getMotion'
 import { PodcastsPageLayout } from '@/components/PodcastsPageLayout'
 import { getAllArts } from '@/lib/getAllArts'
-import { Goback } from '@/components/Goback'
+import { GoBackArrow } from '@/components/Goback'
 import { ProjectLayout } from '@/components/ProjectLayout'
 // import { Header } from '@/components/Header'
 const languages = ['en', 'fr', 'hn']
@@ -32,7 +32,7 @@ export default function ArtPage({ art }) {
         id="project-page"
         className="lg:border-t-0-16   border-slate-500 md:py-0 "
       >
-        <Goback />
+        <GoBackArrow />
 
         {/* <div id="podcast-bg" className=" -mt-10"></div> */}
 

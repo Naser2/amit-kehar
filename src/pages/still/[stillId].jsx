@@ -14,7 +14,7 @@ import { getArt } from '@/lib/getArt'
 import { getMotion } from '@/lib/getMotion'
 import { PodcastsPageLayout } from '@/components/PodcastsPageLayout'
 import { getAllArts } from '@/lib/getAllArts'
-import { Goback } from '@/components/Goback'
+import { GoBackArrow, Goback } from '@/components/Goback'
 import { getAllStills } from '@/lib/getAllStills'
 import { getStill } from '@/lib/getStill'
 import { Galery } from '@/components/Gallery'
@@ -35,7 +35,7 @@ export default function ArtPage({ still }) {
         id="project-page"
         className="lg:border-t-0-16   border-slate-500 md:py-0 "
       >
-        <Goback />
+        <GoBackArrow />
         {/* CATEGORY -  */}
         <Title title={still.name} />
         <Galery contents={still} clicable={false} />
