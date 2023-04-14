@@ -404,6 +404,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">A fashion film by Amit Kehar featuring Arfie Lalani's Fall 2019 collection</p></div>`,
     id: 11,
     name: 'Arfie Lalani',
     href: '#',
@@ -420,6 +421,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `Description content not found.`,
     id: 56,
     name: 'McGill Redmen',
     href: '#',
@@ -436,6 +438,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space:pre-wrap;">I had such a blast shooting and directing The Shopping Channel's Fall + Summer Beauty Videos!</p><p style="white-space:pre-wrap;">Director and Cinematographer: Amit Kehar</p><p style="white-space:pre-wrap;">Produced by: Marc Juliar (The 89Ninety)</p><p style="white-space:pre-wrap;">Creative Director: Margaret Lee</p><p style="white-space:pre-wrap;">Editing by: Rogers Media &amp; Amit Kehar</p><p data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p></div>`,
     id: 13,
     name: 'The Shopping Channel',
     href: '#',
@@ -452,6 +455,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `Description content not found.`,
     id: 12,
     name: 'Knix',
     href: '#',
@@ -468,6 +472,7 @@ export const siteArticles = [
     ],
   },
   {
+    contemt: `<div class="body"><p class="" style="white-space:pre-wrap;">The Human Touch is  A cinematic series that explores the world of different artisans and crafts-makers,</p><p class="" style="white-space:pre-wrap;">Co-Created by Max Rosenstein and Amit Kehar</p></div>`,
     id: 14,
     name: 'Human Touch ',
     href: '#',
@@ -485,7 +490,7 @@ export const siteArticles = [
   },
   {
     id: 39,
-    name: 'Fashio &  Beauty ',
+    name: 'Fashion &  Beauty ',
     href: '#',
     source: istaImg15,
     imageAlt:
@@ -516,6 +521,8 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">In November 2017, I Directed and filmed a series of 15 interactive spots that displayed on Canada’s longest horizontal full-motion digital display (26 x 188 ft). Each spot was coordinated with real-time data from the Weather Network displaying content in relation to changing weather conditions.</p><p style="white-space: pre-wrap;">Director &amp; Cinematographer: Amit Kehar</p><p style="white-space: pre-wrap;">Production: Orange (Jason Gileno and Jono Nemethy)</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p></div>`,
+
     id: 15,
     name: 'Shoppers x Dundas Square ',
     href: '#',
@@ -532,6 +539,16 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<p style="white-space: pre-wrap;">Here's a fun fashion video that I shot, directed and editied, featuring model and photographer Chelsey Boll.</p>`,
+    id: 17,
+    name: 'Chelsey',
+    href: '#',
+    source: istaImgChelsea,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+  },
+  {
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">A series of video that I shot, directed and edited for Hudson’s Bay Company for their spring campaign.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p></div>`,
     id: 16,
     name: "Hudson's Bay Company",
     href: '#',
@@ -539,16 +556,9 @@ export const siteArticles = [
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
   },
-  {
-    id: 17,
-    name: 'Chelsea',
-    href: '#',
-    source: istaImgChelsea,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
-  },
 
   {
+    content: `Description content not found.`,
     id: 18,
     name: 'Garnier Olia',
     href: '#',
@@ -558,6 +568,7 @@ export const siteArticles = [
   },
 
   {
+    content: `<div class="body"><p style="white-space:pre-wrap;">A concept film that uses colour as a vehicle to tell a story about self-love. Shot, directed and edited by Amit Kehar.</p></div>`,
     id: 19,
     name: 'Color Of Love',
     href: '#',
@@ -574,6 +585,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `Content not found.`,
     id: 20,
     name: 'Col. Chris Hadfield',
     href: '#',
@@ -590,6 +602,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">Here are two hilarious “RAP RECIPE MUSIC VIDEOS” that I had the pleasure of directing, shooting and editing for food network star and former member of Epic Meal Time, Josh Elkin .</p><p style="white-space: pre-wrap;">Directed by Josh Elkin &amp; Amit Kehar</p><p style="white-space: pre-wrap;">Shot &amp; Edited by Amit Kehar </p><p style="white-space: pre-wrap;">Music by: Josh Elkin &amp; Ben Shubert <a href="https://www.youtube.com/redirect?redir_token=blg6tHerlIgWPooGIQR3OcB4Avh8MTUzMzczNDQyMkAxNTMzNjQ4MDIy&amp;q=http%3A%2F%2Finstagram.com%2Faaronbenjimin_&amp;v=UTbYyqAwvio&amp;event=video_description">http://instagram.com/aaronbenjimin_</a></p><p style="white-space: pre-wrap;">Special Thanks to Double Pizza <a href="https://www.youtube.com/redirect?redir_token=blg6tHerlIgWPooGIQR3OcB4Avh8MTUzMzczNDQyMkAxNTMzNjQ4MDIy&amp;q=http%3A%2F%2Fwww.doublepizza.ca%2F&amp;v=UTbYyqAwvio&amp;event=video_description">http://www.doublepizza.ca/</a></p></div>`,
     id: 21,
     name: "Makin' A Pizza + French Fries or Onion Rings | Rap Recipe Music Videos",
     href: '#',
@@ -606,14 +619,18 @@ export const siteArticles = [
       'Black machined steel pen with hexagonal grip and small white logo at top.',
   },
   {
+    conent: `Music Videos`,
     id: 22,
     name: 'Music Video',
     href: '#',
     source: istaImg21,
+    type: 'motion',
+    category: 'videos',
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">Here is a series of videos, including a brand film  that Amit Kehar shot, directed and edited for Velour Lashes. </p></div>`,
     id: 23,
     name: 'Velour Lashes',
     href: '#',
@@ -630,6 +647,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">It was such a pleasure to shoot this commercial for Walmart’s clothing line for Babies. This was the first time that I had worked with little toddlers and it resulted in a very cute and uplifting video.</p><p style="white-space: pre-wrap;">Director &amp; DP: Amit Kehar</p><p style="white-space: pre-wrap;">Main editor: Laura Lanktree</p></div>`,
     id: 24,
     name: 'Walmart',
     href: '#',
@@ -637,6 +655,7 @@ export const siteArticles = [
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
     type: 'motion',
+    category: 'videos',
     medias: [
       {
         type: 'video',
@@ -646,6 +665,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">What started as an activity to help pass the time while waiting to “recover” from a traumatic experience – developed into an art exhibit – which transformed into a movement that challenges the culturally accepted beliefs of what it means to be “recovered.” Visitors became active participants in finding new ways to put the pieces of themselves together in an artful, creative and insightful form of recovery.  You are now invited to rethink recovery: to discover and redefine what recovery means to you.  Learn more at www.byKanika.com/recovery and continue the conversation <a href="https://www.youtube.com/results?search_query=%23ReThinkRecovery">#ReThinkRecovery</a>  . Video by Amit Kehar www.amitkehar.com</p></div>`,
     id: 25,
     name: 'Rethink Recovery',
     href: '#',
@@ -662,6 +682,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `Description content not found.`,
     id: 26,
     name: 'Reel',
     href: '#',
@@ -669,6 +690,7 @@ export const siteArticles = [
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
     type: 'motion',
+    category: 'videos',
     medias: [
       {
         type: 'video',
@@ -686,6 +708,7 @@ export const siteArticles = [
       'Black machined steel pen with hexagonal grip and small white logo at top.',
   },
   {
+    conent: `<div class="body"><p style="white-space: pre-wrap;">Here’s a series of videos that I did for Winners Canada for their Winter, Holidays, Fall and Spring collections!</p><p style="white-space: pre-wrap;">Directed, Shot &amp; Edited by Amit Kehar</p></div>`,
     id: 28,
     name: 'ReThink Winners',
     href: '#',
@@ -717,6 +740,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">Every suit has a story. That was the theme for this campaign that I directed for RW &amp; CO's "PK Subban Collection" . The short film dives in a narrative driven by a conversation between the father and son about Canada, Hockey and their history with suits. </p><p class="" style="white-space:pre-wrap;">Featuring PK Subban and Karl Subban</p><p class="" style="white-space:pre-wrap;">Directed and edited by Amit Kehar</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p></div>`,
     id: 29,
     name: 'RW & CO - P.K Subban and Karl Subban',
     href: '#',

@@ -38,7 +38,7 @@ export default function ArtPage({ still }) {
         <GoBackArrow />
         {/* CATEGORY -  */}
         <Title title={still.name} />
-        <Galery contents={still} clicable={false} />
+        <Galery contents={still} clicable={false} gap="gay-x-0 gap-y-0" />
       </article>
     </>
   )

@@ -175,7 +175,8 @@ export function WorkStatus({ ...props }) {
   )
 }
 
-export const Galery = ({ contents, clicable }, ...props) => {
+export const Galery = ({ contents, clicable }, gap, ...props) => {
+  console.log('GAP IN GALLLERY ->', gap)
   return (
     <>
       <section
@@ -187,9 +188,13 @@ export const Galery = ({ contents, clicable }, ...props) => {
           <div role="list" className="">
             <ul
               role="list"
-              className="xxl:grid-cols-3 grid grid-cols-1 gap-x-4 gap-y-0 sm:gap-x-6 sm:gap-y-4 md:gap-x-4 md:gap-y-4 md:gap-y-8 lg:grid-cols-2  xl:gap-x-4"
+              className={clsx([
+                gap ??
+                  'gap-x-4 sm:gap-x-6 sm:gap-y-4 md:gap-x-4  md:gap-y-4 md:gap-y-8 xl:gap-x-4',
+                'xxl:grid-cols-3 grid grid-cols-1 lg:grid-cols-2  ',
+              ])}
             >
-              {checkObject(contents, clicable, props)}
+              {checkObject(contents, clicable, gap, props)}
             </ul>
           </div>
         </div>
