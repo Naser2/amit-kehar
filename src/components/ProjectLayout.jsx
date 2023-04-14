@@ -46,33 +46,33 @@ function ProjectMedias({ mediaContent, hosts, classN, aspect, defaultAspect }) {
     >
       {/* dark::bg-black relative h-full bg-slate-50 lg:fixed  lg:right-0 lg:flex lg:items-start lg:overflow-y-auto lg:pb-44 */}
       <div className="gallery-media-item z-10 mt-20">
-        <>{articleMedias(mediaContent)}</>
+        <>{ArticleMedias(mediaContent)}</>
       </div>
     </div>
   )
 }
 
-const articleMedias = (mediaContent, aspect, defaultAspect) => {
-  const Dimension = useEffect(() => {
-    let { width, height } = useWindowDimensions
+const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
+  // const Dimension = useEffect(() => {
+  let { width, height } = useWindowDimensions()
 
-    if (width >= 300) {
-      return width
-    }
-    if (width >= 300 && height >= 800) {
-      return width
-    }
-    if (width >= 700) {
-      return width
-    }
-    if (width >= 900) {
-      return width / 2
-    }
-    if (width >= 1200) {
-      return width / 2.1
-    }
-  })
-  let { width, height } = useWindowDimensions
+  //   if (width >= 300) {
+  //     return width
+  //   }
+  //   if (width >= 300 && height >= 800) {
+  //     return width
+  //   }
+  //   if (width >= 700) {
+  //     return width
+  //   }
+  //   if (width >= 900) {
+  //     return width / 2
+  //   }
+  //   if (width >= 1200) {
+  //     return width / 2.1
+  //   }
+  // })
+  // let { width, height } = useWindowDimensions
   //  if(winde){
   //   const width = hasWindow ? window.innerWidth : null
   //   const height = hasWindow ? window.innerHeight : null

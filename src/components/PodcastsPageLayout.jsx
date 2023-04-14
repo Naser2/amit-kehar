@@ -1,4 +1,4 @@
-import { Fragment, useId, useState } from 'react'
+import { Fragment, useId } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -139,74 +139,71 @@ export function PersonIcon(props) {
   )
 }
 
-function AboutSection(props) {
-  let [isExpanded, setIsExpanded] = useState(false)
-  let [showAbout, setShowAbout] = useState(false)
-  // console.log('PODCAST About Section', props)
-  // let podcastAbout = props.episodes.map((episode) => {
-  //   return <>{episode.description}</>
-  // })
-  return (
-    <section {...props} className="pb-14">
-      <button
-        onClick={() => setShowAbout(!showAbout)}
-        className={
-          '  mx-10 inline-flex items-center px-8 font-mono text-sm font-medium leading-7 text-slate-900 sm:mx-12 md:px-4 lg:px-8 lg:px-8 xl:px-12 xl:px-12'
-        }
-      >
-        <TinyWaveFormIcon
-          colors={['fill-violet-300', 'fill-pink-300']}
-          className="h-2.5 w-2.5"
-        />
-        <span className="ml-2.5 text-2xl dark:text-slate-200">About</span>
-      </button>
+// function AboutSection(props) {
+//   let [isExpanded, setIsExpanded] = useState(false)
+//   let [showAbout, setShowAbout] = useState(false)
 
-      <>
-        <p
-          className={clsx(
-            'mt-2 px-8 pt-4 text-base leading-7 text-slate-700 dark:text-slate-200/80  sm:px-6 md:px-4 lg:px-8 xl:px-12',
-            !isExpanded && 'lg:line-clamp-4'
-          )}
-        >
-          In this show, Lars and Serena dig deep to get to the facts with guests
-          who have been labeled Poet by a society quick to judge, without
-          actually getting the full story. Tune in every Thursday to get to the
-          truth with another misunderstood outcast as they share the missing
-          context in their tragic tale.
-        </p>
-        {isExpanded && (
-          <p
-            className={clsx(
-              'mt-2 px-8 pt-4 text-base leading-7 text-slate-700 dark:text-slate-200/80  sm:px-6 md:px-4 lg:px-8 xl:px-12',
-              !isExpanded && 'lg:line-clamp-4'
-            )}
-          >
-            mMore COntent truth with another misunderstood outcast as they share
-            the missing context in their tragic tale.
-          </p>
-        )}
-        {!isExpanded && (
-          <button
-            type="button"
-            className="px-8 text-sm font-bold leading-6 text-blue-500 hover:text-blue-700 active:text-blue-900  md:px-4 lg:inline-block lg:px-8 xl:px-12"
-            onClick={() => setIsExpanded(!isExpanded)}
-          >
-            Show more
-          </button>
-        )}
-        {isExpanded && (
-          <button
-            type="button"
-            className=" px-8 text-sm font-bold leading-6 text-blue-500 hover:text-blue-700 active:text-blue-900  md:px-4 lg:inline-block lg:px-8 xl:px-12"
-            onClick={() => setIsExpanded(!isExpanded)}
-          >
-            Show less
-          </button>
-        )}
-      </>
-    </section>
-  )
-}
+//   return (
+//     <section {...props} className="pb-14">
+//       <button
+//         onClick={() => setShowAbout(!showAbout)}
+//         className={
+//           '  mx-10 inline-flex items-center px-8 font-mono text-sm font-medium leading-7 text-slate-900 sm:mx-12 md:px-4 lg:px-8 lg:px-8 xl:px-12 xl:px-12'
+//         }
+//       >
+//         <TinyWaveFormIcon
+//           colors={['fill-violet-300', 'fill-pink-300']}
+//           className="h-2.5 w-2.5"
+//         />
+//         <span className="ml-2.5 text-2xl dark:text-slate-200">About</span>
+//       </button>
+
+//       <>
+//         <p
+//           className={clsx(
+//             'mt-2 px-8 pt-4 text-base leading-7 text-slate-700 dark:text-slate-200/80  sm:px-6 md:px-4 lg:px-8 xl:px-12',
+//             !isExpanded && 'lg:line-clamp-4'
+//           )}
+//         >
+//           In this show, Lars and Serena dig deep to get to the facts with guests
+//           who have been labeled Poet by a society quick to judge, without
+//           actually getting the full story. Tune in every Thursday to get to the
+//           truth with another misunderstood outcast as they share the missing
+//           context in their tragic tale.
+//         </p>
+//         {isExpanded && (
+//           <p
+//             className={clsx(
+//               'mt-2 px-8 pt-4 text-base leading-7 text-slate-700 dark:text-slate-200/80  sm:px-6 md:px-4 lg:px-8 xl:px-12',
+//               !isExpanded && 'lg:line-clamp-4'
+//             )}
+//           >
+//             mMore COntent truth with another misunderstood outcast as they share
+//             the missing context in their tragic tale.
+//           </p>
+//         )}
+//         {!isExpanded && (
+//           <button
+//             type="button"
+//             className="px-8 text-sm font-bold leading-6 text-blue-500 hover:text-blue-700 active:text-blue-900  md:px-4 lg:inline-block lg:px-8 xl:px-12"
+//             onClick={() => setIsExpanded(!isExpanded)}
+//           >
+//             Show more
+//           </button>
+//         )}
+//         {isExpanded && (
+//           <button
+//             type="button"
+//             className=" px-8 text-sm font-bold leading-6 text-blue-500 hover:text-blue-700 active:text-blue-900  md:px-4 lg:inline-block lg:px-8 xl:px-12"
+//             onClick={() => setIsExpanded(!isExpanded)}
+//           >
+//             Show less
+//           </button>
+//         )}
+//       </>
+//     </section>
+//   )
+// }
 {
   /* {!router.pathname.includes(isEpisodeRoute) && ( */
 }

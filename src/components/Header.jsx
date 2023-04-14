@@ -206,8 +206,6 @@ function ModeToggle() {
       onClick={toggleMode}
     >
       <ToggleICon />
-      {/* <SunIcon className="h-6 w-6 fill-zinc-100 stroke-zinc-500 transition group-hover:fill-zinc-200 group-hover:stroke-zinc-700 dark:hidden [@media(prefers-color-scheme:dark)]:fill-teal-50 [@media(prefers-color-scheme:dark)]:stroke-teal-500 [@media(prefers-color-scheme:dark)]:group-hover:fill-teal-50 [@media(prefers-color-scheme:dark)]:group-hover:stroke-teal-600" />
-      <MoonIcon className="hidden h-6 w-6 fill-zinc-700 stroke-zinc-500 transition dark:block [@media(prefers-color-scheme:dark)]:group-hover:stroke-zinc-400 [@media_not_(prefers-color-scheme:dark)]:fill-teal-400/10 [@media_not_(prefers-color-scheme:dark)]:stroke-teal-500" /> */}
     </div>
   )
 }
@@ -303,7 +301,7 @@ function Avatar({ large = false, className, homePage, ...props }) {
           <Link
             href="/"
             id="DIRECTOR CREDENTIALS_MOBILE"
-            className="-mt-9 flex min-w-[260px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:sr-only sm:text-5xl"
+            className="-mt-9 flex min-w-[260px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl"
           >
             <div data-content-field="siteTitle-SM ">
               <div

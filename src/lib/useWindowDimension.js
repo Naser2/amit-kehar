@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 export function useWindowDimensions() {
   const hasWindow = typeof window !== 'undefined'
 

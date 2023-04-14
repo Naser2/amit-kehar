@@ -280,6 +280,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">The Canvas Of Our Minds is a cinematic series about unique stories that are worth sharing with the world.</p><p style="white-space: pre-wrap;">Director, Cinematographer and Editor: Amit Kehar</p></div>`,
     id: 4,
     name: 'The Canvas Of Our Minds',
     href: '#',
@@ -296,6 +297,8 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">In 2017, I had the distinct opportunity to shoot and edit these two spots for Piaget featuring the one and only, Ryan Reynolds!</p><p style="white-space: pre-wrap;">DP &amp; EDITOR: Amit Kehar</p><p style="white-space: pre-wrap;">Director: Greg Williams</p><p style="white-space: pre-wrap;">Producer: Jessica Tjeng</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p><p style="white-space: pre-wrap;"><br></p></div>`,
+
     id: 5,
     name: 'Piaget x Ryan Reynolds',
     href: '#',
@@ -312,6 +315,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">Here are a few videos that combine two of my passions : Food &amp; Motion :)</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p></div>`,
     id: 6,
     name: 'Food in Motion',
     href: '#',
@@ -328,6 +332,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">An experimental dance video, that Amit Kehar shot in “GUERRILLA STYLE” on the streets of NYC.</p><p style="white-space: pre-wrap;">Featuring: Laura Cavaliere</p></div>`,
     id: 7,
     name: 'Dancing With The Sun',
     href: '#',
@@ -344,6 +349,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">A documentary on Ludia, that Amit Kehar shot.</p><p style="white-space: pre-wrap;">Featuring: Laura Cavaliere</p></div>`,
     id: 8,
     name: 'Google Maps',
     href: '#',
@@ -360,6 +366,7 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="body"><p style="white-space: pre-wrap;">Here are a variety of subjects that are witnessed in their natural element. Raw emotion and nothing else…maybe with a sprinkle of slow-motion :)</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p></div>`,
     id: 9,
     name: 'Lifestyle',
     href: '#',

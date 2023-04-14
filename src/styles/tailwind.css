@@ -14,6 +14,7 @@ body {
   color: #454545;
   font-family: Dosis;
   font-style: normal;
+  --color-two: #00adefff;
 }
 .title-gray {
   /* color: #999; */
@@ -935,4 +936,8 @@ body.project-hover-zoom .loaded #grid .item.hovering .wrapper {
   text-transform: none;
   color: #222;
   margin-top: 0;
+}
+
+.user-ring-color {
+  background-color: var(--color-two);
 }
