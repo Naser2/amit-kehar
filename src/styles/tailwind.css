@@ -45,7 +45,7 @@ body {
   color: #dcf2f7;
 }
 .w-17 {
-  width: 5rem;
+  /* width: 5rem; */
 }
 
 .h-17 {
@@ -58,6 +58,28 @@ body {
   /* max-width: 35%; */
   /* text-align: right; */
 }
+
+/* .meta  */
+.h1-custom {
+  font-size: 24px;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 47px !important;
+  font-size: 51px !important;
+  font-family: Dosis;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.2em;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #222;
+  margin-top: 0;
+}
+
+.user-ring-color {
+  background-color: var(--color-two);
+}
+
 .siteTitle-SM {
   margin: 0 35px;
   position: relative;
@@ -619,7 +641,7 @@ textarea {
   cursor: -webkit-zoom-out !important;
   cursor: zoom-out !important;
 }
-@keyframes bounceIn {
+/* @keyframes bounceIn {
   0% {
     opacity: 0;
     transform: scale(0.3);
@@ -665,7 +687,7 @@ textarea {
   .desktop-hidden {
     display: none;
   }
-}
+} */
 
 a:visited {
   /* color: #1f1f1f; */
@@ -829,15 +851,7 @@ body.project-hover-zoom .loaded #grid .item.hovering .wrapper {
   letter-spacing: 0px;
   text-transform: none;
 }
-.main-nav-font {
-  font-size: 19px;
-  font-family: Dosis;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 2em;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
+
 .body-font {
   font-size: 15px;
   font-family: Dosis;
@@ -853,41 +867,6 @@ body.project-hover-zoom .loaded #grid .item.hovering .wrapper {
   line-height: 1.2em;
   letter-spacing: 0px;
   text-transform: none;
-}
-.quote-font {
-  font-size: 24px;
-  font-family: Dosis;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.4em;
-  text-transform: none;
-}
-.grid-heading-font {
-  font-size: 44px;
-  font-family: proxima-nova;
-  font-weight: 300;
-  font-style: normal;
-  line-height: 1.4em;
-  letter-spacing: -1px;
-  text-transform: none;
-}
-.grid-subheading-font {
-  font-size: 16px;
-  font-family: proxima-nova;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.4em;
-  letter-spacing: 0.05em;
-  text-transform: none;
-}
-.category-nav-font {
-  font-family: proxima-nova;
-  font-size: 13px;
-  letter-spacing: 0px;
-  font-weight: 400;
-  font-style: normal;
-  text-transform: none;
-  text-decoration: none;
 }
 
 .meta h1 {
@@ -919,25 +898,4 @@ body.project-hover-zoom .loaded #grid .item.hovering .wrapper {
   /* float: left; */
   padding: 47px 35px 47px 32px;
   z-index: 3;
-}
-
-/* .meta  */
-.h1-custom {
-  font-size: 24px;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 47px !important;
-  font-size: 51px !important;
-  font-family: Dosis;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.2em;
-  letter-spacing: 0px;
-  text-transform: none;
-  color: #222;
-  margin-top: 0;
-}
-
-.user-ring-color {
-  background-color: var(--color-two);
 }

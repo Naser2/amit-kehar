@@ -159,7 +159,7 @@ export default function Home({ articles, allprojects, artprojects }) {
               </h1>
 
               <h2 className="logo-subtitle text-left">
-                Colletion of great things
+                Collection of great things
               </h2>
             </div>{' '}
             {/*  Amit Kehar Director, Cinematographer & Visual Media Artist */}
@@ -204,7 +204,7 @@ export default function Home({ articles, allprojects, artprojects }) {
                       width="2658"
                       height="1660"
                       decoding="async"
-                      className="is-zoomed mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0 "
+                      className=" mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0 "
                       loading="lazy"
                       style="color: transparent;"
                     />
