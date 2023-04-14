@@ -6,55 +6,58 @@ import Head from 'next/head'
 import { getAllMotions } from '@/lib/getAllMotions'
 // import { ArtPageLayout } from '@/components/ArtPageLayout'
 import { Galery } from '@/components/Gallery'
+import { Container } from '@/components/Container'
 
 export default function Art({ motions }) {
   return (
     <>
       <Head>
-        <title>Speaking - Amit Kehar</title>
+        <title>MOTION - Amit Kehar</title>
         <meta
           name="description"
           content="Amit Kehar art's Director videographer and filmaker and artist"
         />
       </Head>
-      <Galery contents={motions} />
-      {/* {artprojects.map((project) => (
-        <div key={project.id} className="flex flex-col sm:flex-row">
-          <div className="order-2 mt-6 sm:mt-0 sm:ml-16">
-            <h3 className="text-sm font-medium text-gray-900">
-              {project.title}
-            </h3>
-            <h1>{project.title}</h1>
-            <div
-              className="mt-3 space-y-6 text-sm text-gray-600  "
-              dangerouslySetInnerHTML={{ __html: project.content }}
-            />
-          </div>
+      <Container containerPadding="mt-14">
+        <div className="meta  sm:px-20 ">
+          <h1 style={{ fontSize: '37px' }} className="dark:text-white">
+            MOTIONS
+          </h1>
 
-          <div className="order-1 flex items-center sm:flex-col sm:items-start">
-            <div className="ml-4 sm:ml-0 sm:mt-4">
-              <div className="mt-2 flex items-center">
-                <></>
+          <div class="body"></div>
+          <div class="share-like">
+            <span
+              class="squarespace-social-buttons inline-style"
+              data-system-data-id="5c3f565f4d7a9c53a5c8575a"
+              data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg"
+              data-record-type=""
+              data-full-url="/doodlesillustrations"
+              data-title="Doodles/Illustrations"
+            >
+              <div
+                id="social-yui_3_17_2_1_1681400427717_594"
+                class="yui3-widget yui3-socialbutton"
+              >
+                <div
+                  id="yui_3_17_2_1_1681400427717_615"
+                  class="yui3-socialbutton-content"
+                >
+                  <div class="ss-social-button-wrapper">
+                    <div class="ss-social-button">
+                      <span className="ss-social-button-icon dark:text-slate-100"></span>
+                      Share
+                    </div>
+                  </div>
+                  <div class="ss-social-list-wrapper">
+                    <div class="ss-social-button-list"></div>
+                  </div>
+                </div>
               </div>
-            </div>
+            </span>
           </div>
         </div>
-      ))} */}
-      {/* <SimpleLayout
-        title="Welcome to my art page, where I get to share my personal hobby with you."
-        intro="Photography and filmmaking are my professions, but drawing and doodling have always been my passion. This page is a glimpse into my creative mind and the ideas that I explore outside of my commercial work. I hope that my art will inspire you or make you smile, and that you'll find something that speaks to you. Motion is an essential part of my life, and I believe that it can connect us all. Thank you for taking the time to explore my doodles and drawings, and feel free to reach out if you have any questions or comments. Let's appreciate the beauty of art together."
-      >
-        <div className="mx-4 space-y-20">
-          <SpeakingSection title="Conferences">
-            <Appearance
-              href="#"
-              title="In space, no one can watch you stream — until now"
-              description="A technical deep-dive into HelioStream, the real-time streaming library I wrote for transmitting live video back to Earth."
-              event="SysConf 2021"
-              cta="Watch video"
-            />
-       
-      </SimpleLayout> */}
+        <Galery contents={motions} clicable />
+      </Container>
     </>
   )
 }

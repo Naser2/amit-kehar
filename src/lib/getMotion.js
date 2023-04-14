@@ -1,17 +1,8 @@
-import { data as allData } from './data.js'
-async function sortData(allData) {
-  console.log('DATA', allData)
-  return allData.filter((a) => {
-    a.tag === 'art'
-  })
-}
+import { siteArticles } from './data.js'
+
 export async function getMotion(id) {
   console.log('Motion-ID', id)
-  let item = await Promise.all(
-    allData.filter((i) => {
-      return i.id == id
-    })
-  )
-  console.log('Motion Item', item)
+  let item = siteArticles.find((i) => i.id == id)
+  console.log('MOTION ITEM', item)
   return item
 }

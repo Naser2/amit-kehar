@@ -175,282 +175,7 @@ export function WorkStatus({ ...props }) {
   )
 }
 
-export const Galery = ({ contents }, ...props) => {
-  // const intagramImgs = [
-  //   {
-  //     ref: aboutRef,
-  //     id: 1,
-  //     name: 'National Gallery of Canada - Brand Film',
-  //     href: '#',
-  //     source: istaImg1,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: podcastRef,
-  //     id: 2,
-  //     name: 'My Glimpses of India',
-  //     href: '#',
-  //     source: istaImg2,
-  //     imageAlt: 'this podcast was built.....',
-  //   },
-  //   {
-  //     ref: projectsRef,
-  //     id: 3,
-  //     name: 'The Stillness Within You',
-  //     href: '#',
-  //     source: istaImg3,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: blogsRef,
-  //     id: 4,
-  //     name: 'The Canvas Of Our Minds',
-  //     href: '#',
-  //     source: istaImg4,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: learnToCode,
-  //     id: 5,
-  //     name: 'Piaget x Ryan Reynolds',
-  //     href: '#',
-  //     source: istaImg5,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 6,
-  //     name: 'Food in Motion',
-  //     href: '#',
-  //     source: istaImg6,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 7,
-  //     name: 'Dancing With The Sun',
-  //     href: '#',
-  //     source: istaImg7,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 8,
-  //     name: 'Google Maps',
-  //     href: '#',
-  //     source: istaImg8,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 9,
-  //     name: 'Lifestyle',
-  //     href: '#',
-  //     source: istaImg9,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 10,
-  //     name: 'National Gallery of Canada',
-  //     href: '#',
-  //     source: istaImg10,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 11,
-  //     name: 'Arfie Lalani',
-  //     href: '#',
-  //     source: istaImg11,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'McGill Redmen',
-  //     href: '#',
-  //     source: istaImg12,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'The Shopping Channel',
-  //     href: '#',
-  //     source: istaImg13,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Knix',
-  //     href: '#',
-  //     source: istaImg14,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Human Touch ',
-  //     href: '#',
-  //     source: istaImg15,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Shoppers x Dundas Square ',
-  //     href: '#',
-  //     source: istaImg16,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: "Hudson's Bay Company",
-  //     href: '#',
-  //     source: istaImg17,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Chelsea',
-  //     href: '#',
-  //     source: istaImgChelsea,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Garnier Olia',
-  //     href: '#',
-  //     source: istaImg18,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-
-  //   // {
-  //   //   ref: socialsRef,
-  //   //   id: 12,
-  //   //   name: "Hudson's Bay Company",
-  //   //   href: '#',
-  //   //   source: istaImg16,
-  //   //   imageAlt:
-  //   //     'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   // },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Col. Chris Hadfield',
-  //     href: '#',
-  //     source: istaImg19,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: "Makin' A Pizza + French Fries or Onion Rings | Rap Recipe Music Videos",
-  //     href: '#',
-  //     source: istaImg20,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Music Video',
-  //     href: '#',
-  //     source: istaImg21,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Velour Lashes',
-  //     href: '#',
-  //     source: istaImgVelour,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Walmart',
-  //     href: '#',
-  //     source: istaImgBaby,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'ReThink Recovery',
-  //     href: '#',
-  //     source: istaImg23,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'Reel',
-  //     href: '#',
-  //     source: istaImg24,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'ReThink Recovery',
-  //     href: '#',
-  //     source: istaImg15,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'ReThink Winners',
-  //     href: '#',
-  //     source: istaImg22,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  //   {
-  //     ref: socialsRef,
-  //     id: 12,
-  //     name: 'RW & CO - P.K Subban and Karl Subban',
-  //     href: '#',
-  //     source: istaImg25,
-  //     imageAlt:
-  //       'Black machined steel pen with hexagonal grip and small white logo at top.',
-  //   },
-  // ]
-
-  // console.log('GaleryCUSTOMIZE BAN PROP', projectsRef)
+export const Galery = ({ contents, clicable }, ...props) => {
   return (
     <>
       <section
@@ -458,101 +183,238 @@ export const Galery = ({ contents }, ...props) => {
         className="xl:mx-34 relative mt-8 pb-4  dark:pb-0 lg:mx-20 lg:pb-12 "
         aria-labelledby="gallery-heading"
       >
-        {/* <LandingHeroTabs {...props}/> */}
-        {/* <div>
-          <Image
-            className="h-32 w-full object-cover lg:h-48"
-            src="https://images.unsplash.com/photo-1444628838545-ac4016a5418a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&amp;ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=1950&amp;q=80"
-            alt=""
-          />
-        </div> */}
         <div className="max-w-10xl mx-3 lg:my-4 lg:mt-8  lg:pb-12 ">
-          {/* <div
-            className="wax-w-2xl absolute -z-10 ml-10 w-[200%] skew-x-[-30deg] bg-indigo-100 opacity-20 ring-1 ring-inset ring-white md:left-1/2 md:ml-20 md:ml-36 lg:-inset-y-px"
-            aria-hidden="true"
-          ></div> */}
-          {/* <div className="OTHE">OTHER CONTENT </div> */}
           <div role="list" className="">
             <ul
               role="list"
-              className="xxl:grid-cols-3 grid grid-cols-1 gap-x-4 gap-y-0 sm:gap-y-4 sm:gap-x-6 md:gap-y-8 md:gap-y-4 md:gap-x-4 lg:grid-cols-2  xl:gap-x-4"
+              className="xxl:grid-cols-3 grid grid-cols-1 gap-x-4 gap-y-0 sm:gap-x-6 sm:gap-y-4 md:gap-x-4 md:gap-y-4 md:gap-y-8 lg:grid-cols-2  xl:gap-x-4"
             >
-              {contents.map((item) => {
-                return (
-                  <li key={item.id} className="relative">
-                    <div
-                      className={clsx(
-                        item.current
-                          ? 'ring-2 ring-indigo-500 ring-offset-2 sm:rounded-xl sm:rounded-3xl'
-                          : 'focus-within:ring-2 focus-within:ring-slate-900 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 ',
-                        'aspect-w-10 aspect-h-7 group block w-full overflow-hidden '
-                      )}
-                    >
-                      <Image
-                        src={item.source}
-                        alt=""
-                        className={clsx(
-                          item.current ? '' : 'group-hover:opacity-100',
-                          'pointer-events-none mt-2 h-full w-full  bg-slate-100 object-cover sm:mt-10 sm:aspect-[1216/940] md:mt-0 lg:aspect-[1516/940]  lg:flex-none'
-                        )}
-                        sizes="100vw"
-                        width="1358"
-                        height="1860"
-                        decoding="async"
-                        loading="lazy"
-                        id={item.id}
-                        style={{ color: 'transparent' }}
-                      />
-                      {/* aspect-[4/3]  */}
-                      <Link
-                        // href="/"
-                        href={`/${item.type + '/' + item.id}`}
-                        type="button"
-                        className="controlled-blur min-h-12 absolute top-1/2  left-1/2 block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center
-                         rounded-sm px-2 text-sm font-bold 
-                          tracking-tight text-white opacity-10 hover:text-white 
-                          hover:opacity-100 group-hover:opacity-100 dark:text-black 
-                          md:text-transparent"
-                        id="TITLE_LINK_MOBILE_BTN"
-                      >
-                        <h2
-                          id="yui_3_17_2_1_1681192592262_2502"
-                          className="w-[80%] text-white"
-                        >
-                          {item.name}
-                        </h2>
-
-                        <span
-                          className="w-[20%] bg-white text-black"
-                          id="WHITE BTN MOBILE ONLY"
-                        >
-                          <h2
-                            className="button"
-                            href="/105/media/us/iphone/2022/99276d09-ab06-4d62-93b1-37c306902932/films/guided-tour/iphone-guided-tour-tpl-us-2022_16x9.m3u8"
-                            role="button"
-                          >
-                            <span className="">View</span>
-                            {props.video && (
-                              <span
-                                id="PLAY ICON"
-                                className="icon icon-after icon icon-playcircle"
-                              ></span>
-                            )}
-                          </h2>{' '}
-                        </span>
-                      </Link>
-                    </div>
-
-                    <p className="pointer-events-none block text-sm font-medium text-gray-500">
-                      {item.description}
-                    </p>
-                  </li>
-                )
-              })}
+              {checkObject(contents, clicable, props)}
             </ul>
           </div>
         </div>
       </section>
     </>
+  )
+}
+
+function checkObject(contents, clicable, ...props) {
+  // check if arr is array
+  const result = Array.isArray(contents)
+
+  if (result) {
+    console.log(`[${contents}] is an array.`)
+    return (
+      <>
+        {' '}
+        {contents.map((item) => {
+          return (
+            <li key={item.id} className="relative">
+              <div
+                className={clsx(
+                  item.current
+                    ? 'ring-2 ring-indigo-500 ring-offset-2 sm:rounded-3xl sm:rounded-xl'
+                    : 'focus-within:ring-2 focus-within:ring-slate-900 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 ',
+                  'aspect-w-10 aspect-h-7 group block w-full overflow-hidden '
+                )}
+              >
+                <Image
+                  src={item.source}
+                  alt=""
+                  className={clsx(
+                    item.current ? '' : 'group-hover:opacity-100',
+                    'pointer-events-none mt-2 h-full w-full  bg-slate-100 object-cover sm:mt-10 sm:aspect-[1216/940] md:mt-0 lg:aspect-[1516/940]  lg:flex-none'
+                  )}
+                  sizes="100vw"
+                  width="1358"
+                  height="1860"
+                  decoding="async"
+                  loading="lazy"
+                  id={item.id}
+                  style={{ color: 'transparent' }}
+                />
+                {/* aspect-[4/3]  */}
+                {clicable && (
+                  <Link
+                    // href="/"
+                    href={`/${item.type + '/' + item.id}`}
+                    type="button"
+                    className="controlled-blur min-h-12 absolute left-1/2  top-1/2 block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center
+               rounded-sm px-2 text-sm font-bold 
+                tracking-tight text-white opacity-10 hover:text-white 
+                hover:opacity-100 group-hover:opacity-100 dark:text-black 
+                md:text-transparent"
+                    id="TITLE_LINK_MOBILE_BTN"
+                  >
+                    <h2
+                      id="yui_3_17_2_1_1681192592262_2502"
+                      className="w-[80%] text-white"
+                    >
+                      {item.name}
+                    </h2>
+
+                    <span
+                      className="w-[20%] bg-white text-black"
+                      id="WHITE BTN MOBILE ONLY"
+                    >
+                      <h2
+                        className="button"
+                        href="/105/media/us/iphone/2022/99276d09-ab06-4d62-93b1-37c306902932/films/guided-tour/iphone-guided-tour-tpl-us-2022_16x9.m3u8"
+                        role="button"
+                      >
+                        <span className="">View</span>
+                        {props.video && (
+                          <span
+                            id="PLAY ICON"
+                            className="icon icon-after icon icon-playcircle"
+                          ></span>
+                        )}
+                      </h2>{' '}
+                    </span>
+                  </Link>
+                )}
+              </div>
+
+              <p className="pointer-events-none block text-sm font-medium text-gray-500">
+                {item.description}
+              </p>
+            </li>
+          )
+        })}
+      </>
+    )
+  } else {
+    console.log(`${contents} is not an array.`)
+    return (
+      <>
+        {' '}
+        {contents.medias.map((item) => {
+          return (
+            <li key={item.id} className="relative">
+              <div
+                className={clsx(
+                  item.current
+                    ? 'ring-2 ring-indigo-500 ring-offset-2 sm:rounded-3xl sm:rounded-xl'
+                    : 'focus-within:ring-2 focus-within:ring-slate-900 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 ',
+                  'aspect-w-10 aspect-h-7 group block w-full overflow-hidden '
+                )}
+              >
+                <Image
+                  src={item.source}
+                  alt=""
+                  className={clsx(
+                    item.current ? '' : 'group-hover:opacity-100',
+                    'pointer-events-none mt-2 h-full w-full  bg-slate-100 object-cover sm:mt-10 sm:aspect-[1216/940] md:mt-0 lg:aspect-[1516/940]  lg:flex-none'
+                  )}
+                  sizes="100vw"
+                  width="1358"
+                  height="1860"
+                  decoding="async"
+                  loading="lazy"
+                  id={item.id}
+                  style={{ color: 'transparent' }}
+                />
+                {/* aspect-[4/3]  */}
+                {clicable && (
+                  <Link
+                    // href="/"
+                    href={`/${item.type + '/' + item.id}`}
+                    type="button"
+                    className="controlled-blur min-h-12 absolute left-1/2  top-1/2 block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center
+               rounded-sm px-2 text-sm font-bold 
+                tracking-tight text-white opacity-10 hover:text-white 
+                hover:opacity-100 group-hover:opacity-100 dark:text-black 
+                md:text-transparent"
+                    id="TITLE_LINK_MOBILE_BTN"
+                  >
+                    <h2
+                      id="yui_3_17_2_1_1681192592262_2502"
+                      className="w-[80%] text-white"
+                    >
+                      {item.name}
+                    </h2>
+
+                    <span
+                      className="w-[20%] bg-white text-black"
+                      id="WHITE BTN MOBILE ONLY"
+                    >
+                      <h2
+                        className="button"
+                        href="/105/media/us/iphone/2022/99276d09-ab06-4d62-93b1-37c306902932/films/guided-tour/iphone-guided-tour-tpl-us-2022_16x9.m3u8"
+                        role="button"
+                      >
+                        <span className="">View</span>
+                        {props.video && (
+                          <span
+                            id="PLAY ICON"
+                            className="icon icon-after icon icon-playcircle"
+                          ></span>
+                        )}
+                      </h2>{' '}
+                    </span>
+                  </Link>
+                )}
+              </div>
+
+              <p className="pointer-events-none block text-sm font-medium text-gray-500">
+                {item.description}
+              </p>
+            </li>
+          )
+        })}
+      </>
+    )
+  }
+}
+
+export const FancyImageClicabletitle = ({ item, cta }, props) => {
+  return (
+    <div className="relative " key={item.source}>
+      <Link href={`/${item.type + '/' + item.id}`} className="" aria-label="">
+        <Image
+          className={clsx(
+            'z-1 relative  my-4 shadow-xl shadow-black/5 ring-slate-900/5 lg:my-10 xl:my-14'
+          )}
+          // className="gallery-item relative z-20 -mb-36 aspect-[953/882] w-full max-w-[853px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
+          id={`${item.name}-IMAGE-${item.name}`}
+          // className="w-full "
+          src={item.source}
+          // src={still.source}
+          alt=""
+          height={1000}
+          width={1600}
+          sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
+          priority
+        />
+        <div
+          id="fancybtn-wrap"
+          className="content-container large-12 small-order-0 z-2 absolute bottom-44 left-20 opacity-100"
+        >
+          <div className="content-wrapper">
+            <h2>
+              {/* <span class="typography-subhero-eyebrow tile-copy large-12">
+                Tapis rouge a Paris
+              </span> */}
+              <span class="typography-subhero-headline tile-headline large-12 text-white dark:text-slate-100 ">
+                {item.name}
+              </span>
+            </h2>
+            <div id="WHITE_BTN" className="guided-tours-triggers">
+              <a
+                aria-label=""
+                id="film-guided-tour-chapters"
+                class="icon-wrapper film-link"
+                role="button"
+                data-analytics-id="film-guided-tour-chapters"
+                href="/105/media/us/iphone/2022/99276d09-ab06-4d62-93b1-37c306902932/films/guided-tour/iphone-guided-tour-tpl-us-2022_16x9.m3u8"
+              >
+                <span class="icon-copy">{cta}</span>
+                <span class="icon icon-after icon icon-playcircle"></span>
+              </a>{' '}
+            </div>
+          </div>
+        </div>
+      </Link>
+    </div>
   )
 }

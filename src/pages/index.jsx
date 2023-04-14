@@ -27,6 +27,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import { getAllProjects } from '@/lib/getAllProjects'
 import { Galery } from '@/components/Gallery'
 import { SocialMedia } from '@/components/SocialMedia'
+import { getAllArts } from '@/lib/getAllArts'
 
 function MailIcon(props) {
   return (
@@ -222,22 +223,22 @@ function Resume() {
   )
 }
 
-function Photos() {
+function Photos({ artprojects }) {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
   return (
     <div className="mt-16 sm:mt-20">
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
-        {[image1, image2, image3, image4, image5].map((image, imageIndex) => (
+        {artprojects.map((image, imageIndex) => (
           <div
-            key={image.src}
+            key={image.source}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length]
             )}
           >
             <Image
-              src={image}
+              src={image.source}
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
@@ -249,7 +250,7 @@ function Photos() {
   )
 }
 
-export default function Home({ articles, allprojects }) {
+export default function Home({ articles, allprojects, artprojects }) {
   return (
     <>
       <Head>
@@ -269,7 +270,7 @@ export default function Home({ articles, allprojects }) {
           >
             <div data-content-field="site-title" className="siteTitle ">
               <h1
-                data-shrink-original-size="27"
+                className=" dark:text-white"
                 style={{ letterSpacing: '0.0740741em' }}
               >
                 <Link href="/">
@@ -292,10 +293,10 @@ export default function Home({ articles, allprojects }) {
           </p> */}
         <div
           id="header-social-media"
-          className="sm: absolute  right-0  -mt-0 -mr-4 ml-4 sm:relative sm:-ml-1 sm:-mt-8"
+          className="sm: absolute  right-0  -mr-4 -mt-0 ml-4 sm:relative sm:-ml-1 sm:-mt-8"
         >
           <SocialMedia
-            className={'mx-4 flex gap-y-4 gap-x-2 sm:-mt-6 sm:mb-10'}
+            className={'mx-4 flex gap-x-2 gap-y-4 sm:-mt-6 sm:mb-10'}
             iconStyle=""
           />
         </div>
@@ -323,7 +324,7 @@ export default function Home({ articles, allprojects }) {
                       width="2658"
                       height="1660"
                       decoding="async"
-                      className="mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0"
+                      className="is-zoomed mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0 "
                       loading="lazy"
                       style="color: transparent;"
                     />
@@ -343,7 +344,7 @@ export default function Home({ articles, allprojects }) {
                     </h2>
                     <div id="WHITE_BTN" className="guided-tours-triggers">
                       <Link
-                        href="/105/media/us/iphone/2022/99276d09-ab06-4d62-93b1-37c306902932/films/guided-tour/iphone-guided-tour-tpl-us-2022_16x9.m3u8"
+                        href="/featured"
                         aria-label="Watch the Guided Tour film."
                         id="film-guided-tour-chapters"
                         className="icon-wrapper film-link"
@@ -362,18 +363,40 @@ export default function Home({ articles, allprojects }) {
           </div>
         </div>
       </section>
-      <Galery contents={allprojects} />
-      <Photos />
+      <Galery contents={allprojects} clicable />
+      <Container>
+        <div
+          data-content-field="site-title"
+          className=" relative mx-auto max-w-7xl items-center"
+        >
+          <h1
+            className="h1-np text-center"
+            style={{ letterSpacing: '0.0740741em' }}
+          >
+            <Link href="/">
+              <span id="site-title" className="dark:text-white">
+                Art
+              </span>
+            </Link>
+          </h1>
+          <h2 class="logo-subtitle text-center">
+            Drawing and doodling have always been my passion
+          </h2>
+        </div>
+      </Container>
+
+      <Photos artprojects={artprojects} />
+
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
+          {/* <div className="flex flex-col gap-16">
             {articles.map((article) => (
               <Article key={article.slug} article={article} />
             ))}
-          </div>
+          </div> */}
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
+            {/* <Newsletter /> */}
+            {/* <Resume /> */}
           </div>
         </div>
       </Container>
@@ -394,6 +417,7 @@ export async function getStaticProps() {
       allprojects: (await getAllProjects()).map(
         ({ component, ...meta }) => meta
       ),
+      artprojects: (await getAllArts()).map(({ component, ...meta }) => meta),
     },
   }
 }

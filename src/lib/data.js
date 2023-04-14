@@ -248,20 +248,6 @@ Y.all(".project-item .meta h1").each(function (current) {
 
 export const siteArticles = [
   {
-    id: 1,
-    name: 'National Gallery of Canada - Brand Film',
-    href: '#',
-    source: istaImg1,
-    type: 'motion',
-    medias: [
-      {
-        type: 'video',
-        source: 'UTbYyqAwvio',
-        title: 'National Gallery of Canada - Brand Film',
-      },
-    ],
-  },
-  {
     id: 2,
     name: 'My Glimpses of India',
     href: '#',
@@ -271,12 +257,13 @@ export const siteArticles = [
     medias: [
       {
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source: '2fUcyO7T8TA&t',
         title: 'My Glimpses of India',
       },
     ],
   },
   {
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">In October 2018, I had the pleasure to collaborate with the extremely talented Chalvar Monteiro from the legendary Alvin Ailey dance theater. This was also the first time that I featured my poetry to drive the narrative of a short film.</p></div>`,
     id: 3,
     name: 'The Stillness Within You',
     href: '#',
@@ -389,20 +376,25 @@ export const siteArticles = [
     ],
   },
   {
-    id: 10,
-    name: 'National Gallery of Canada',
+    constent: `<div class="meta">
+    <h1 data-shrink-original-size="42">National Gallery of Canada</h1>
+    <div class="body"><p class="" style="white-space:pre-wrap;">In April 2019, I was brought into the National Gallery of Canada to create their video content strategy. I have had the pleasure to shoot, direct, edit and conceive ideas such as unique behind the scenes videos, web-series and exhibition related films.</p><p class="" style="white-space:pre-wrap;"> Shot, Directed and Edited by Amit Kehar</p></div>
+    <div class="share-like">
+      <span class="squarespace-social-buttons inline-style" data-system-data-id="5f4473e3b1aae94ee1337f7c" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1564583666871-CSHNS4103UGH9DN6VU3M/image-asset.jpeg" data-record-type="" data-full-url="/ngc" data-title="National Gallery of Canada"><div id="social-yui_3_17_2_1_1681420739230_2983" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681420739230_3146" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+    </div>
+  </div>`,
+    id: 1,
+    name: 'National Gallery of Canada - Brand Film',
     href: '#',
-    source: istaImg10,
+    source: istaImg1,
     type: 'motion',
     medias: [
       {
         type: 'video',
         source: 'UTbYyqAwvio',
-        title: 'Arfie Laalani',
+        title: 'National Gallery of Canada - Brand Film',
       },
     ],
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
   },
   {
     id: 11,
@@ -421,7 +413,7 @@ export const siteArticles = [
     ],
   },
   {
-    id: 12,
+    id: 56,
     name: 'McGill Redmen',
     href: '#',
     source: istaImg12,
@@ -485,7 +477,7 @@ export const siteArticles = [
     ],
   },
   {
-    id: 34,
+    id: 39,
     name: 'Fashio &  Beauty ',
     href: '#',
     source: istaImg15,
@@ -734,8 +726,9 @@ export const siteArticles = [
     ],
   },
   {
+    content: `<div class="sqs-block-content"><p class="" style="white-space:pre-wrap;"><strong>A Warm Hug</strong> is an interactive sculptural light installation that illuminates when interacted with. When the participant “hugs” the sculpture, it will simultaneously respond to the hug by glowing and lighting up. A Warm Hug encourages playful interactions that are designed to inspire connection and promote the universality of warmth and love. This body of work is particularly relevant today when fear, mistrust, and disregard for humanity dominate the headlines of mainstream media where loneliness and isolation feel more prevalent than human connection and physical contact. There is a tendency to be selective of who we choose to share our love with, based on our biases. By asking participants to do something they otherwise wouldn’t do (hugging an object they have no pre-existing connection with), they are subconsciously leaving behind their judgement and biases.<br><br>Use <strong>#GiveaWarmHug</strong>&nbsp; to capture your pictures, stories and experiences with the Installation.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;"><strong>Winterlude @ Sparks Street :&nbsp;</strong>January 31, 2020 - February 17, 2020. Sparks Street, Ottawa, ON.&nbsp; &nbsp;</p><p class="" style="white-space:pre-wrap;"><em>The flagship event of the winter tourist season in Canada's Capital Region,&nbsp;</em><a href="https://www.canada.ca/en/canadian-heritage/campaigns/winterlude/calendar-events/events.html?id=247423" target="_blank"><em>Winterlude&nbsp;</em></a><em>offers must do winter pleasures such as tube sliding, skating&nbsp;on the Rideau Canal Skateway&nbsp;and admiring snow and ice sculptures among other cultural activities.&nbsp;&nbsp;</em></p><p class="" style="white-space:pre-wrap;"><strong>Celebration Square @ City of Mississauga :&nbsp;</strong>December 20, 2019 - January 23, 2020. 300 City Centre Drive, Mississauga, Ontario.&nbsp;&nbsp;</p><p class="" style="white-space:pre-wrap;"><a href="https://culture.mississauga.ca/event/celebration-square/warm-hug" target="_blank"><em>Celebration Square</em></a><em>&nbsp;is&nbsp;located in the heart of downtown Mississauga. Join us in this award-winning public square for free programming during the holiday season!</em></p><p class="" style="white-space:pre-wrap;"><strong>LUMEN Festival for Culture Days @ City of Waterloo : </strong>September 28, 2019<br><br><strong>SPECTRUM on at THEMUSEUM : </strong>April 25, 2019 - September 2, 2019<br></p><p class="" style="white-space:pre-wrap;"><em>SPECTRUM is an interactive, shareable, playable and oh-so-Instagram-able exhibition which explores the world of colour at </em><a href="https://themuseum.ca/plan-your-visit/" target="_blank"><em>THEMUSEUM in Downtown Kitchener</em></a><em>. Visitors are immersing themselves into the pop culture phenomenon that is SPECTRUM at THEMUSEUM spending hours playing in the colourful rooms.</em></p><p class="" style="white-space:pre-wrap;"><strong>Winter Light Exhibition at Ontario Place: </strong>November 23, 2018 – March 17, 2019.<br></p><p class="" style="white-space:pre-wrap;"><em>Throughout the winter season, Ontario Place is a landscape of brisk wind, extreme temperature and intricate ice sculptures crafted by Mother Nature herself. In collaboration with Amit Kehar, Adam Schwartzentruber and Navnith Ravindran following the curatorial theme of “</em><strong><em>Disruptive Engagement</em></strong><em>”, we created A Warm Hug.</em></p></div>`,
     id: 30,
-    name: 'Warm Hug',
+    name: 'A Warm Hug',
     href: '#',
     source: istaImg22,
     imageAlt:
@@ -754,7 +747,7 @@ export const siteArticles = [
       },
       {
         type: 'image',
-        source: '/art/warm-hug',
+        source: '/warm-hug/warm-hug-1.jpeg',
         title: 'Winners',
       },
     ],
@@ -791,7 +784,12 @@ export const siteArticles = [
     ],
   },
   {
-    // href: 'the-light-in-the-shadows',
+    content: `<div class="meta"> <h1 data-shrink-original-size="42">The Light In The Shadows</h1>
+    <div class="body"><p style="white-space: pre-wrap;"><em>In 2017, 12 Trees</em>&nbsp;exhibition focuses on light as a potent symbol of hope that many cultures share. Created in collaboration with Kanika Gupta,&nbsp;<em>The Light in the Shadows</em>&nbsp;in an installation that focuses on the light within the shadows.&nbsp;</p><p style="white-space: pre-wrap;">​In times of darkness when we are feeling lost or helpless there is a desire to look for the light, something to guide our way through uncertainty, hardship, and/or despair. There will always be times when we find ourselves in the shadows with nothing external to turn to, nothing that we are able to grab hold of, to direct, to light and illuminate our path out of the darkness. Rather than seek a way out – it is precisely in these times, when we are in the shadows, that we must open our eyes and our hearts to the magnificence that surrounds us within these </p></div>
+    <div class="share-like">
+      <span class="squarespace-social-buttons inline-style" data-system-data-id="5c36525dc2241b494bd8d57d" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg" data-record-type="" data-full-url="/the-light-in-the-shadows" data-title="The Light In The Shadows"><div id="social-yui_3_17_2_1_1681417303167_1695" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681417303167_1729" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+    </div>
+  </div>`,
     id: 32,
     name: 'The Light In The Shadows',
     href: '#',
@@ -814,28 +812,132 @@ export const siteArticles = [
   },
   {
     // href: ' from-home-to-anywhere',
-
-    id: 34,
-    name: 'From Home to Anywhere',
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">Every journey begins with a starting point. It is with the nurturing support of our home, our cocoon, that we can then excel and reach our fullest potential. From Home to Anywhere is an Art Installation that invites passers-by to step up to it and experience the cocoon for themselves, serving as a reminder that while our world is a big place, home begins with where you are.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">Upon entering a nest, participants will be surrounded by birds fluttering overhead and invited to project their hopes and desires onto the birds flying above them, taking a moment to imagine how they would feel if they too could fly.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">From Home to Anywhere encourages human interactions that are designed to inspire connection and to evoke the sentiment of possibility and hope. This body of work is particularly relevant today where we are displaced from our realities and caught up in our daily routines. Where our relentless pursuit of ‘success’ comes at the expense of forgotten aspirations and dreams. This Installation grounds participants in the current moment, giving them an escape from the chaos to rekindle and reimagine possibilities. The act of simply looking at these birds is a prompt for mindful reflection and presence.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">Participants are encouraged to take a moment to reflect on possibilities and share their visions with the world using #fromhometoanywhere</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">______________________</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">Amit and Kanika collaboratively realize Installations that push the boundaries of their individual practices.They intend for all collaborations to embody themes of hope and unity.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p><p class="" style="white-space:pre-wrap;">This installation is produced in collaboration with Kelly Robinson and Navnith Ravindran.</p></div>`,
+    id: 74,
+    name: 'From Home to Anywheree',
     href: '#',
     source: istaImg22,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    imageAlt: 'From here to anywhere..',
+
     type: 'art',
     medias: [
       {
+        type: 'image',
+        source: '/warm-hug/warm-hug-1.jpeg',
+        title: 'Winners',
+      },
+
+      {
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source: '478IDDGH7CI',
+        title: 'from here',
+      },
+    ],
+  },
+]
+
+export const stills = [
+  {
+    id: 40,
+    name: 'Fashion & Beauty',
+    href: '/still',
+    source: '/fashion-beauty/fashion-beauty-1.jpg',
+    imageAlt: '/fashion-beauty/fashion-beauty-1.jpg',
+    type: 'still',
+    medias: [
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-1.jpg',
         title: 'Winners',
       },
       {
-        type: 'video',
-        source: 'UTbYyqAwvio',
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-2.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-3.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-4.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-5.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-6.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-7.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-8.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-9.png',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-10.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/fashion-beauty/fashion-beauty-11.jpg',
+        title: 'Winners',
+      },
+    ],
+  },
+  {
+    id: 41,
+    name: 'Lifestyle',
+    href: '/still',
+    source: '/lifestyle/lifestyle-1.jpg',
+    imageAlt: 'public/lifestyle/lifestyle-1.jpg',
+    type: 'still',
+    medias: [
+      {
+        type: 'image',
+        source: '/lifestyle/lifestyle-1.jpg',
         title: 'Winners',
       },
       {
         type: 'image',
-        source: '/art/warm-hug',
+        source: '/lifestyle/lifestyle-2.jpeg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/lifestyle/lifestyle-3.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/lifestyle/lifestyle-4.jpeg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/lifestyle/lifestyle-5.jpg',
+        title: 'Winners',
+      },
+      {
+        type: 'imaghe',
+        source: '/lifestyle/lifestyle-6.jpg',
         title: 'Winners',
       },
     ],

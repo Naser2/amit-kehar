@@ -17,7 +17,7 @@ export default function Contact() {
       </Head>
 
       <SimpleLayout
-        className="Hello mx-4  mt-24 sm:mx-24 sm:mt-32"
+        containerPadding={'mt-24 sm:mt-20 lg:mt-44'}
         title="SAY HELLO"
         intro="Thank you for visiting my website and exploring my work. Whether you're interested in booking a photoshoot or a film project, I would love to hear from you. Don't hesitate to reach out with any questions, ideas or inquiries you may have. Let's collaborate and create something beautiful together.
          Please do not hesitate to get in touch. Use  my email below or reach on my social medias handles."

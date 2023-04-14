@@ -7,6 +7,6 @@ export async function getAllMotions() {
       return i.type === 'motion'
     })
   )
-  console.log('FinalDATA', items)
+  // console.log('FinalDATA', items)
   return items
 }

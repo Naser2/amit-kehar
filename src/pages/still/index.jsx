@@ -3,6 +3,12 @@ import Head from 'next/head'
 import { Card } from '@/components/Card'
 import { Section } from '@/components/Section'
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { getAllStills } from '@/lib/getAllStills'
+import Image from 'next/image'
+import clsx from 'clsx'
+import { Title } from '@/components/Title'
+import Link from 'next/link'
+import { FancyImageClicabletitle } from '@/components/Gallery'
 
 function SpeakingSection({ children, ...props }) {
   return (
@@ -25,22 +31,74 @@ function Appearance({ title, description, event, cta, href }) {
   )
 }
 
-export default function Stills() {
+export default function Stills({ stills }) {
   return (
     <>
       <Head>
         <title>Speaking - Amit Kehar</title>
         <meta
           name="description"
-          content="I’ve spoken at events all around the world and been interviewed for many podcasts."
+          content="Photos I captured throughout this journey.."
         />
       </Head>
+      <Title
+        title="STILLS"
+        description=" One of my favorite ways to share love is to take a chace a capturing
+        moments, where there’s so much more communication bandwidth than
+        there is in writing. These are some stills."
+      />
       <SimpleLayout
-        title="I’ve spoken at events all around the world and been interviewed for many podcasts."
-        intro="One of my favorite ways to share my ideas is live on stage, where there’s so much more communication bandwidth than there is in writing, and I love podcast interviews because they give me the opportunity to answer questions instead of just present my opinions."
+        innerContainerClassName={'max-w-8xl lg:max-w-10xl'}
+        // title="Photos I captured throughout this journey.."
+        // intro="One of my favorite ways to share love is to take a chace a capturing moments, where there’s so much more communication bandwidth than there is in writing. These are some stills."
       >
+        {/* <div
+          id="page-intro"
+          className=" relative mx-auto max-w-7xl items-center"
+        >
+          <p className="logo-subtitle  mt-6 px-6  text-center dark:text-slate-400 sm:-mt-10 sm:px-20 lg:sm:-mt-20 lg:px-44">
+            One of my favorite ways to share love is to take a chace a capturing
+            moments, where there’s so much more communication bandwidth than
+            there is in writing. These are some stills.
+          </p>
+        </div> */}
+
+        {stills.map((still) => {
+          return (
+            <FancyImageClicabletitle
+              key={still.source}
+              item={still}
+              name={still.name}
+              cta={'View Page'}
+              // cta={`View ${still.name}`}
+            />
+            // <Link
+            //   key={still.source}
+            //   href={`/${still.type + '/' + still.id}`}
+            //   className=""
+            //   aria-label=""
+            // >
+            //   <Image
+            //     className={clsx(
+            //       'relative z-20  my-4 shadow-xl shadow-black/5 ring-slate-900/5 lg:my-10 xl:my-14'
+            //     )}
+
+            //     id={`${still.title}-_IMAGE-${still.title}`}
+
+            //     src={still.source}
+
+            //     alt=""
+            //     height={1000}
+            //     width={1600}
+            //     sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
+            //     priority
+            //   />
+            // </Link>
+          )
+        })}
+
         <div className="space-y-20">
-          <SpeakingSection title="Conferences">
+          {/* <SpeakingSection title="Conferences">
             <Appearance
               href="#"
               title="In space, no one can watch you stream — until now"
@@ -78,9 +136,21 @@ export default function Stills() {
               event="How They Work Radio, September 2021"
               cta="Listen to podcast"
             />
-          </SpeakingSection>
+          </SpeakingSection> */}
         </div>
       </SimpleLayout>
     </>
   )
+}
+
+export async function getStaticProps() {
+  // if (process.env.NODE_ENV === 'production') {
+  //   await generateRssFeed()
+  // }
+
+  return {
+    props: {
+      stills: (await getAllStills()).map(({ component, ...meta }) => meta),
+    },
+  }
 }

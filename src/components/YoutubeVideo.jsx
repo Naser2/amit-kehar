@@ -4,16 +4,16 @@ import YouTube from 'react-youtube'
 export default class YoutubeVideo extends React.Component {
   render() {
     const opts = {
-      height: '390',
-      width: '640',
+      height: ['190'],
+      width: ['340', '450'],
       playerVars: {
         autoplay: 1,
       },
     }
 
     return (
-      <div className="w-200px] gallery-item relative mx-4 ">
-        <h3>GeeksforGeeks - Youtube</h3>
+      <div className="gallery-item h-190 w-120 relative w-[240px]  sm:w-[290px]">
+        {/* <h3>GeeksforGeeks - Youtube</h3> */}
         <YouTube
           videoId={this.props.videoID}
           opts={opts}

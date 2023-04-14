@@ -125,7 +125,7 @@ function MobileNavigation(props) {
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/motion">Motionn</MobileNavItem>
                 <MobileNavItem href="/art">Art</MobileNavItem>
-                <MobileNavItem href="/stills">Stills</MobileNavItem>
+                <MobileNavItem href="/still">Stills</MobileNavItem>
                 <MobileNavItem href="/contact">ontact</MobileNavItem>{' '}
                 <MobileNavItem href="/about">About</MobileNavItem>
               </ul>
@@ -166,7 +166,7 @@ function DesktopNavigation(props) {
       <ul className="flex rounded-sm bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-400/5 backdrop-blur   hover:shadow-zinc-900/5 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/motion">Motionn</NavItem>
         <NavItem href="/art">Art</NavItem>
-        <NavItem href="/stills">Stills</NavItem>
+        <NavItem href="/still">Stills</NavItem>
         <NavItem href="/contact">Contact</NavItem>
         <NavItem href="/about">About</NavItem>
         <NavItem href="/Music">Music</NavItem>
@@ -223,8 +223,8 @@ function AvatarContainer({ className, homePage, ...props }) {
     <div
       className={clsx(
         className,
-        !homePage ? 'h-10 w-10 ' : 'h-23 w-22',
-        'rounded-sm bg-transparent p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10'
+        !homePage ? 'h-10 w-10 ' : 'h-[6.5rem] w-[6.5rem] ',
+        'rounded-full bg-transparent p-0.5 '
       )}
       {...props}
     />
@@ -241,24 +241,28 @@ function Avatar({ large = false, className, homePage, ...props }) {
       >
         <Image
           id="AVATAR-LG"
-          src={avatarImage}
+          src={'/amit-avatar.jpg'}
           alt=""
+          height={58}
+          width={58}
           sizes={large ? '20rem' : '10.25rem'}
           className={clsx(
             !homePage ? 'h-20 w-20' : 'h-18 w-18',
-            'rounded-md  object-cover  max-[400px]:hidden',
-            large ? 'sm:h-16 sm:w-16' : 'sm:h-20 sm:w-24'
+            'rounded-full  object-cover  max-[400px]:hidden',
+            large ? 'sm:h-16 sm:w-16' : 'h-22 w-22'
           )}
           priority
         />
         <Image
           id="AVATAR-MOBILE"
-          src={avatarImage}
+          src={'/amit-avatar.jpg'}
           alt=""
+          height={19}
+          width={19}
           sizes={large ? '6rem' : '4.25rem'}
           className={clsx(
             !homePage ? 'w-17 h-17' : 'h-[5.7rem] w-[5.5rem] ',
-            '-mt-8 rounded-md  bg-transparent object-cover   sm:sr-only'
+            '-mt-8 rounded-full  bg-transparent object-cover    min-[400px]:hidden'
           )}
           priority
         />
@@ -266,9 +270,9 @@ function Avatar({ large = false, className, homePage, ...props }) {
           <Link
             href="/"
             id="DIRECTOR_NAME_DESKTOP"
-            className="-mt-11 flex min-w-[800px] flex-nowrap text-4xl font-bold  text-zinc-800 dark:text-zinc-100 max-[400px]:hidden sm:not-sr-only sm:text-5xl"
+            className="-mt-16  min-w-[600px]  text-4xl font-bold  text-zinc-800 dark:text-zinc-100 max-[400px]:hidden  sm:text-5xl"
           >
-            <div data-content-field="site-title">
+            <div data-content-field="site-title LG">
               <h1
                 className="ml-4 text-slate-800"
                 data-shrink-original-size="27"
@@ -281,7 +285,10 @@ function Avatar({ large = false, className, homePage, ...props }) {
                   Amit Kehar
                 </span>
               </h1>
-              <div id="name-mobile" className="site-title -mt-5 pl-4 sm:-mt-3">
+              <div
+                id="name-mobile"
+                className="site-title -mt-6 pl-4  sm:-mt-8  lg:-mt-6"
+              >
                 <h2 className=" title-gray  profession_title text-left text-base  dark:text-slate-200/90">
                   Director, Cinematographer &amp; Visual Media Artist{' '}
                 </h2>
@@ -295,20 +302,20 @@ function Avatar({ large = false, className, homePage, ...props }) {
         {!homePage && (
           <Link
             href="/"
-            id="DIRECTOR CREDENTIALS MOBILE"
+            id="DIRECTOR CREDENTIALS_MOBILE"
             className="-mt-9 flex min-w-[260px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:sr-only sm:text-5xl"
           >
             <div data-content-field="siteTitle-SM ">
-              <p
-                className="ml-4 text-slate-800"
+              <div
+                className="header-p ml-4 text-slate-800 "
                 data-shrink-original-size="27"
                 style={{ letterSpacing: '0.0740741em' }}
               >
                 <span id="siteTitle-SM" className="flex dark:text-slate-50">
                   Amit Kehar
                 </span>
-              </p>
-              <div id="name-mobile" className=" -mt-5 pl-4  sm:sr-only">
+              </div>
+              <div id="name-mobile" className=" -mt-10 pl-4  sm:sr-only">
                 <h2 className=" text-left text-base text-slate-500 dark:text-slate-200/90">
                   Director, Cinematographer
                 </h2>

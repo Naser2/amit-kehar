@@ -213,16 +213,15 @@ function AboutSection(props) {
 const articleMedias = (mediaContent, aspect, defaultAspect) => {
   const defaultAspectRatio = 'aspect-[953/882] w-full max-w-[853px]'
   return (
-    <>
-      {' '}
+    <div className="xl:mb-90 relative -mt-10 lg:-mt-20 lg:mb-64">
       {mediaContent.map((media) => {
         return media.type !== 'video' ? (
-          <div key={media.source} className="" aria-label="">
+          <div key={media.source} className="CULPRIT">
             <Image
               className={clsx(
                 aspect && aspect,
                 defaultAspect && defaultAspectRatio,
-                'relative z-20  my-4  rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 lg:my-10 xl:my-14'
+                'is-zoomed lg:w-[800px]relative z-20 mx-2 my-6 w-[375px]  rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 sm:w-[700px] lg:my-10 xl:my-14'
               )}
               // className="gallery-item relative z-20 -mb-36 aspect-[953/882] w-full max-w-[853px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
               id={`${media.title}-_IMAGE-${media.title}`}
@@ -240,7 +239,7 @@ const articleMedias = (mediaContent, aspect, defaultAspect) => {
         ) : (
           <div
             id={`${media.title}-ARTICLE_VIDEO`}
-            className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 lg:w-auto "
+            className="overflow-hiddenlg:w-auto relative mx-4 mx-auto block max-w-[640px] sm:mb-10 "
             // className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 dark:sm:rounded-xl lg:w-auto dark:lg:rounded-2xl"
             aria-label="gallery-media-item"
           >
@@ -250,7 +249,7 @@ const articleMedias = (mediaContent, aspect, defaultAspect) => {
           </div>
         )
       })}
-    </>
+    </div>
   )
 }
 function PodcastAside({ mediaContent, hosts, classN, aspect, defaultAspect }) {
@@ -260,7 +259,7 @@ function PodcastAside({ mediaContent, hosts, classN, aspect, defaultAspect }) {
     <div
       id="PAGE-MEDIA-ASIDE-CONTENT"
       className={clsx(
-        ' dark::bg-black lg:grid-cols-start darK:bg-slate-50! relative h-full lg:fixed lg:overflow-y-auto lg:pb-44 '
+        'dark::bg-black lg:grid-cols-start  relative h-full lg:fixed lg:-mt-24 lg:overflow-y-auto  lg:pb-44'
       )}
     >
       {/* dark::bg-black relative h-full bg-slate-50 lg:fixed  lg:right-0 lg:flex lg:items-start lg:overflow-y-auto lg:pb-44 */}
@@ -279,15 +278,15 @@ export function PodcastsPageLayout({ contents, children, className }) {
 
   return (
     <div
-      className="max-w-10xl relative mx-auto  grid grid-cols-1 dark:bg-black sm:mx-10 lg:mt-0 lg:grid-cols-2 lg:px-8 xl:mx-14"
+      className="max-w-10xl relative  z-40 mx-auto  dark:bg-black sm:mx-10 sm:grid sm:grid-cols-1 lg:mt-0 lg:grid-cols-2 lg:px-8 xl:mx-14"
       id="project"
     >
       <div
         id="PAGE-ART-STUFF"
-        className="lg:w-2xl xl:-ml-30 col-start-2 col-end-2 mt-10 bg-slate-200 sm:-ml-20"
+        className="lg:w-2xl xl:-ml-30 col-start-2 col-end-2 mt-28 bg-slate-200 sm:-ml-20"
       >
         <PodcastAside
-          mediaContent={mediaContents}
+          mediaContent={contents.medias && contents.medias}
           hosts={hosts}
           classN={className}
         />
@@ -297,16 +296,16 @@ export function PodcastsPageLayout({ contents, children, className }) {
         id="PAGE-LEFT-TEXT-CONTENT"
         // className="lg:ml-112 xl:ml-120 lg:mb-28  "
       >
-        <div className="col-start-2 flex lg:col-span-4 xl:ml-36">
+        <div className="col-start-2 flex lg:col-span-4 xl:ml-44">
           <div
             id="ASIDE_LEFT_TEXT-CONTENT-main"
             className={clsx(
-              'dark:black-2-bg z-5  max-w-[800px] min-[1000px]:w-[800px] lg:min-h-full lg:max-w-[400px] lg:border-slate-200   min-[1500px]:max-w-[520px] '
+              'dark:black-2-bg z-5  max-w-[800px] min-[1000px]:w-[800px] lg:min-h-full lg:max-w-[400px] lg:border-slate-200   min-[1500px]:max-w-[450px] '
             )}
           >
             <div
               id="ASIDE_LEFT_TEXT-CONTENT-child"
-              className="pb-4 pb-20 sm:px-0 xl:max-w-[439px]"
+              className="pb-20 pb-4 sm:px-0 xl:max-w-[439px]"
             >
               {' '}
               <div
@@ -334,81 +333,35 @@ export function PodcastsPageLayout({ contents, children, className }) {
               </div>
               <div
                 id="podcast-intro"
-                className="meta  pt-10 text-center sm:px-6  sm:px-6 sm:pt-4 md:px-4 md:pt-14 lg:mt-2 lg:px-8 lg:pt-12 lg:text-left xl:px-12"
+                className="meta -mt-64 min-w-[300px] pt-10 text-center sm:px-6  sm:px-6 sm:pt-4 md:px-4 md:pt-14 lg:mt-2 lg:px-8 lg:pt-12 lg:text-left xl:px-12"
               >
                 <h1 className="text-4xl font-bold text-slate-900 dark:text-slate-200 sm:text-3xl">
                   {contents.name}
                 </h1>
-                <p className="mt-6 mb-10 px-6 text-lg  font-medium leading-8 text-slate-700 dark:text-slate-200/80 md:px-0 lg:mb-0">
+                {/* <p className="mb-10 mt-6 px-6 text-lg  font-medium leading-8 text-slate-700 dark:text-slate-200/80 md:px-0 lg:mb-0">
                   Conversations with the most tragically misunderstood people of
                   our time. Lars Gaudin ia Doctor and a parttime respected
                   podcast authors.
-                </p>
+                </p> */}
                 <div id="MEDIA-IMAGE_SMALL" className="lg:hidden">
-                  {articleMedias(contents.medias.slice(0, 1))}
+                  {/* {articleMedias(
+                    contents.medias &&
+                      contents.medias.length >= 2 &&
+                      contents.medias.slice(0, 1)
+                  )} */}
                 </div>
-                <div class="body">
-                  <p
-                    class=""
-                    // style="white-space:pre-wrap;"
-                  >
-                    Every journey begins with a starting point. It is with the
-                    nurturing support of our home, our cocoon, that we can then
-                    excel and reach our fullest potential. From Home to Anywhere
-                    is an Art Installation that invites passers-by to step up to
-                    it and experience the cocoon for themselves, serving as a
-                    reminder that while our world is a big place, home begins
-                    with where you are.
-                  </p>
-                  <p
-                    class=""
-                    data-rte-preserve-empty="true"
-                    //   style="white-space:pre-wrap;"
-                  ></p>
-                  <p
-                    class=""
-                    // style="white-space:pre-wrap;"
-                  >
-                    Upon entering a nest, participants will be surrounded by
-                    birds fluttering overhead and invited to project their hopes
-                    and desires onto the birds flying above them, taking a
-                    moment to imagine how they would feel if they too could fly.
-                  </p>
 
-                  <p
-                    class=""
-                    data-rte-preserve-empty="true"
-                    //   style="white-space:pre-wrap;"
-                  ></p>
-                  <p
-                    class=""
-                    // style="white-space:pre-wrap;"
-                  >
-                    Amit and Kanika collaboratively realize Installations that
-                    push the boundaries of their individual practices.They
-                    intend for all collaborations to embody themes of hope and
-                    unity.
-                  </p>
-                  <p
-                    class=""
-                    data-rte-preserve-empty="true"
-                    //   style="white-space:pre-wrap;"
-                  ></p>
-                  <p
-                    class=""
-
-                    // style="white-space:pre-wrap;"
-                  >
-                    This installation is produced in collaboration with Kelly
-                    Robinson and Navnith Ravindran.
-                  </p>
-                </div>
                 <div className="">
-                  <h1 data-shrink-original-size="42">
+                  {/* <h1 data-shrink-original-size="42">
                     XXFrom Home to Anywhere
-                  </h1>
-
-                  <div class="body">
+                  </h1> */}
+                  <div
+                    id={`${contents.id}-title`}
+                    aria-hidden="true"
+                    className="text-sm font-medium text-zinc-900 group-aria-selected:text-emerald-500 dark:text-white"
+                    dangerouslySetInnerHTML={{ __html: contents.content }}
+                  />
+                  {/* <div class="body">
                     <p
                       class=""
                       // style="white-space:pre-wrap;"
@@ -464,20 +417,14 @@ export function PodcastsPageLayout({ contents, children, className }) {
                       This installation is produced in collaboration with Kelly
                       Robinson and Navnith Ravindran.
                     </p>
-                  </div>
+                  </div> */}
                   <div class="share-like"></div>
                 </div>
               </div>
             </div>
 
-            <AboutSection className="hidden border-t border-slate-500 lg:-mt-32 lg:mb-20 lg:block " />
+            {/* <AboutSection className="hidden border-t border-slate-500 lg:-mt-32 lg:mb-20 lg:block " /> */}
           </div>
-          {/* <div
-            id={`${contents.id}-title`}
-            aria-hidden="true"
-            className="text-sm font-medium text-zinc-900 group-aria-selected:text-emerald-500 dark:text-white"
-            dangerouslySetInnerHTML={{ __html: content }}
-          /> */}
         </div>
       </div>
       {/* <footer className="border-t border-slate-200 bg-slate-50 py-10 pb-40 sm:py-16 sm:pb-32 lg:hidden">

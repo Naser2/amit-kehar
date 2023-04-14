@@ -6,18 +6,43 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import { getAllArts } from '@/lib/getAllArts'
 import { ArtPageLayout } from '@/components/ArtPageLayout'
 import { Galery } from '@/components/Gallery'
+import Link from 'next/link'
 
 export default function Art({ artprojects }) {
   return (
     <>
       <Head>
-        <title>Speaking - Amit Kehar</title>
+        <title>ART - Amit Kehar</title>
         <meta
           name="description"
           content="Amit Kehar art's Director videographer and filmaker and artist"
         />
       </Head>
-      <Galery contents={artprojects} />
+      <div class="mx-auto  mt-20 max-w-7xl px-6   md:px-14  lg:px-44  xl:px-24">
+        <div class="relative px-4 sm:px-8 lg:px-12">
+          <div class=" mx-auto max-w-2xl lg:max-w-5xl  ">
+            <div data-content-field="site-title" className="siteTitle ">
+              <h1
+                className=" dark:text-white"
+                style={{ letterSpacing: '0.0740741em' }}
+              >
+                <Link href="/">
+                  <span id="site-title">ART</span>
+                </Link>
+              </h1>
+
+              <h2 className="logo-subtitle text-left">
+                Colletion of great things
+              </h2>
+            </div>{' '}
+            {/* <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+              ART
+            </h1> */}
+          </div>
+        </div>
+      </div>
+      {/* <Galery contents={artprojects} clicable /> */}
+      <Galery contents={artprojects} clicable />
       {/* {artprojects.map((project) => (
         <div key={project.id} className="flex flex-col sm:flex-row">
           <div className="order-2 mt-6 sm:mt-0 sm:ml-16">
