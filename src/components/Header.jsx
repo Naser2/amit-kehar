@@ -8,6 +8,7 @@ import avatarImage from '../../public/amit-avatar.jpg'
 import { Fragment, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import ToggleICon from './ToggleIcon'
 
 // function CloseIcon(props) {
 //   return (
