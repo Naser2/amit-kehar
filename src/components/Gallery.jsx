@@ -393,7 +393,7 @@ export const FancyImageClicabletitle = ({ item, cta }, props) => {
         />
         <div
           id="fancybtn-wrap"
-          className="content-container large-12 small-order-0 z-2 absolute bottom-44 left-20 opacity-100"
+          className="content-container large-12 small-order-0 z-2 absolute bottom-4  opacity-100 sm:bottom-10 sm:left-20 lg:bottom-20"
         >
           <div className="content-wrapper">
             <h2>

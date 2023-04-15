@@ -18,11 +18,14 @@ export default function Art({ motions }) {
           content="Amit Kehar art's Director videographer and filmaker and artist"
         />
       </Head>
-      <Container containerPadding="mt-14">
+      <Container className={'mt-24 sm:mt-44'}>
         <div className="meta  sm:px-20 ">
           <h1 style={{ fontSize: '37px' }} className="dark:text-white">
             MOTIONS
           </h1>
+          <h2 className="subtitle-SM dark:text-white">
+            A collection of motions
+          </h2>
 
           <div class="body"></div>
           <div class="share-like">

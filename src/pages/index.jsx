@@ -173,7 +173,7 @@ export default function Home({ articles, allprojects, artprojects }) {
           </p> */}
         <div
           id="header-social-media"
-          className="sm: absolute  right-0  -mr-4 -mt-0 ml-4 sm:relative sm:-ml-1 sm:-mt-8"
+          className="sm: absolute  right-0 -mt-0 ml-4 sm:relative sm:-ml-1 sm:-mt-8"
         >
           <SocialMedia
             className={'mx-4 flex gap-x-2 gap-y-4 sm:-mt-6 sm:mb-10'}

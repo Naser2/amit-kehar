@@ -815,7 +815,7 @@ export const siteArticles = [
     ],
   },
   {
-    content: `<div class="meta"> <h1 data-shrink-original-size="42">The Light In The Shadows</h1>
+    content: `<div class="meta"> 
     <div class="body"><p style="white-space: pre-wrap;"><em>In 2017, 12 Trees</em>&nbsp;exhibition focuses on light as a potent symbol of hope that many cultures share. Created in collaboration with Kanika Gupta,&nbsp;<em>The Light in the Shadows</em>&nbsp;in an installation that focuses on the light within the shadows.&nbsp;</p><p style="white-space: pre-wrap;">​In times of darkness when we are feeling lost or helpless there is a desire to look for the light, something to guide our way through uncertainty, hardship, and/or despair. There will always be times when we find ourselves in the shadows with nothing external to turn to, nothing that we are able to grab hold of, to direct, to light and illuminate our path out of the darkness. Rather than seek a way out – it is precisely in these times, when we are in the shadows, that we must open our eyes and our hearts to the magnificence that surrounds us within these </p></div>
     <div class="share-like">
       <span class="squarespace-social-buttons inline-style" data-system-data-id="5c36525dc2241b494bd8d57d" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547063901925-QZ95EQQ8KBK9MVK9R3F6/C0009T01.jpeg" data-record-type="" data-full-url="/the-light-in-the-shadows" data-title="The Light In The Shadows"><div id="social-yui_3_17_2_1_1681417303167_1695" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681417303167_1729" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
@@ -831,7 +831,7 @@ export const siteArticles = [
     medias: [
       {
         type: 'image',
-        source: '/art/from-home/fromhome-1.jpeg',
+        source: '/art/fromhome-1.jpeg',
         title: 'Winners',
       },
       {

@@ -458,38 +458,6 @@ function ChevronDownIcon(props) {
   )
 }
 
-function SunIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z" />
-      <path
-        d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
-        fill="none"
-      />
-    </svg>
-  )
-}
-
-function MoonIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
 function MobileNavItem({ href, children }) {
   return (
     <li>
@@ -500,6 +468,8 @@ function MobileNavItem({ href, children }) {
   )
 }
 
+const transparent =
+  'group flex items-center rounded-sm px-4 py-2 text-sm font-medium    backdrop-blur dark:text-zinc-200  dark:hover:ring-white/20'
 function MobileNavigation(props) {
   return (
     <Popover {...props}>
@@ -720,20 +690,26 @@ function Avatar({ large = false, className, homePage, ...props }) {
           <Link
             href="/"
             id="DIRECTOR CREDENTIALS_MOBILE"
-            className="-mt-9 flex min-w-[260px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl"
+            className={clsx(
+              transparent,
+              '-mt-9 flex min-w-[240px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl'
+            )}
           >
-            <div data-content-field="siteTitle-SM ">
+            <div id="MOBILE-CRED">
               <div
-                className="header-p ml-4 text-slate-800 "
+                className="siteTitle-SM px-4  text-slate-800 "
                 data-shrink-original-size="27"
                 style={{ letterSpacing: '0.0740741em' }}
               >
-                <span id="siteTitle-SM" className="flex dark:text-slate-50">
+                <h1 id="NAME-SM" className="flex text-left dark:text-slate-50">
                   Amit Kehar
-                </span>
+                </h1>
               </div>
-              <div id="name-mobile" className=" -mt-10 pl-4  sm:sr-only">
-                <h2 className=" text-left text-base text-slate-500 dark:text-slate-200/90">
+              <div
+                id="director-position-mobile"
+                className="logo-subtitle-SM -mt-4  sm:sr-only"
+              >
+                <h2 className="  dark:text-slate-200/90">
                   Director, Cinematographer
                 </h2>
                 <h2 className="-mt-5  text-left text-base text-slate-500 dark:text-slate-200/90">

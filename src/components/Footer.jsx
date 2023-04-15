@@ -16,9 +16,9 @@ function NavLink({ href, children }) {
 // if Path is not or include 'art/ or motion/ home or Contac set position fixed or hide
 export function Footer() {
   return (
-    <footer className="mt-32 mt-32 xl:mt-64 xl:mt-64">
+    <footer className="relative mt-32 mt-32 xl:mt-64 xl:mt-64">
       <Container.Outer>
-        <div className="xl:mt-54 border-t border-zinc-100 pt-10 pb-16 dark:border-zinc-700/40 lg:mt-44">
+        <div className="xl:mt-54 border-t border-zinc-100 pb-16 pt-10 dark:border-zinc-700/40 lg:mt-44">
           <Container.Inner>
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">

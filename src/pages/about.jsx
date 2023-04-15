@@ -69,7 +69,7 @@ export default function About() {
           content="I’m Amit Kehar. I live in New York City, where I design the future."
         />
       </Head>
-      <div class="mx-auto -mb-20 mt-20 max-w-7xl px-6   md:px-14  lg:px-44  xl:px-24">
+      {/* <div class="mx-auto -mb-20 mt-20 max-w-7xl px-6   md:px-14  lg:px-44  xl:px-24">
         <div class="relative px-4 sm:px-8 lg:px-12">
           <div class=" mx-auto max-w-2xl lg:max-w-5xl  ">
             <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
@@ -77,7 +77,7 @@ export default function About() {
             </h1>
           </div>
         </div>
-      </div>
+      </div> */}
       <TwoGridSection
         right={{
           title1: title1,
