@@ -40,6 +40,7 @@ export default function Contact() {
         <h1 className=" relative mx-auto py-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl">
           KEHARAMIT@GMAIL.COM
         </h1>{' '}
+        <h2>Have a great day! 📣🐢</h2>
         <div id="LANDING-SOCIAL-MEDIA" className="ml-4 mt-4">
           <SocialMedia
             className={'mx-4 mb-10 flex gap-x-2 gap-y-4'}
