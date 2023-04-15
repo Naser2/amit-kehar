@@ -18,8 +18,8 @@ export function TwoGridSection({ right, left, socialMedia }) {
   return (
     <div
       id="intro-personal"
-      className="max-w-8xl min-[1190px]:grid-cols-2 min-[1500px]:mx-[14px] min-[1600px]:mx-[24px] grid grid-cols-1 gap-y-10 px-4 pt-20  sm:py-36 sm:px-14 sm:pt-32 xl:gap-x-0 
-      xl:px-56"
+      className="max-w-8xl grid grid-cols-1 gap-y-10 px-4 pt-20 sm:px-14 sm:py-36 sm:pt-32  min-[1190px]:grid-cols-2 xl:gap-x-0 xl:px-56 min-[1500px]:mx-[14px] 
+      min-[1600px]:mx-[24px]"
     >
       {/* <img
         id="SM"
@@ -41,11 +41,11 @@ export function TwoGridSection({ right, left, socialMedia }) {
           {/* <p className="headline typography-headline  large-centered max-w-2xl pb-4 dark:text-slate-100 sm:pb-10 sm:pl-4 ">
           {title2}
         </p> */}
-          <p className="amits-paragraph col-start-1 row-start-3 mt-4 max-w-lg  pb-6 dark:text-slate-200 sm:pl-4 sm:pb-0">
+          <p className="amits-paragraph col-start-1 row-start-3 mt-4 max-w-lg  pb-6 dark:text-slate-200 sm:pb-0 sm:pl-4">
             {content1}
           </p>{' '}
           <br class="small" />
-          <p className="amits-paragraph col-start-1 row-start-3 mt-4 max-w-lg  pb-6 dark:text-slate-200 sm:pl-4 sm:pb-0">
+          <p className="amits-paragraph col-start-1 row-start-3 mt-4 max-w-lg  pb-6 dark:text-slate-200 sm:pb-0 sm:pl-4">
             {content2}
           </p>
           <img
@@ -70,7 +70,7 @@ export function TwoGridSection({ right, left, socialMedia }) {
         </div>{' '}
       </Container>
 
-      <div id="CONTENT-2" className="relative">
+      <div id="CONTENT-2" className="relative sm:mt-6">
         {/* <imageContent /> */}
         <img
           id="LG"
@@ -78,11 +78,11 @@ export function TwoGridSection({ right, left, socialMedia }) {
           loading="lazy"
           decoding="async"
           src={imageContent.props.src}
-          className="min-[1190px]:not-sr-only min-[1400px]:w-[32.1666666rem] min-[1500px]:w-[37.1666666rem] sr-only absolute w-full w-[14.1666666rem] bg-slate-100  shadow-xl  shadow-xl lg:ml-8 lg:mt-10 lg:block lg:flex-none 
+          className="sr-only absolute w-[14.1666666rem] w-full bg-slate-100 shadow-xl shadow-xl lg:ml-8  lg:mt-10  lg:block lg:flex-none min-[1190px]:not-sr-only min-[1400px]:w-[32.1666666rem] min-[1500px]:w-[37.1666666rem] 
           "
         />
         {socialMedia && (
-          <div className="max-[1100px]:hidden absolute mt-10">
+          <div className="absolute mt-14 max-[1100px]:hidden">
             <SocialMedia />
           </div>
         )}
@@ -90,7 +90,7 @@ export function TwoGridSection({ right, left, socialMedia }) {
       {socialMedia && (
         <div
           id="bottom-social-media"
-          className="min-[1099px]:hidden  mx-auto px-4 sm:px-8   lg:px-1 lg:px-8"
+          className="mx-auto  px-4 sm:px-8 lg:px-1   lg:px-8 min-[1099px]:hidden"
         >
           <SocialMedia />
         </div>

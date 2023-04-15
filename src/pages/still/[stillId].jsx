@@ -19,6 +19,7 @@ import { getAllStills } from '@/lib/getAllStills'
 import { getStill } from '@/lib/getStill'
 import { Galery } from '@/components/Gallery'
 import { Title } from '@/components/Title'
+import { DirectorCredentials } from '@/components/DirectorCredentials'
 // import { Header } from '@/components/Header'
 const languages = ['en', 'fr', 'hn']
 
@@ -37,7 +38,21 @@ export default function ArtPage({ still }) {
       >
         {/* <GoBackArrow /> */}
         {/* CATEGORY -  */}
-        <Title title={still.name} />
+        <div id="still-title" className="mt-24 sm:mb-20 sm:mt-44">
+          <Title
+            title={still.name}
+            // description={
+            //   'A collection of stills a gathered over the last 10 years.'
+            // }
+          />
+        </div>
+        <div
+          id="direct"
+          className="relative mx-auto -mb-6 pr-2 sm:-mb-0 sm:px-24"
+        >
+          <DirectorCredentials />
+        </div>
+
         <Galery contents={still} clicable={false} gap="gay-x-0 gap-y-0" />
       </article>
     </>

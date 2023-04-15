@@ -9,6 +9,7 @@ import { Galery } from '@/components/Gallery'
 import { Container } from '@/components/Container'
 import Link from 'next/link'
 import { SocialMedia } from '@/components/SocialMedia'
+import { DirectorCredentials } from '@/components/DirectorCredentials'
 
 export default function Art({ motions }) {
   return (
@@ -61,36 +62,7 @@ export default function Art({ motions }) {
             </span>
           </div>
         </div>{' '}
-        <div
-          data-content-field="page-credentials"
-          className="page-credentials ml-auto w-48 pr-2 sm:pr-8"
-        >
-          <h1
-            className="justify-end "
-            data-shrink-original-size="27"
-            style={{ letterSpacing: ' 0.0740741em' }}
-          >
-            <Link href="/" className="justify-end">
-              <span id="site-title" className="w-4">
-                Amit
-                <br />
-              </span>
-            </Link>
-            <Link href="/" className="justify-end">
-              <span id="site-title">Kehar</span>
-            </Link>
-          </h1>
-
-          <h2 className="logo-subtitle  sm:mr-4 sm:w-64">
-            Visual Media Artist{' '}
-          </h2>
-          <div
-            id="page-social-edia"
-            className="ml-8 justify-end sm:ml-0 sm:mt-8"
-          >
-            <SocialMedia />
-          </div>
-        </div>
+        <DirectorCredentials />
       </Container>
       <Galery contents={motions} clicable />
     </>

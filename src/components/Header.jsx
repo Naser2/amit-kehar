@@ -555,7 +555,7 @@ function DesktopNavigation(props) {
   return (
     <nav {...props} id="desktop-navigation">
       <ul className="flex rounded-sm bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-400/5 backdrop-blur   hover:shadow-zinc-900/5 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-        <NavItem href="/motion">Motionn</NavItem>
+        <NavItem href="/motion">Motion</NavItem>
         <NavItem href="/art">Art</NavItem>
         <NavItem href="/still">Stills</NavItem>
         <NavItem href="/contact">Contact</NavItem>

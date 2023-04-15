@@ -79,20 +79,21 @@ export default function About() {
           </div>
         </div>
       </div> */}
-
-      <Title title={'ABOUT'} />
-      <TwoGridSection
-        right={{
-          title1: title1,
-          content1: content1,
-          title2: title2,
-          content2: content2,
-          content3,
-          content4,
-        }}
-        left={artistImage}
-        socialMedia
-      />
+      <div id="about" className="mt-10 sm:mt-24">
+        <Title title={'ABOUT'} />
+        <TwoGridSection
+          right={{
+            title1: title1,
+            content1: content1,
+            title2: title2,
+            content2: content2,
+            content3,
+            content4,
+          }}
+          left={artistImage}
+          socialMedia
+        />
+      </div>
     </>
   )
 }

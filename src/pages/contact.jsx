@@ -24,9 +24,9 @@ export default function Contact() {
          Please do not hesitate to get in touch. Use  my email below or reach on my social medias handles."
       /> */}
 
-      <Container className="items-cente 4 s:mt-24  relative relative mx-auto mt-20   max-w-3xl max-w-7xl items-center  px-4 xl:mx-44 xl:mt-64">
+      <Container className="items-cente 4 s:mt-24 relative relative  mx-auto mt-20 mt-36 max-w-3xl items-center px-4 sm:mx-64  sm:mt-44 xl:mx-64 xl:mt-64">
         <h1 class="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-          SAY HELLO
+          SAY HELLO 👋
         </h1>
         <p class="mt-6 text-base text-zinc-600 dark:text-zinc-400">
           Thank you for visiting my website and exploring my work. Whether you

@@ -192,13 +192,10 @@ h2.logo-subtitle-SM {
 .page-credentials h1 {
   color: #2e2e2e;
   margin: 0;
-  font-size: 15px;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: bold;
-  line-height: 1em;
-  letter-spacing: 0px;
   text-transform: none;
-  font-size: 27px;
+  font-size: 18px;
   font-family: Dosis;
   font-weight: 400;
   font-style: normal;
@@ -237,8 +234,15 @@ h2.logo-subtitle {
   line-height: 1.5em;
   letter-spacing: 0px;
   text-transform: none;
+
   margin: -0.4em 0 0;
+  margin-left: -16px;
   color: #999;
+}
+@media only screen and (max-width: 735px) {
+  h2.logo-subtitle {
+    margin-left: 11px;
+  }
 }
 header#topBar ul#nav {
   display: block;
