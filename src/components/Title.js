@@ -7,9 +7,7 @@ export const Title = ({ title, description }) => {
         className="h1-custom mb-4 text-center dark:text-slate-200 "
         style={{ letterSpacing: '0.0740741em' }}
       >
-        <Link href="/">
-          <span id="site-title">{title}</span>
-        </Link>
+        <span id="site-title">{title}</span>
       </h1>
       <h2 className="subtitle px-6 text-center dark:text-slate-300">
         {description}

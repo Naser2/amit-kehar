@@ -7,6 +7,8 @@ import { getAllMotions } from '@/lib/getAllMotions'
 // import { ArtPageLayout } from '@/components/ArtPageLayout'
 import { Galery } from '@/components/Gallery'
 import { Container } from '@/components/Container'
+import Link from 'next/link'
+import { SocialMedia } from '@/components/SocialMedia'
 
 export default function Art({ motions }) {
   return (
@@ -18,16 +20,16 @@ export default function Art({ motions }) {
           content="Amit Kehar art's Director videographer and filmaker and artist"
         />
       </Head>
-      <Container className={'mt-24 sm:mt-44'}>
-        <div className="meta  sm:px-20 ">
+      <Container
+        containerMax={'lg:max-w-10xl'}
+        className={'max-w-8xl xl:mt-34 mt-14 sm:mt-20'}
+      >
+        <div className="meta mx-4  my-20 text-center  sm:px-20 ">
           <h1 style={{ fontSize: '37px' }} className="dark:text-white">
             MOTIONS
           </h1>
-          <h2 className="subtitle-SM dark:text-white">
-            A collection of motions
-          </h2>
+          <h2 class="logo-subtitle">A collection of motions</h2>
 
-          <div class="body"></div>
           <div class="share-like">
             <span
               class="squarespace-social-buttons inline-style"
@@ -58,9 +60,39 @@ export default function Art({ motions }) {
               </div>
             </span>
           </div>
+        </div>{' '}
+        <div
+          data-content-field="page-credentials"
+          className="page-credentials ml-auto w-48 pr-2 sm:pr-8"
+        >
+          <h1
+            className="justify-end "
+            data-shrink-original-size="27"
+            style={{ letterSpacing: ' 0.0740741em' }}
+          >
+            <Link href="/" className="justify-end">
+              <span id="site-title" className="w-4">
+                Amit
+                <br />
+              </span>
+            </Link>
+            <Link href="/" className="justify-end">
+              <span id="site-title">Kehar</span>
+            </Link>
+          </h1>
+
+          <h2 className="logo-subtitle  sm:mr-4 sm:w-64">
+            Visual Media Artist{' '}
+          </h2>
+          <div
+            id="page-social-edia"
+            className="ml-8 justify-end sm:ml-0 sm:mt-8"
+          >
+            <SocialMedia />
+          </div>
         </div>
-        <Galery contents={motions} clicable />
       </Container>
+      <Galery contents={motions} clicable />
     </>
   )
 }

@@ -112,7 +112,7 @@ function Photos({ artprojects }) {
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {artprojects.map((image, imageIndex) => (
           <div
-            key={image.source}
+            key={image.name + imageIndex.id}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length]
@@ -143,20 +143,18 @@ export default function Home({ articles, allprojects, artprojects }) {
           content="I’m Amit Kehar, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
         />
       </Head>
-      <Container className="mt-20 sm:mt-9">
-        <div className="max-w-2xl">
-          <h1
-            className="text-4xl  font-bold tracking-tight 
+      <Container className="mt-20 sm:mt-44">
+        <div className="max-w-lg ">
+          <div
+            className="text-left text-4xl  font-bold tracking-tight 
           text-zinc-800 dark:text-zinc-100 max-[700px]:hidden sm:text-5xl"
           >
-            <div data-content-field="site-title" className="siteTitle ">
+            <div className="introTitle  mt-4">
               <h1
-                className=" dark:text-white"
+                className=" text-left dark:text-white"
                 style={{ letterSpacing: '0.0740741em' }}
               >
-                <Link href="/">
-                  <span id="site-title">The love of photograpgy</span>
-                </Link>
+                <span id="intro-title">The love of photograpgy</span>
               </h1>
 
               <h2 className="logo-subtitle text-left">
@@ -164,57 +162,8 @@ export default function Home({ articles, allprojects, artprojects }) {
               </h2>
             </div>{' '}
             {/*  Amit Kehar Director, Cinematographer & Visual Media Artist */}
-          </h1>{' '}
-        </div>{' '}
-        {/* <Link
-          href="/"
-          id="DIRECTOR CREDENTIALS_MOBILE"
-          className={clsx(
-            'float-r -mt-9 flex min-w-[40px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl'
-          )}
-        >
-          <div id="MOBILE-CRED">
-            <div
-              className="siteTitle-SM float-r  px-4 text-slate-800"
-              data-shrink-original-size="27"
-              style={{ letterSpacing: '0.0740741em' }}
-            >
-              <h1 id="NAME-SM" className="flex text-left dark:text-slate-50">
-                Amit KehRRRR
-              </h1>
-            </div>
-            <div
-              id="director-position-mobile"
-              className="logo-subtitle-SM -mt-4 min-[400px]:hidden "
-            >
-              <h2 className="  dark:text-slate-200/90">
-                Director, Cinematographerrr
-              </h2>
-              <h2 className="-mt-5  text-left text-base text-slate-500 dark:text-slate-200/90">
-                &amp; Visual Media Artist{' '}
-              </h2>
-            </div>
-
-            <h2 className=" sr-only -mt-2 pl-4 text-left text-base  text-slate-500 sm:not-sr-only">
-              Director, Cinematographer &amp; Visual Media Artist{' '}
-            </h2>
           </div>{' '}
-        </Link> */}
-        {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-          I’m Amit Kehar, a software designer and entrepreneur based in New York
-          City. I’m the founder and CEO of Planetaria, where we develop
-          technologies that empower regular people to explore space on their own
-          terms.
-        </p> */}
-        <div
-          id="header-social-media"
-          className="sm: absolute  right-0 -mt-0 ml-4 sm:relative sm:-ml-1 sm:-mt-8"
-        >
-          <SocialMedia
-            className={'mx-4 flex gap-x-2 gap-y-4 sm:-mt-6 sm:mb-10'}
-            iconStyle=""
-          />
-        </div>
+        </div>{' '}
       </Container>
       <section className="section section-subhero ">
         <div className="full-width-tile-wrapper row">
@@ -224,9 +173,6 @@ export default function Home({ articles, allprojects, artprojects }) {
                 <div className="background-container large-12  small-order-1">
                   {/* <figure className="sm:rounded-3xl sm:px-2"> */}
                   <div className="w-full flex-none " id="FEATURED VIDEO">
-                    <p className="text-md rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0">
-                      React native screen components to be used in mobile app .
-                    </p>
                     <Image
                       alt="Featured Project Image"
                       sizes="100vw"
@@ -235,8 +181,9 @@ export default function Home({ articles, allprojects, artprojects }) {
                       height="1660"
                       decoding="async"
                       className=" mt-10 aspect-[1216/640] sm:rounded-3xl md:mt-0 "
-                      loading="lazy"
-                      style="color: transparent;"
+                      // loading="lazy"
+                      style={{ color: 'transparent' }}
+                      priority
                     />
                   </div>
                   {/* </figure> */}
@@ -273,19 +220,25 @@ export default function Home({ articles, allprojects, artprojects }) {
           </div>
         </div>
       </section>
-      <Galery contents={allprojects} clicable />
+      <Galery
+        contents={allprojects}
+        clicable
+        gap="gap-y-0"
+        imgMarginY="-my-4"
+      />
+      <p className="text-md mx-4 mt-2 rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0">
+        Currently viewing [MVP] in native mobile screen as in in mobile app .
+      </p>
       <Container>
         <div
           data-content-field="site-title"
-          className=" relative mx-auto -mt-14 max-w-7xl items-center sm:-mt-0"
+          className=" relative mx-auto -mt-14  max-w-7xl items-center sm:-mt-0"
         >
-          <Link href="/">
-            {/* <span id="site-title" className="dark:text-white"> */}
-            {/* <Title title="Art" /> */}
-            {/* </span> */}
-          </Link>
+          {/* <span id="site-title" className="dark:text-white"> */}
+          <Title title="Art" />
+          {/* </span> */}
 
-          <h2 class="logo-subtitle text-center">
+          <h2 className="logo-subtitle text-center">
             Drawing and doodling have always been my passion
           </h2>
         </div>

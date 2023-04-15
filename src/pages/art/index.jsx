@@ -39,7 +39,13 @@ export default function Art({ artprojects }) {
           </div>
         </div>
       </div> */}
-      <Title title="ART" description="A catalogue of some of my art." />
+      <div id="wrap" className="my-24 sm:my-44 ">
+        {' '}
+        <Title title="ART" />
+        <h2 className="logo-subtitle  text-center">
+          A catalogue of some of my art.{' '}
+        </h2>
+      </div>
 
       <Galery contents={artprojects} clicable />
     </>

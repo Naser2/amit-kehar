@@ -9,6 +9,7 @@ import { Fragment, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import ToggleICon from './ToggleIcon'
+import { SocialMedia } from './SocialMedia'
 
 // function CloseIcon(props) {
 //   return (
@@ -507,15 +508,16 @@ function MobileNavigation(props) {
                 <CloseIcon className="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
               </Popover.Button>
               <h2 className="text-sm font-medium text-zinc-600 dark:text-zinc-400">
-                Navigation
+                Menu
               </h2>
             </div>
-            <nav className="mt-6">
+            <nav id="mobile-navigation" className="mt-6">
               <ul className="-my-2 divide-y divide-zinc-100 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
-                <MobileNavItem href="/motion">Motionn</MobileNavItem>
+                <MobileNavItem href="/">Home</MobileNavItem>
+                <MobileNavItem href="/motion">Motion</MobileNavItem>
                 <MobileNavItem href="/art">Art</MobileNavItem>
                 <MobileNavItem href="/still">Stills</MobileNavItem>
-                <MobileNavItem href="/contact">ontact</MobileNavItem>{' '}
+                <MobileNavItem href="/contact">Contact</MobileNavItem>{' '}
                 <MobileNavItem href="/about">About</MobileNavItem>
               </ul>
             </nav>
@@ -551,7 +553,7 @@ function NavItem({ href, children }) {
 
 function DesktopNavigation(props) {
   return (
-    <nav {...props}>
+    <nav {...props} id="desktop-navigation">
       <ul className="flex rounded-sm bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-400/5 backdrop-blur   hover:shadow-zinc-900/5 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/motion">Motionn</NavItem>
         <NavItem href="/art">Art</NavItem>
@@ -623,7 +625,10 @@ function Avatar({ large = false, className, homePage, ...props }) {
     <>
       <div
         aria-label="Home"
-        className={clsx(className, 'pointer-events-auto mt-6 flex sm:mt-0')}
+        className={clsx(
+          className,
+          'group pointer-events-auto mt-6 flex  hover:animate-bounce  sm:mt-0'
+        )}
         {...props}
       >
         <Image
@@ -639,6 +644,9 @@ function Avatar({ large = false, className, homePage, ...props }) {
             large ? 'sm:h-16 sm:w-16' : 'h-22 w-22'
           )}
           priority
+          as="image"
+          // placeholder="blur"
+          blurDataURL={'/amit-avatar.jpg'}
         />
         <Image
           id="AVATAR-MOBILE"
@@ -651,77 +659,49 @@ function Avatar({ large = false, className, homePage, ...props }) {
             !homePage ? 'w-17 h-17' : 'h-[5.7rem] w-[5.5rem] ',
             '-mt-8 rounded-full  bg-transparent object-cover    min-[400px]:hidden'
           )}
+          placeholder="/amit-avatar.jpg'"
+          blurDataURL={'/amit-avatar.jpg'}
           priority
         />
-        {!homePage && (
-          <Link
-            href="/"
-            id="DIRECTOR_NAME_DESKTOP"
-            className="-mt-16  min-w-[600px]  text-4xl font-bold  text-zinc-800 dark:text-zinc-100 max-[400px]:hidden  sm:text-5xl"
-          >
-            <div data-content-field="site-title LG">
-              <h1
-                className="ml-4 text-slate-800"
-                data-shrink-original-size="27"
-                style={{ letterSpacing: '0.0740741em' }}
-              >
-                <span
-                  id="site-title"
-                  className="flex tracking-tight dark:text-slate-100"
-                >
-                  AmitTTT Kehar
-                </span>
-              </h1>
-              <div
-                id="name-mobile"
-                className="site-title -mt-6 pl-4  sm:-mt-8  lg:-mt-6"
-              >
-                <h2 className=" title-gray  profession_title text-left text-base  dark:text-slate-200/90">
-                  Director, Cinematographer &amp; Visual Media Artist{' '}
-                </h2>
-              </div>
-
-              <h2 className="title-gray -mt-2 pl-4 text-left  text-base "></h2>
-            </div>
-          </Link>
-        )}
 
         {!homePage && (
-          <Link
+          <div
             href="/"
             id="DIRECTOR CREDENTIALS_MOBILE"
             className={clsx(
               transparent,
-              '-mt-9 flex min-w-[20px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl'
+              'sm:text-5x flex-block -mt-9 flex min-w-[20px] flex-nowrap text-4xl font-bold tracking-tight  text-zinc-800 dark:text-zinc-100'
             )}
           >
-            <div id="MOBILE-CRED">
+            <div id="MOBILE-CRED" className="siteTile-SM min-[400px]:hidden">
               <div
-                className="siteTitle-SM float-r  px-4 text-slate-800"
+                className="siteTitle-SM  -mt-5  px-4 text-slate-800"
                 data-shrink-original-size="27"
                 style={{ letterSpacing: '0.0740741em' }}
               >
                 <h1 id="NAME-SM" className="flex text-left dark:text-slate-50">
-                  Amit KehRRRR
+                  Amit
+                </h1>
+                <br />
+                <h1 id="NAME-SM" className="flex text-left dark:text-slate-50">
+                  Kehar
                 </h1>
               </div>
               <div
                 id="director-position-mobile"
-                className="logo-subtitle-SM -mt-4 min-[400px]:hidden "
+                className="logo-subtitle-SM -mt-1 w-64 "
               >
-                <h2 className="  dark:text-slate-200/90">
-                  Director, Cinematographerrr
+                <h2 className=" dark:text-slate-200/90">
+                  Director, Cinematographer
                 </h2>
+
                 <h2 className="-mt-5  text-left text-base text-slate-500 dark:text-slate-200/90">
                   &amp; Visual Media Artist{' '}
                 </h2>
               </div>
-
-              {/* <h2 className=" sr-only -mt-2 pl-4 text-left text-base  text-slate-500 sm:not-sr-only">
-              Director, Cinematographer &amp; Visual Media Artist{' '}
-            </h2> */}
             </div>{' '}
-          </Link>
+            <DesktopTitle />
+          </div>
         )}
       </div>
       {/* <div id="header-social-media" className="-ml-4 -mt-6">
@@ -734,6 +714,49 @@ function Avatar({ large = false, className, homePage, ...props }) {
   )
 }
 
+const DesktopTitle = () => {
+  return (
+    <div
+      href="/"
+      id="DIRECTOR_NAME_DESKTOP"
+      className="inline=-flextext-4xl mt-20 flex font-bold text-zinc-800 dark:text-zinc-100 max-[400px]:hidden"
+    >
+      <div
+        data-content-field="DESTKOOP TYITLE"
+        className="director-title-Desktop  mt-6  px-4 text-slate-800"
+      >
+        <h1
+          id="NAME-DESKTOP"
+          className="flex min-w-[250px] text-left dark:text-slate-50"
+        >
+          Amit Kehar
+        </h1>
+
+        <div id="DESCKTOP CREDENTIALS" className="site-title mt-0">
+          <h2 class="logo-subtitle">Director, Cinematographer</h2>
+          <h2 class="logo-subtitle">&amp; Visual Media Artist</h2>
+        </div>
+
+        <div className="-ml-6 mt-6">
+          <SocialMedia className={'flex gap-x-2 gap-y-4'} iconStyle="" />
+        </div>
+      </div>
+      <Link
+        href="/"
+        // to={homePage}
+        aria-label="Home"
+        className={clsx(
+          // className,
+          'mt-6 hidden hover:flex group-hover:relative'
+        )}
+      >
+        <p className="text-md mx-4 mt-2 rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0">
+          Go to home page ? .
+        </p>
+      </Link>
+    </div>
+  )
+}
 export function Header() {
   let isHomePage = useRouter().pathname === '/'
 

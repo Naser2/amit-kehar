@@ -9,6 +9,7 @@ import clsx from 'clsx'
 import { Title } from '@/components/Title'
 import Link from 'next/link'
 import { FancyImageClicabletitle } from '@/components/Gallery'
+import { SocialMedia } from '@/components/SocialMedia'
 
 function SpeakingSection({ children, ...props }) {
   return (
@@ -63,7 +64,12 @@ export default function Stills({ stills }) {
             />
           )
         })}
-
+        <div id="LANDING-SOCIAL-MEDIA" className="ml-4 mt-4">
+          <SocialMedia
+            className={'mx-4 mb-10 flex gap-x-2 gap-y-4'}
+            iconStyle=""
+          />
+        </div>
         <div className="space-y-20">
           {/* <SpeakingSection title="Conferences">
             <Appearance

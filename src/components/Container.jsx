@@ -73,7 +73,7 @@ import { forwardRef } from 'react'
 import clsx from 'clsx'
 
 const OuterContainer = forwardRef(function OuterContainer(
-  { className, containerpadding, children, ...props },
+  { className, containerpadding, containerMax, children, ...props },
   ref
 ) {
   console.log('containerpadding,', containerpadding)
@@ -87,13 +87,19 @@ const OuterContainer = forwardRef(function OuterContainer(
       )}
       {...props}
     >
-      <div className="mx-auto max-w-7xl lg:px-8">{children}</div>
+      <div
+        className={clsx(
+          containerMax ? [containerMax, 'mx-auto'] : 'mx-auto max-w-7xl lg:px-8'
+        )}
+      >
+        {children}
+      </div>
     </div>
   )
 })
 
 const InnerContainer = forwardRef(function InnerContainer(
-  { className, children, ...props },
+  { className, children, containerMax, ...props },
   ref
 ) {
   return (
@@ -106,18 +112,31 @@ const InnerContainer = forwardRef(function InnerContainer(
       )}
       {...props}
     >
-      <div className="mx-auto max-w-2xl lg:max-w-5xl">{children}</div>
+      <div
+        className={clsx(
+          containerMax
+            ? [containerMax, 'mx-auto']
+            : 'mx-auto max-w-2xl lg:max-w-5xl'
+        )}
+      >
+        {children}
+      </div>
     </div>
   )
 })
 
 export const Container = forwardRef(function Container(
-  { children, containerpadding, ...props },
+  { children, containerpadding, containerMax, ...props },
   ref
 ) {
   return (
-    <OuterContainer ref={ref} {...props} containerpadding={containerpadding}>
-      <InnerContainer>{children}</InnerContainer>
+    <OuterContainer
+      ref={ref}
+      {...props}
+      containerpadding={containerpadding}
+      containerMax={containerMax}
+    >
+      <InnerContainer containerMax={containerMax}>{children}</InnerContainer>
     </OuterContainer>
   )
 })

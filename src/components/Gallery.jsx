@@ -175,8 +175,8 @@ export function WorkStatus({ ...props }) {
   )
 }
 
-export const Galery = ({ contents, clicable }, gap, ...props) => {
-  console.log('GAP IN GALLLERY ->', gap)
+export const Galery = ({ contents, clicable, gap, imgMarginY }, ...props) => {
+  console.log('PROPS IN MARGIINGY ->', imgMarginY)
   return (
     <>
       <section
@@ -194,7 +194,7 @@ export const Galery = ({ contents, clicable }, gap, ...props) => {
                 'xxl:grid-cols-3 grid grid-cols-1 lg:grid-cols-2  ',
               ])}
             >
-              {checkObject(contents, clicable, gap, props)}
+              {checkObject(contents, clicable, imgMarginY, props)}
             </ul>
           </div>
         </div>
@@ -203,7 +203,7 @@ export const Galery = ({ contents, clicable }, gap, ...props) => {
   )
 }
 
-function checkObject(contents, clicable, ...props) {
+function checkObject(contents, clicable, imgMarginY, ...props) {
   // check if arr is array
   const result = Array.isArray(contents)
 
@@ -214,7 +214,7 @@ function checkObject(contents, clicable, ...props) {
         {' '}
         {contents.map((item) => {
           return (
-            <li key={item.id} className="relative">
+            <li key={item.id} className={clsx(imgMarginY ?? 'relative')}>
               <div
                 className={clsx(
                   item.current
@@ -234,9 +234,10 @@ function checkObject(contents, clicable, ...props) {
                   width="1358"
                   height="1860"
                   decoding="async"
-                  loading="lazy"
+                  // loading="lazy"
                   id={item.id}
                   style={{ color: 'transparent' }}
+                  priority
                 />
                 {/* aspect-[4/3]  */}
                 {clicable && (
@@ -389,7 +390,7 @@ export const FancyImageClicabletitle = ({ item, cta }, props) => {
           height={1000}
           width={1600}
           sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
-          priority
+          priority={true}
         />
         <div
           id="fancybtn-wrap"
@@ -397,10 +398,10 @@ export const FancyImageClicabletitle = ({ item, cta }, props) => {
         >
           <div className="content-wrapper">
             <h2>
-              {/* <span class="typography-subhero-eyebrow tile-copy large-12">
+              {/* <span className="typography-subhero-eyebrow tile-copy large-12">
                 Tapis rouge a Paris
               </span> */}
-              <span class="typography-subhero-headline tile-headline large-12 text-white dark:text-slate-100 ">
+              <span className="typography-subhero-headline tile-headline large-12 text-white dark:text-slate-100 ">
                 {item.name}
               </span>
             </h2>
@@ -408,13 +409,13 @@ export const FancyImageClicabletitle = ({ item, cta }, props) => {
               <a
                 aria-label=""
                 id="film-guided-tour-chapters"
-                class="icon-wrapper film-link"
+                className="icon-wrapper film-link"
                 role="button"
                 data-analytics-id="film-guided-tour-chapters"
                 href="/105/media/us/iphone/2022/99276d09-ab06-4d62-93b1-37c306902932/films/guided-tour/iphone-guided-tour-tpl-us-2022_16x9.m3u8"
               >
-                <span class="icon-copy">{cta}</span>
-                <span class="icon icon-after icon icon-playcircle"></span>
+                <span className="icon-copy">{cta}</span>
+                <span className="icon icon-after icon icon-playcircle"></span>
               </a>{' '}
             </div>
           </div>
