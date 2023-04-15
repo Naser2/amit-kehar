@@ -166,12 +166,46 @@ export default function Home({ articles, allprojects, artprojects }) {
             {/*  Amit Kehar Director, Cinematographer & Visual Media Artist */}
           </h1>{' '}
         </div>{' '}
+        {/* <Link
+          href="/"
+          id="DIRECTOR CREDENTIALS_MOBILE"
+          className={clsx(
+            'float-r -mt-9 flex min-w-[40px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl'
+          )}
+        >
+          <div id="MOBILE-CRED">
+            <div
+              className="siteTitle-SM float-r  px-4 text-slate-800"
+              data-shrink-original-size="27"
+              style={{ letterSpacing: '0.0740741em' }}
+            >
+              <h1 id="NAME-SM" className="flex text-left dark:text-slate-50">
+                Amit KehRRRR
+              </h1>
+            </div>
+            <div
+              id="director-position-mobile"
+              className="logo-subtitle-SM -mt-4 min-[400px]:hidden "
+            >
+              <h2 className="  dark:text-slate-200/90">
+                Director, Cinematographerrr
+              </h2>
+              <h2 className="-mt-5  text-left text-base text-slate-500 dark:text-slate-200/90">
+                &amp; Visual Media Artist{' '}
+              </h2>
+            </div>
+
+            <h2 className=" sr-only -mt-2 pl-4 text-left text-base  text-slate-500 sm:not-sr-only">
+              Director, Cinematographer &amp; Visual Media Artist{' '}
+            </h2>
+          </div>{' '}
+        </Link> */}
         {/* <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Amit Kehar, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
-          </p> */}
+          I’m Amit Kehar, a software designer and entrepreneur based in New York
+          City. I’m the founder and CEO of Planetaria, where we develop
+          technologies that empower regular people to explore space on their own
+          terms.
+        </p> */}
         <div
           id="header-social-media"
           className="sm: absolute  right-0 -mt-0 ml-4 sm:relative sm:-ml-1 sm:-mt-8"
@@ -190,7 +224,7 @@ export default function Home({ articles, allprojects, artprojects }) {
                 <div className="background-container large-12  small-order-1">
                   {/* <figure className="sm:rounded-3xl sm:px-2"> */}
                   <div className="w-full flex-none " id="FEATURED VIDEO">
-                    <p className="text-md rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0 md:hidden">
+                    <p className="text-md rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0">
                       React native screen components to be used in mobile app .
                     </p>
                     <Image

@@ -43,7 +43,7 @@ export default function Stills({ stills }) {
       </Head>
       <Title
         title="STILLS"
-        description=" One of my favorite ways to share love is to take a chace a capturing
+        description=" One of my favorite ways to share love is to take a chance a capturing
         moments, where there’s so much more communication bandwidth than
         there is in writing. These are some stills."
       />

@@ -669,7 +669,7 @@ function Avatar({ large = false, className, homePage, ...props }) {
                   id="site-title"
                   className="flex tracking-tight dark:text-slate-100"
                 >
-                  Amit Kehar
+                  AmitTTT Kehar
                 </span>
               </h1>
               <div
@@ -692,25 +692,25 @@ function Avatar({ large = false, className, homePage, ...props }) {
             id="DIRECTOR CREDENTIALS_MOBILE"
             className={clsx(
               transparent,
-              '-mt-9 flex min-w-[240px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl'
+              '-mt-9 flex min-w-[20px] flex-nowrap text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl'
             )}
           >
             <div id="MOBILE-CRED">
               <div
-                className="siteTitle-SM px-4  text-slate-800 "
+                className="siteTitle-SM float-r  px-4 text-slate-800"
                 data-shrink-original-size="27"
                 style={{ letterSpacing: '0.0740741em' }}
               >
                 <h1 id="NAME-SM" className="flex text-left dark:text-slate-50">
-                  Amit Kehar
+                  Amit KehRRRR
                 </h1>
               </div>
               <div
                 id="director-position-mobile"
-                className="logo-subtitle-SM -mt-4  sm:sr-only"
+                className="logo-subtitle-SM -mt-4 min-[400px]:hidden "
               >
                 <h2 className="  dark:text-slate-200/90">
-                  Director, Cinematographer
+                  Director, Cinematographerrr
                 </h2>
                 <h2 className="-mt-5  text-left text-base text-slate-500 dark:text-slate-200/90">
                   &amp; Visual Media Artist{' '}
