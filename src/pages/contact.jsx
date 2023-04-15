@@ -4,6 +4,7 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import Link from 'next/link'
 import { Container } from '@/components/Container'
 import { SocialMedia } from '@/components/SocialMedia'
+import { Title } from '@/components/Title'
 
 export default function Contact() {
   return (
@@ -15,15 +16,18 @@ export default function Contact() {
           content="Thanks for subscribing to my newsletter."
         />
       </Head>
-
+      <Title title={'CONTACT'} />
       <SimpleLayout
-        containerPadding={'mt-24 sm:mt-20 lg:mt-44'}
+        containerPadding={
+          'xl:mx-44 px-4 items-cente 4 relative relative mx-auto mx-auto mt-20 max-w-7xl max-w-7xl  items-center'
+        }
         title="SAY HELLO"
         intro="Thank you for visiting my website and exploring my work. Whether you're interested in booking a photoshoot or a film project, I would love to hear from you. Don't hesitate to reach out with any questions, ideas or inquiries you may have. Let's collaborate and create something beautiful together.
          Please do not hesitate to get in touch. Use  my email below or reach on my social medias handles."
       />
 
-      <Container className="Hello mx-4 mt-14 mt-16 sm:mx-24 sm:mt-10 sm:px-8 ">
+      <Container className="items-cente 4  relative relative mx-auto mt-20  max-w-7xl max-w-7xl items-center px-4  xl:mx-44">
+        {' '}
         <h1 className=" relative mx-auto py-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl">
           KEHARAMIT@GMAIL.COM
         </h1>{' '}

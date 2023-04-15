@@ -45,7 +45,7 @@ export default function SocialMediaHandle({ className }) {
       id="social-media-handles"
       className=" px-auto xl:items-left relative -mt-5 flex flex items-center items-center items-center items-center gap-4 gap-4  lg:pt-1"
     >
-      <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
+      <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-pink-500 dark:text-zinc-200">
         <svg
           viewBox="0 0 24 24"
           aria-hidden="true"

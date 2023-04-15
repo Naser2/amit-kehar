@@ -28,6 +28,7 @@ import { getAllProjects } from '@/lib/getAllProjects'
 import { Galery } from '@/components/Gallery'
 import { SocialMedia } from '@/components/SocialMedia'
 import { getAllArts } from '@/lib/getAllArts'
+import { Title } from '@/components/Title'
 
 function MailIcon(props) {
   return (
@@ -247,18 +248,14 @@ export default function Home({ articles, allprojects, artprojects }) {
       <Container>
         <div
           data-content-field="site-title"
-          className=" relative mx-auto max-w-7xl items-center"
+          className=" relative mx-auto -mt-14 max-w-7xl items-center sm:-mt-0"
         >
-          <h1
-            className="h1-np text-center"
-            style={{ letterSpacing: '0.0740741em' }}
-          >
-            <Link href="/">
-              <span id="site-title" className="dark:text-white">
-                Art
-              </span>
-            </Link>
-          </h1>
+          <Link href="/">
+            {/* <span id="site-title" className="dark:text-white"> */}
+            <Title title=" Art" />
+            {/* </span> */}
+          </Link>
+
           <h2 class="logo-subtitle text-center">
             Drawing and doodling have always been my passion
           </h2>

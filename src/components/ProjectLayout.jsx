@@ -6,52 +6,56 @@ import clsx from 'clsx'
 import { useWindowDimensions } from '@/lib/useWindowDimension.js'
 import { useEffect, useMemo } from 'react'
 import { PageAside } from './PageAside'
+import { GoBackArrow } from './Goback'
 export function ProjectLayout({ project, hosts, aspect, defaultAspect }) {
   return (
-    <div id="PROJECT_LAYOUT" className="page relative flex">
-      <PageAside />
-      <div
-        id="PROJECT GRID"
-        className="max-w-10xl block gap-y-10  pt-20 sm:px-14 sm:py-36 sm:pt-32 lg:flex lg:grid lg:grid-cols-2 xl:px-64"
-      >
+    <>
+      <GoBackArrow />
+      {/* <PageAside /> */}
+      <div id="PROJECT_LAYOUT" className="page relative">
         <div
-          id="PROJECT_TEXT"
-          className="meta relative px-5 "
-          // lg:max-w-[25%] lg:max-w-[40%] xl:max-w-[65%] w-[100%]
+          id="PROJECT GRID"
+          className="max-w-10xl block gap-y-10  pt-20 sm:px-14 sm:py-36 sm:pt-32 lg:flex lg:grid lg:grid-cols-2 xl:px-36"
         >
-          <h1
-            data-shrink-original-size="42"
-            className="max-w-2xl pb-4 dark:text-slate-100 sm:pb-10 sm:pl-4 "
+          <div
+            id="PROJECT_TEXT"
+            className="meta relative px-5 "
+            // lg:max-w-[25%] lg:max-w-[40%] xl:max-w-[65%] w-[100%]
           >
-            {project.name}
-          </h1>
-          <h2 className=" mt-4 max-w-lg text-xl font-bold text-slate-700 dark:text-slate-200 sm:pl-4">
-            {project.description}
-          </h2>
-          <p
-            className=" mt-4 max-w-lg text-lg text-slate-700 dark:text-slate-200 sm:pl-4"
-            id={`${project.name}-description`}
-            aria-hidden="false"
-            // className="text-sm font-medium text-zinc-900 group-aria-selected:text-emerald-500 dark:text-white"
-            dangerouslySetInnerHTML={{ __html: project.content }}
-          />
-        </div>
-        <div
-          id="PROJECT_MEDIA"
-          className="meta flex-block relative mb-64  px-4 sm:-mt-4 sm:mb-10"
-          //  sm:max-w-[600%] lg:max-w-[75%]
-        >
-          <ProjectMedias
-            mediaContent={project.medias}
-            aspect={aspect}
-            defaultAspect={defaultAspect}
-          />{' '}
-          <div id="hidden small-foolter" className="hidden">
-            <PageAside />
+            <h1
+              data-shrink-original-size="42"
+              className="max-w-2xl pb-4 dark:text-slate-100 sm:pb-10 sm:pl-4 "
+            >
+              {project.name}
+            </h1>
+            <h2 className=" mt-4 max-w-lg text-xl font-bold text-slate-700 dark:text-slate-200 sm:pl-4">
+              {project.description}
+            </h2>
+            <p
+              className=" mt-4 max-w-lg text-lg text-slate-700 dark:text-slate-200 sm:pl-4"
+              id={`${project.name}-description`}
+              aria-hidden="false"
+              // className="text-sm font-medium text-zinc-900 group-aria-selected:text-emerald-500 dark:text-white"
+              dangerouslySetInnerHTML={{ __html: project.content }}
+            />
+          </div>
+          <div
+            id="PROJECT_MEDIA"
+            className="meta flex-block relative mb-64  px-4 sm:-mt-4 sm:mb-10"
+            //  sm:max-w-[600%] lg:max-w-[75%]
+          >
+            <ProjectMedias
+              mediaContent={project.medias}
+              aspect={aspect}
+              defaultAspect={defaultAspect}
+            />{' '}
+            <div id="hidden small-foolter" className="hidden">
+              <PageAside />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
@@ -106,7 +110,7 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
         ) : (
           <div
             id={`${media.title}-ARTICLE_VIDEO`}
-            className="relative mx-auto block w-[340px] max-w-[640px] overflow-hidden sm:mb-10 lg:w-auto "
+            className="relative mx-auto mb-6 block w-[340px] max-w-[640px] overflow-hidden sm:mb-10 lg:w-auto "
             // className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 dark:sm:rounded-xl lg:w-auto dark:lg:rounded-2xl"
             aria-label="gallery-media-item"
           >

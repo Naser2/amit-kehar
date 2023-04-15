@@ -35,7 +35,7 @@ export default function ArtPage({ still }) {
         id="project-page"
         className="lg:border-t-0-16   border-slate-500 md:py-0 "
       >
-        <GoBackArrow />
+        {/* <GoBackArrow /> */}
         {/* CATEGORY -  */}
         <Title title={still.name} />
         <Galery contents={still} clicable={false} gap="gay-x-0 gap-y-0" />

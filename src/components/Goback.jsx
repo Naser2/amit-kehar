@@ -36,6 +36,7 @@ export const GobackRound = () => {
         <button
           onClick={() => router.back()}
           id="podcast-go-backkk"
+          x
           type="button"
           className="w-23 group absolute top-0 flex h-10 flex-shrink-0  items-center justify-center px-2 py-2 text-slate-900 hover:text-sky-500 focus:outline-none focus:ring dark:text-white lg:h-11 lg:w-24 "
           aria-label="go-back"
@@ -67,14 +68,15 @@ export const GoBackArrow = () => {
     <>
       <div
         id="Goback-Arrow"
-        className="transparent z-[100] mt-24 hidden h-[40px] w-full flex-col items-center text-base 
-        sm:flex-row sm:bg-gradient-to-r sm:bg-gradient-to-r sm:from-cyan-500 sm:from-sky-500  sm:to-blue-500 sm:to-indigo-500 sm:py-0 md:text-lg lg:flex"
+        className="transparent relative z-[40] mt-24 flex h-[40px] w-[90px] items-center bg-pink-300/60 text-base 
+       
+        sm:-mt-8 sm:mt-14 sm:flex-row sm:py-0 md:text-lg lg:flex "
       >
         <button
           onClick={() => router.back()}
           id="podcastss-go-back"
           type="button"
-          className="w-23 group absolute top-0 flex h-10 flex-shrink-0  items-center justify-center px-2 py-2 text-slate-100 hover:text-white focus:outline-none focus:ring dark:text-white lg:h-11 lg:w-24 "
+          className="w-23 group absolute top-0 flex h-10 flex-shrink-0 items-center justify-center px-2 py-2 text-slate-100 hover:text-white focus:outline-none focus:ring dark:text-slate-300/90 dark:text-white lg:h-11 lg:w-24 "
           aria-label="go-back"
         >
           <svg
@@ -84,16 +86,16 @@ export const GoBackArrow = () => {
             className="h-10 w-10 rotate-180 font-bold  md:h-14 md:w-14"
           >
             <path
-              stroke="white"
+              stroke="currentcolor"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"
             ></path>
           </svg>
-          Back
+          {/* Back */}
         </button>
       </div>
-      <div
+      {/* <div
         id="episode-mobile-go-back-bar"
         className="transparent z-[100] w-full flex-row flex-col items-center rounded-full pt-10  text-base md:hidden"
       >
@@ -111,16 +113,16 @@ export const GoBackArrow = () => {
             className="h-10 w-10 rotate-180 font-bold  text-black dark:text-white md:h-14 md:w-14"
           >
             <path
-              className="text-black dark:text-white"
+              className="text-black dark:text-pink-400"
               stroke="currentColor"
               strokeLinecap="round"
               strokeLinejoin="round"
               d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"
             ></path>
           </svg>
-          {/* Back */}
+     
         </button>
-      </div>
+      </div> */}
     </>
   )
 }

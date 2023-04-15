@@ -32,7 +32,7 @@ export default function ArtPage({ art }) {
         id="project-page"
         className="lg:border-t-0-16   border-slate-500 md:py-0 "
       >
-        <GoBackArrow />
+        {/* <GoBackArrow /> */}
 
         {/* <div id="podcast-bg" className=" -mt-10"></div> */}
 

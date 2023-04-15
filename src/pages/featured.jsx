@@ -6,11 +6,12 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 import React from 'react'
 import ReactPlayer from 'react-player'
 import { Title } from '@/components/Title'
+import { GoBackArrow } from '@/components/Goback'
 
 function ToolsSection({ children, ...props }) {
   return (
     <Section {...props}>
-      <ul role="list" className="space-y-16">
+      <ul role="list" className="space-y-26">
         {children}
       </ul>
     </Section>
@@ -45,14 +46,20 @@ export default function Uses() {
         // there is in writing. These are some stills."
       />
       <SimpleLayout
-        title="FEATURED"
+        className="relative space-y-20"
+
+        // title="FEATURED"
         // intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favorite stuff."
       >
-        <div className="space-y-20">
-          <ReactPlayer url="https://vimeo.com/355571737" />
+        <GoBackArrow />
+        <div>
+          <ReactPlayer
+            url="https://vimeo.com/355571737"
+            className="react-player xl:w-[800px relative -mt-20 max-w-[360px] sm:-mt-0 sm:max-w-[630px]"
+          />
           {/* Https://vimeo.com/3155182  */}
-          <ToolsSection title="Workstation">
-            <Tool title="Hudson's Bay Company">
+          <ToolsSection title="Recent">
+            <Tool title="Hudson's Bay Company" className="py-4">
               A series of video that I shot, directed and edited for Hudson’s
               Bay Company for their spring campaign.
             </Tool>

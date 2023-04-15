@@ -959,12 +959,18 @@ p {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.67em;
-  font-size: 15px;
+  font-size: 16px;
   font-family: Dosis;
   font-weight: 400;
   font-style: normal;
   line-height: 1.6em;
   color: #454545;
+}
+.dark p {
+  line-height: 1.67em;
+  font-size: 17px;
+
+  color: #d5d5d5d4 !important;
 }
 
 @media (max-width: 767px) {
@@ -991,5 +997,23 @@ p {
     margin: -0.4em 0 0;
     color: #999;
     text-align: center;
+  }
+}
+
+.vp-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* max-width: 300px !important; */
+}
+.vp-video-wrapper transparent {
+  align-items: center;
+  justify-content: center;
+  /* max-width: 300px !important; */
+}
+@media (min-width: 767px) {
+  .vp-center {
+    /* width: 600px !important; */
+    height: 360px;
   }
 }
