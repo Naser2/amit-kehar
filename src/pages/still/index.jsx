@@ -42,14 +42,18 @@ export default function Stills({ stills }) {
           content="Photos I captured throughout this journey.."
         />
       </Head>
+
       <Title
+        className="mt-24 sm:mt-16"
         title="STILLS"
         description=" One of my favorite ways to share love is to take a chance a capturing
         moments, where there’s so much more communication bandwidth than
         there is in writing. These are some stills."
       />
       <SimpleLayout
-        innerContainerClassNamex={'max-w-8xl lg:max-w-10xl'}
+        containerMax={'lg:max-w-10xl sm:mx-14 xl:mx-18 '}
+        className={'sm:mx-4 sm:mt-10 xl:mt-14'}
+        // containerPadding={'max-w-9xl lg:max-w-10xl my-24 sm:my-32 '}
         // title="Photos I captured throughout this journey.."
         // intro="One of my favorite ways to share love is to take a chace a capturing moments, where there’s so much more communication bandwidth than there is in writing. These are some stills."
       >
@@ -71,7 +75,7 @@ export default function Stills({ stills }) {
           />
         </div>
         <div className="space-y-20">
-          {/* <SpeakingSection title="Conferences">
+          {/* 
             <Appearance
               href="#"
               title="In space, no one can watch you stream — until now"
@@ -101,7 +105,9 @@ export default function Stills({ stills }) {
               description="The story of how we built one of the most promising space startups in the world without taking any capital from investors."
               event="The Escape Velocity Show, March 2022"
               cta="Listen to podcast"
-            />
+            />*/}
+          {/* <SpeakingSection title="Conferences">
+            {' '}
             <Appearance
               href="#"
               title="Programming your company operating system"

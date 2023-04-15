@@ -40,12 +40,16 @@ export default function Contact() {
         <h1 className=" relative mx-auto py-4 text-2xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100  sm:text-5xl">
           KEHARAMIT@GMAIL.COM
         </h1>{' '}
-        <h2>Have a great day! 📣🐢</h2>
-        <div id="LANDING-SOCIAL-MEDIA" className="ml-4 mt-4">
+        <h2 className="text-lg text-zinc-800 dark:text-zinc-100 ">
+          - Have a great day!<span className="px-2">📣</span>
+          <span className="px-0">🐢</span>
+        </h2>
+        <div id="LANDING-SOCIAL-MEDIA" className="ml-4 mt-4 flex">
           <SocialMedia
-            className={'mx-4 mb-10 flex gap-x-2 gap-y-4'}
+            className={'-ml-4  mb-10 flex gap-x-2 gap-y-4'}
             iconStyle="h-14 w-14 sm:h-20 sm:w-20 sm:mt-8"
           />
+          {/* <span className="px-4">📣🐢</span> */}
         </div>
       </Container>
       <Container className="sm:mt-2"></Container>

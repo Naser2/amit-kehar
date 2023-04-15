@@ -8,6 +8,7 @@ import logoCosmos from '@/images/logos/cosmos.svg'
 import logoHelioStream from '@/images/logos/helio-stream.svg'
 import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoPlanetaria from '@/images/logos/planetaria.svg'
+import NoContent from '@/components/NoContent'
 
 const projects = [
   {
@@ -62,17 +63,24 @@ export default function Music() {
   return (
     <>
       <Head>
-        <title>Projects - Amit Kehar</title>
+        <title>Music- Amit Kehar</title>
         <meta
           name="description"
           content="Things I’ve made trying to put my dent in the universe."
         />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Music videos."
+        intro="Some music videos I made trying to put my dent in the universe"
       >
-        <ul
+        <NoContent
+          message={{
+            text: 'Music Page under development',
+            code: 503,
+            theme: 'periwinkle',
+          }}
+        />
+        {/* <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
@@ -96,7 +104,7 @@ export default function Music() {
               </p>
             </Card>
           ))}
-        </ul>
+        </ul> */}
       </SimpleLayout>
     </>
   )

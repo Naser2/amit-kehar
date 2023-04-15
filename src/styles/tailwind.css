@@ -205,6 +205,9 @@ h2.logo-subtitle-SM {
   text-align: right;
 }
 
+:is(.dark .dark\:text-slate-250) {
+  color: rgb(240 242 244 / 80%);
+}
 .introTitle h1 {
   display: inline-block;
   color: #2e2e2e;
@@ -234,9 +237,8 @@ h2.logo-subtitle {
   line-height: 1.5em;
   letter-spacing: 0px;
   text-transform: none;
-
-  margin: -0.4em 0 0;
-  margin-left: -16px;
+  /* margin: -0.4em 0 0; */
+  /* margin-left: -16px; */
   color: #999;
 }
 @media only screen and (max-width: 735px) {
@@ -1160,4 +1162,26 @@ p {
   -moz-transition: padding 0.25s ease-out;
   -o-transition: padding 0.25s ease-out;
   transition: padding 0.25s ease-out;
+}
+
+.nocontent-code {
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.nocontent-text-h1 {
+  display: inline-block;
+  text-align: left;
+  line-height: 49px;
+  height: 49px;
+  vertical-align: middle;
+}
+
+.nocontent-code {
+  display: inline-block;
+  margin: 0px 20px 0px 0px;
+  padding: 0px 23px 0px 0px;
+  font-size: 24px;
+  font-weight: 500;
+  vertical-align: top;
+  line-height: 49px;
 }

@@ -13,12 +13,12 @@ export const DirectorCredentials = () => {
         style={{ letterSpacing: ' 0.0740741em' }}
       >
         <Link href="/" className="justify-end">
-          <span id="site-title" className="w-4 dark:text-slate-300/80">
+          <span id="site-title" className="dark:text-slate-250 w-4">
             Amit
             <br />
           </span>
         </Link>
-        <Link href="/" className="justify-end dark:text-slate-300/80">
+        <Link href="/" className="dark:text-slate-250 justify-end">
           <span id="site-title">Kehar</span>
         </Link>
       </h1>

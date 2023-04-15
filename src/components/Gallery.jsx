@@ -175,7 +175,10 @@ export function WorkStatus({ ...props }) {
   )
 }
 
-export const Galery = ({ contents, clicable, gap, imgMarginY }, ...props) => {
+export const Galery = (
+  { contents, clicable, gap, imgMarginY, roundedMd },
+  ...props
+) => {
   console.log('PROPS IN MARGIINGY ->', imgMarginY)
   return (
     <>
@@ -194,7 +197,7 @@ export const Galery = ({ contents, clicable, gap, imgMarginY }, ...props) => {
                 'xxl:grid-cols-3 grid grid-cols-1 lg:grid-cols-2  ',
               ])}
             >
-              {checkObject(contents, clicable, imgMarginY, props)}
+              {checkObject(contents, clicable, imgMarginY, roundedMd, props)}
             </ul>
           </div>
         </div>
@@ -203,7 +206,7 @@ export const Galery = ({ contents, clicable, gap, imgMarginY }, ...props) => {
   )
 }
 
-function checkObject(contents, clicable, imgMarginY, ...props) {
+function checkObject(contents, clicable, imgMarginY, roundedMd, ...props) {
   // check if arr is array
   const result = Array.isArray(contents)
 
@@ -227,6 +230,7 @@ function checkObject(contents, clicable, imgMarginY, ...props) {
                   src={item.source}
                   alt=""
                   className={clsx(
+                    'rounded-md' ?? roundedMd,
                     item.current ? '' : 'group-hover:opacity-100',
                     'pointer-events-none mt-2 h-full w-full  bg-slate-100 object-cover sm:mt-10 sm:aspect-[1216/940] md:mt-0 lg:aspect-[1516/940]  lg:flex-none'
                   )}
@@ -387,9 +391,9 @@ export const FancyImageClicabletitle = ({ item, cta }, props) => {
           src={item.source}
           // src={still.source}
           alt=""
-          height={1000}
-          width={1600}
-          sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
+          height={1400}
+          width={1700}
+          // sizes="(min-width: 1024px) 20rem, (min-width: 640px) 16rem, 12rem"
           priority={true}
         />
         <div
