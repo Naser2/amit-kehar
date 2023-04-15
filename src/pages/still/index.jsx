@@ -48,7 +48,7 @@ export default function Stills({ stills }) {
         there is in writing. These are some stills."
       />
       <SimpleLayout
-        innerContainerClassName={'max-w-8xl lg:max-w-10xl'}
+        innerContainerClassNamex={'max-w-8xl lg:max-w-10xl'}
         // title="Photos I captured throughout this journey.."
         // intro="One of my favorite ways to share love is to take a chace a capturing moments, where there’s so much more communication bandwidth than there is in writing. These are some stills."
       >
