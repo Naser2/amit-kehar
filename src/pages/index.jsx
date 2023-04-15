@@ -182,11 +182,7 @@ export default function Home({ articles, allprojects, artprojects }) {
           />
         </div>
       </Container>
-      <section
-        className="section section-subhero "
-        data-component-list="ProgressiveImageLoader"
-        data-analytics-section-engagement="name:sub-hero"
-      >
+      <section className="section section-subhero ">
         <div className="full-width-tile-wrapper row">
           <div className="tile-wrapper tile-guided-tour large-12">
             <div id="guided-tour" className="guided-tour">
@@ -194,10 +190,9 @@ export default function Home({ articles, allprojects, artprojects }) {
                 <div className="background-container large-12  small-order-1">
                   {/* <figure className="sm:rounded-3xl sm:px-2"> */}
                   <div className="w-full flex-none " id="FEATURED VIDEO">
-                    {/* <p className="text-md rounded-lg bg-slate-200 py-2 px-8 leading-6 text-slate-700 dark:text-gray-700 sm:px-0 md:hidden">
-                        React native screen components to be used in mobile app
-                        .
-                      </p> */}
+                    <p className="text-md rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0 md:hidden">
+                      React native screen components to be used in mobile app .
+                    </p>
                     <Image
                       alt="Featured Project Image"
                       sizes="100vw"
@@ -252,7 +247,7 @@ export default function Home({ articles, allprojects, artprojects }) {
         >
           <Link href="/">
             {/* <span id="site-title" className="dark:text-white"> */}
-            <Title title=" Art" />
+            {/* <Title title="Art" /> */}
             {/* </span> */}
           </Link>
 
