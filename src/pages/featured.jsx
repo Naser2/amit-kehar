@@ -39,12 +39,7 @@ export default function Uses() {
           content="Software I use, gadgets I love, and other things I recommend."
         />
       </Head>
-      <Title
-        title="FEATURED"
-        // description=" One of my favorite ways to share love is to take a chace a capturing
-        // moments, where there’s so much more communication bandwidth than
-        // there is in writing. These are some stills."
-      />
+      <Title title="FEATURED" />
       <SimpleLayout
         className="relative space-y-20"
 
