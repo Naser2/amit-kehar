@@ -15,7 +15,7 @@ export function ProjectLayout({ project, hosts, aspect, defaultAspect }) {
       <div id="PROJECT_LAYOUT" className="page relative">
         <div
           id="PROJECT GRID"
-          className="max-w-10xl block gap-y-10  pt-6 sm:px-14 sm:py-36 sm:pt-32 md:pt-20 lg:flex lg:grid lg:grid-cols-2 xl:px-36"
+          className="max-w-10xl block gap-y-10  pt-6 sm:px-14 sm:py-36 sm:pt-32 md:pt-20 lg:flex lg:grid lg:grid-cols-3 xl:px-36"
         >
           <div
             id="PROJECT_TEXT"
@@ -41,7 +41,7 @@ export function ProjectLayout({ project, hosts, aspect, defaultAspect }) {
           </div>
           <div
             id="PROJECT_MEDIA"
-            className="meta flex-block relative sm:mb-10  md:-mt-4 md:px-0 xl:mb-64"
+            className="meta flex-block lg:cols-span- relative sm:-mt-10 sm:mb-10 md:-mt-16 md:px-0 xl:mb-64"
             //  sm:max-w-[600%] lg:max-w-[75%]
           >
             <ProjectMedias
@@ -68,7 +68,7 @@ function ProjectMedias({ mediaContent, hosts, classN, aspect, defaultAspect }) {
       className={clsx(' dark::bg-black lg:grid-cols-start  relative lg:pb-44 ')}
     >
       {/* dark::bg-black relative h-full bg-slate-50 lg:fixed  lg:right-0 lg:flex lg:items-start lg:overflow-y-auto lg:pb-44 */}
-      <div className="gallery-media-item z-10 mt-20">
+      <div className="gallery-media-item z-10 xl:mt-20">
         <>{ArticleMedias(mediaContent)}</>
       </div>
     </div>
@@ -82,7 +82,7 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
   //  }
   const defaultAspectRatio = 'aspect-[953/882] w-creen/2 max-w-[853px]'
   return (
-    <div className="xl:w-[1000px]] gark:backdrop-blur dark:bg-dark sm:-mt-436 relative  -mt-24 rounded-md pb-20 pt-4 lg:mb-64 lg:w-[500px] xl:mb-64 xl:px-4">
+    <div className=" dark:bg-dark sm:-mt-436 relative -mt-14 rounded-md  pb-20 pt-4  lg:mb-64 lg:w-[500px] xl:-mt-24 xl:mb-64 xl:px-4">
       {mediaContent.map((media) => {
         return media.type !== 'video' ? (
           <div key={media.source} className={clsx(`w-${width}`, 'relative')}>
@@ -90,8 +90,9 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
               className={clsx(
                 aspect && aspect,
                 defaultAspect && defaultAspectRatio,
-                'is-zoomed lg:w-[600px]lg:my-10 relative z-20 my-4 min-w-[340px] rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 sm:w-[440px] xl:my-14'
+                'is-zoomed lg:w-[600px]lg:my-10 relative z-20 my-4 min-w-[340px] rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 dark:backdrop-blur min-[1267px]:min-w-[736px]  xl:my-14'
               )}
+              // sm:min-w-[640px]
               // className="gallery-item relative z-20 -mb-36 aspect-[953/882] w-full max-w-[853px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
               id={`${media.title}-_IMAGE-${media.title}`}
               // className="w-full "
@@ -110,7 +111,7 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
             {media.provider && media.provider === 'vimeo' ? (
               <div
                 id="YOUTUBE_VIDEO"
-                className="relative mx-auto  min-h-[326px] min-w-[426px] rounded-md sm:w-[490px] lg:max-h-[600px] lg:max-w-[800]"
+                className="relative mx-auto  mb-24 min-h-[326px] min-w-[200px] min-w-[300px]  rounded-md px-4  md:mb-14 lg:max-h-[600px] lg:max-w-[800]"
               >
                 {/* <img
                   dataLoad="false"
@@ -143,20 +144,26 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
                   allow="utoplay: fullscreen"
                   allowfullscreen=""
                   src={media.source}
-                  width="640"
+                  width="320"
+                  height="180"
                   frameborder="0"
                   title="The Stillness Within You"
-                  height="360"
                   thumbnail="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1549894044362-48VZ634FW28NDHX8CLUU/image-asset.jpeg"
                   placeholder="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1538581105184-M12M7SO3XFD4985BJA2M/image-asset.jpeg"
                   id={media.title}
-                  style={{ opacity: 1, width: '681px', height: '383.062px' }}
+                  // style={{
+                  //   opacity: 1,
+                  //   minWidth: '361px',
+                  //   minHeight: '293.062px',
+                  //   width: '681px',
+                  //   height: '383.062px',
+                  // }}
                 ></iframe>
               </div>
             ) : (
               <div
                 id={`${media.title}-ARTICLE_VIDEO`}
-                className="min-w-[359px;x]  relative mx-auto mb-6  block max-w-[840px] overflow-hidden   lg:w-auto "
+                className="relative mx-auto mb-6  mt-4 block max-w-[840px] sm:mt-10 lg:mt-14 lg:w-auto xl:mt-10 "
                 // className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 dark:sm:rounded-xl lg:w-auto dark:lg:rounded-2xl"
                 // aria-label="gallery-media-item"
               >

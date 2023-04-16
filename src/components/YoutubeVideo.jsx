@@ -4,18 +4,16 @@ import YouTube from 'react-youtube'
 export default class YoutubeVideo extends React.Component {
   render() {
     const opts = {
-      height: '195',
-      width: '395',
+      // height: '100%',
+      // width: '100%',
       playerVars: {
         autoplay: 1,
       },
     }
 
     return (
-      <div
-        id="YOUTUBE_VIDEO"
-        className=" ounded-md  relative relative  min-w-[426px] min-w-[426px] sm:w-[490px] lg:h-[600px] lg:w-[800] "
-      >
+      <div id="YOUTUBE_VIDEO" className="iframe  relative rounded-md">
+        {/* min-w-[426px] min-w-[426px] sm:w-[490px] lg:min-h-[600px] lg:min-w-[800]  */}
         {/* <h3>GeeksforGeeks - Youtube</h3> */}
         <YouTube
           videoId={this.props.videoID}

@@ -1266,9 +1266,10 @@ div.body p {
   /* justify-content: center; */
   /* max-width: 300px !important; */
 }
+
 iframe {
-  width: 420px;
-  height: 360px;
+  width: 386px;
+  height: 255px;
   border-top-width: 0px;
   border-bottom-width: 0px;
   border-left-width: 0px;
@@ -1282,7 +1283,59 @@ iframe {
   border-image: initial;
   overflow: clip !important; */
 }
+@media (min-width: 767px) {
+  iframe {
+    width: 670px;
+    height: 590px;
+  }
+}
+@media (min-width: 1267px) {
+  iframe {
+    width: 736px;
+    height: 482px;
+  }
+}
+@media (min-width: 1467px) {
+  iframe {
+    width: 836px;
+    height: 592px;
+  }
+}
 
+.youtube {
+  width: 420px;
+  height: 360px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  border-right-width: 0px;
+}
+.youtube {
+  overflow-clip-margin: content-box !important;
+  /* border-width: 2px;
+  border-style: inset;
+  border-color: initial;
+  border-image: initial;
+  overflow: clip !important; */
+}
+@media (min-width: 767px) {
+  .youtube {
+    width: 750px;
+    height: 490px;
+  }
+}
+@media (min-width: 1267px) {
+  .youtube {
+    width: 836px;
+    height: 482px;
+  }
+}
+@media (min-width: 1467px) {
+  .youtube {
+    width: 836px;
+    height: 542px;
+  }
+}
 .description {
   margin: 0 0 1.25em;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
