@@ -1166,7 +1166,7 @@ p {
   text-transform: uppercase;
   padding: 35px 0 25px 0;
   margin: -39px 0 0 4px;
-  max-width: 49%;
+  /* max-width: 70%; */
   transition: padding 0.25s ease-out;
 }
 #desktop-navigation {
@@ -1187,7 +1187,7 @@ p {
   text-transform: uppercase;
   /* padding: 35px 0 25px 0; */
   /* margin: 0 0 0 35px; */
-  max-width: 49%;
+  max-width: 100%;
   -webkit-transition: padding 0.25s ease-out;
   -moz-transition: padding 0.25s ease-out;
   -o-transition: padding 0.25s ease-out;

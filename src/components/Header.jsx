@@ -224,7 +224,7 @@ function Avatar({ large = false, className, homePage, ...props }) {
           width={58}
           sizes={large ? '20rem' : '10.25rem'}
           className={clsx(
-            !homePage ? 'h-20 w-20' : 'h-18 w-1',
+            !homePage ? 'h-20 w-20' : 'h-18 w-18',
             'rounded-full  object-cover',
             `${showOnlyAt500Px}`,
             large ? 'sm:h-16 sm:w-16' : 'h-22 w-22'
