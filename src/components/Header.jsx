@@ -307,7 +307,7 @@ const DesktopTitle = () => {
     <div
       href="/"
       id="DIRECTOR_NAME_DESKTOP"
-      className="inline=-flextext-4xl mt-20 flex font-bold text-zinc-800 dark:text-zinc-100 max-[500px]:hidden"
+      className="inline=-flextext-4xl mt-10 flex font-bold text-zinc-800 dark:text-zinc-100 max-[500px]:hidden md:mt-20"
     >
       <div
         data-content-field="DESTKOOP TYITLE"

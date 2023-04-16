@@ -8,12 +8,13 @@ import {
 } from '@/components/SocialIcons'
 import clsx from 'clsx'
 
-export const SocialMedia = ({ className, iconStyle }) => {
+export const SocialMedia = ({ className, iconStyle, gap }) => {
   return (
     <div
       className={clsx(
         className && className,
-        'mx-8 flex gap-6 sm:-mt-6 sm:mb-10'
+        gap ? gap : 'gap-6',
+        'mx-8 flex  sm:-mt-6 sm:mb-10'
       )}
     >
       <SocialLink

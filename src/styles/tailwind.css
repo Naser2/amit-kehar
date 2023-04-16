@@ -1081,7 +1081,8 @@ p {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: normal;
   line-height: 1.67em;
-  font-size: 16px;
+  font-size: 22px;
+  /* font-size: 16px; */
   font-family: Dosis;
   font-weight: 400;
   font-style: normal;
@@ -1090,9 +1091,10 @@ p {
 }
 @media (max-width: 767px) {
   p {
-    margin: 0 0 1.25em;
+    margin: 0 18 1.25em;
     font-family: Helvetica Neue, Helvetica, sans-serif;
-    font-size: 29px;
+    font-size: 20px;
+    /* padding-inline-start: 4px; */
     font-family: Dosis;
     font-weight: 400;
     font-style: normal;
@@ -1296,3 +1298,11 @@ iframe {
 .featured-tag {
   background: #b6959b;
 }
+
+.gobak {
+  background: black;
+}
+
+/* :is(.dark .dark\:gobak) {
+  background: #ffaab93d;
+} */

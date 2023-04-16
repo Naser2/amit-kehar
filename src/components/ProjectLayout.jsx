@@ -15,7 +15,7 @@ export function ProjectLayout({ project, hosts, aspect, defaultAspect }) {
       <div id="PROJECT_LAYOUT" className="page relative">
         <div
           id="PROJECT GRID"
-          className="max-w-10xl block gap-y-10  pt-20 sm:px-14 sm:py-36 sm:pt-32 lg:flex lg:grid lg:grid-cols-2 xl:px-36"
+          className="max-w-10xl block gap-y-10  pt-6 sm:px-14 sm:py-36 sm:pt-32 md:pt-20 lg:flex lg:grid lg:grid-cols-2 xl:px-36"
         >
           <div
             id="PROJECT_TEXT"

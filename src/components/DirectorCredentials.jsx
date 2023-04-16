@@ -24,8 +24,8 @@ export const DirectorCredentials = () => {
       </h1>
 
       <h2 className="logo-subtitle  sm:w-64">Visual Media Artist </h2>
-      <div id="page-social-edia" className="ml-8 justify-end sm:ml-6 sm:mt-8">
-        <SocialMedia />
+      <div id="page-social-edia" className="ml-16 justify-end sm:ml-14 sm:mt-8">
+        <SocialMedia gap="gap-2" />
       </div>
     </div>
   )

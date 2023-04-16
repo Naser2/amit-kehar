@@ -68,9 +68,8 @@ export const GoBackArrow = () => {
     <>
       <div
         id="Goback-Arrow"
-        className="transparent relative z-[40] mt-24 flex h-[40px] w-[90px] items-center bg-pink-300/60 text-base 
-       
-        sm:-mt-8 sm:mt-14 sm:flex-row sm:py-0 md:text-lg lg:flex "
+        className="transparent  gobak relative z-[40] mt-24 flex h-[40px] w-[65px] items-center text-base  sm:-mt-8 
+        sm:mt-14 sm:flex-row sm:py-0 md:w-[87px] md:text-lg lg:flex "
       >
         <button
           onClick={() => router.back()}
