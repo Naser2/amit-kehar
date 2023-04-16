@@ -391,7 +391,7 @@ export const FancyImageClicabletitle = ({ item, cta }, props) => {
       <Link href={`/${item.type + '/' + item.id}`} className="" aria-label="">
         <Image
           className={clsx(
-            'z-1 relative  my-4 shadow-xl shadow-black/5 ring-slate-900/5 lg:my-10 xl:my-14'
+            'z-1 relative  mt-4 shadow-xl shadow-black/5 ring-slate-900/5 lg:mt-10 xl:mb-10 xl:mt-0'
           )}
           // className="gallery-item relative z-20 -mb-36 aspect-[953/882] w-full max-w-[853px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
           id={`${item.name}-IMAGE-${item.name}`}

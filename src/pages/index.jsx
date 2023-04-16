@@ -143,29 +143,29 @@ export default function Home({ articles, allprojects, artprojects }) {
           content="I’m Amit Kehar, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
         />
       </Head>
-      <Container className=" mt-20 sm:mt-44">
-        <div className="mx-16 max-w-lg">
+      <Container className="mt-24 sm:mt-44 ">
+        <div className="max-w-none sm:mx-16 lg:max-w-lg">
           <div
-            className="text-left text-4xl  font-bold tracking-tight 
-          text-zinc-800 dark:text-zinc-100 max-[700px]:hidden sm:text-5xl"
+            className="text-center text-4xl font-bold  tracking-tight text-zinc-800 
+          dark:text-zinc-100 sm:text-left sm:text-5xl"
           >
             <div className="introTitle  mt-4">
               <h1
                 className=" text-left dark:text-white"
                 style={{ letterSpacing: '0.0740741em' }}
               >
-                <span id="intro-title">The love of photograpgy</span>
+                <span id="intro-title">For the love of art</span>
               </h1>
 
-              <h2 className="logo-subtitle text-left">
-                Collection of great things
+              <h2 className="logo-subtitle sm:text-left">
+                A collection of my work.
               </h2>
             </div>{' '}
             {/*  Amit Kehar Director, Cinematographer & Visual Media Artist */}
           </div>{' '}
         </div>{' '}
       </Container>
-      <section className="section section-subhero ">
+      <section className="section section-subhero relative">
         <div className="full-width-tile-wrapper row">
           <div className="tile-wrapper tile-guided-tour large-12">
             <div id="guided-tour" className="guided-tour">
@@ -217,6 +217,9 @@ export default function Home({ articles, allprojects, artprojects }) {
                 </div>
               </div>
             </div>
+          </div>
+          <div class="featured-tag absolute  right-6 top-2 ml-2 rounded-full px-2 py-0.5 text-xs text-white sm:block">
+            Featured
           </div>
         </div>
       </section>

@@ -1292,3 +1292,7 @@ iframe {
   line-height: 1.6em;
   color: #454545;
 }
+
+.featured-tag {
+  background: #b6959b;
+}

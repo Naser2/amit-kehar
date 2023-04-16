@@ -44,15 +44,16 @@ export default function Stills({ stills }) {
       </Head>
 
       <Title
-        className="mt-24 sm:mt-16"
+        className="mt-24 sm:mt-14"
         title="STILLS"
         description=" One of my favorite ways to share love is to take a chance a capturing
         moments, where there’s so much more communication bandwidth than
         there is in writing. These are some stills."
       />
       <SimpleLayout
+        containerPadding="mt-6 "
         containerMax={'lg:max-w-10xl sm:mx-14 xl:mx-18 '}
-        className={'sm:mx-4 sm:mt-10 xl:mt-14'}
+        className={'sm:mx-4 sm:mt-0 xl:-mt-4'}
         // containerPadding={'max-w-9xl lg:max-w-10xl my-24 sm:my-32 '}
         // title="Photos I captured throughout this journey.."
         // intro="One of my favorite ways to share love is to take a chace a capturing moments, where there’s so much more communication bandwidth than there is in writing. These are some stills."
