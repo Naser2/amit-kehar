@@ -40,7 +40,7 @@ function MailIcon(props) {
   )
 }
 
-const title1 = 'ARTIST BIO'
+const title1 = 'ABOUT'
 const content1 =
   ' Amit Kehar’s entire artistic practice is dedicated to the art of capturing and creating emotion. As a motion director and cinematographer he brings others into worlds that tease the imagination and capture the reality of environments they otherwise would not experience.'
 const title2 = 'ARTIST STATEMENT'
@@ -79,8 +79,14 @@ export default function About() {
           </div>
         </div>
       </div> */}
-      <div id="about" className="mt-10 sm:mt-24">
-        <Title title={'ABOUT'} />
+      <div id="about" className="mt-0 sm:mt-24">
+        {/* <Title title={'ABOUT'} /> */}
+        <Container>
+          <p className=" mt-4 py-3  text-center text-xl font-bold text-slate-700 dark:text-slate-200 max-[800px]:hidden sm:pl-4">
+            <h1>ARTIST BIO</h1>
+          </p>
+        </Container>
+
         <TwoGridSection
           right={{
             title1: title1,

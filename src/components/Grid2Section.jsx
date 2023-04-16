@@ -15,6 +15,9 @@ export function TwoGridSection({ right, left, socialMedia }) {
     right,
     left
   )
+  const artist = title2.split(' ')[0]
+  const bio = title2.split(' ')[1]
+  console.log('ARTIST', artist, 'BIO, ' + bio, 'ARtist b iop', title2)
   return (
     <div
       id="intro-personal"
@@ -56,9 +59,9 @@ export function TwoGridSection({ right, left, socialMedia }) {
             src={imageContent.props.src}
             className="md::w-[20rem] w-full    bg-slate-100 shadow-xl sm:mb-14 sm:mt-10 md:w-[33.1666666rem] lg:sr-only lg:ml-8 lg:block lg:flex-none "
           />
-          <p className="col-start-1 row-start-3 mt-4 mt-4  max-w-lg py-3 text-xl font-bold text-slate-700 dark:text-slate-200 sm:mt-0  sm:pl-4">
-            {title2}
-            <br class="small" />
+          <p className="col-start-1 row-start-3 mt-14  max-w-lg text-xl font-bold text-slate-700 dark:text-slate-200 sm:mt-10  sm:pl-4">
+            {artist}
+            <span className="px-1"></span> {bio}
           </p>
           <p className="amits-paragraph col-start-1 row-start-3 mt-4 max-w-lg  dark:text-slate-200 sm:pl-4">
             {content3}
