@@ -221,8 +221,9 @@ function Avatar({ large = false, className, homePage, ...props }) {
           width={58}
           sizes={large ? '20rem' : '10.25rem'}
           className={clsx(
-            !homePage ? 'h-20 w-20' : 'h-18 w-18',
-            'rounded-full  object-cover  max-[400px]:hidden',
+            !homePage ? 'h-20 w-20' : 'h-18 w-1',
+            'rounded-full  object-cover',
+            `${showOnlyAt500Px}`,
             large ? 'sm:h-16 sm:w-16' : 'h-22 w-22'
           )}
           priority
@@ -239,7 +240,8 @@ function Avatar({ large = false, className, homePage, ...props }) {
           sizes={large ? '6rem' : '4.25rem'}
           className={clsx(
             !homePage ? 'w-17 h-17' : 'h-[5.7rem] w-[5.5rem] ',
-            '-mt-8 rounded-full  bg-transparent object-cover    min-[400px]:hidden'
+            '-mt-8 rounded-full  bg-transparent object-cover',
+            `${HideAt500Px}`
           )}
           placeholder="/amit-avatar.jpg'"
           blurDataURL={'/amit-avatar.jpg'}
@@ -255,7 +257,7 @@ function Avatar({ large = false, className, homePage, ...props }) {
               'sm:text-5x flex-block -mt-9 flex min-w-[20px] flex-nowrap text-4xl font-bold tracking-tight  text-zinc-800 dark:text-zinc-100'
             )}
           >
-            <div id="MOBILE-CRED" className="siteTile-SM min-[400px]:hidden">
+            <div id="MOBILE-CRED" className="siteTile-SM min-[500px]:hidden">
               <div
                 className="siteTitle-SM  -mt-5  px-4 text-slate-800"
                 data-shrink-original-size="27"
@@ -271,7 +273,7 @@ function Avatar({ large = false, className, homePage, ...props }) {
               </div>
               <div
                 id="director-position-mobile"
-                className="logo-subtitle-SM -mt-1 w-64 "
+                className="logo-subtitle-SM -mt-1 w-64"
               >
                 <h2 className=" dark:text-slate-200/70">
                   Director, Cinematographer
@@ -295,13 +297,14 @@ function Avatar({ large = false, className, homePage, ...props }) {
     </>
   )
 }
-
+const showOnlyAt500Px = 'max-[500px]:hidden'
+const HideAt500Px = 'min-[500px]:hidden'
 const DesktopTitle = () => {
   return (
     <div
       href="/"
       id="DIRECTOR_NAME_DESKTOP"
-      className="inline=-flextext-4xl mt-20 flex font-bold text-zinc-800 dark:text-zinc-100 max-[400px]:hidden"
+      className="inline=-flextext-4xl mt-20 flex font-bold text-zinc-800 dark:text-zinc-100 max-[500px]:hidden"
     >
       <div
         data-content-field="DESTKOOP TYITLE"
@@ -315,11 +318,13 @@ const DesktopTitle = () => {
         </h1>
 
         <div id="DESCKTOP CREDENTIALS" className="site-title mt-0">
-          <h2 class="logo-subtitle">Director, Cinematographer</h2>
-          <h2 class="logo-subtitle">&amp; Visual Media Artist</h2>
+          <h2 class="logo-subtitle -mt-4 lg:-mt-2">
+            Director, Cinematographer
+          </h2>
+          <h2 class="logo-subtitle -mt-3">&amp; Visual Media Artist</h2>
         </div>
 
-        <div className="-ml-8 mt-8">
+        <div id="desktop-cred" className="-ml-8 sm:mt-6">
           <SocialMedia className={'flex gap-x-2 gap-y-4'} iconStyle="" />
         </div>
       </div>

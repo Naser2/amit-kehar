@@ -243,7 +243,7 @@ h2.logo-subtitle {
 }
 @media only screen and (max-width: 735px) {
   h2.logo-subtitle {
-    margin-left: 11px;
+    /* margin-left: 11px; */
   }
 }
 header#topBar ul#nav {
@@ -1075,6 +1075,7 @@ body.project-hover-zoom .loaded #grid .item.hovering .wrapper {
     z-index: 3;
   }
 }
+
 p {
   margin: 0 0 1.25em;
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
@@ -1087,11 +1088,22 @@ p {
   line-height: 1.6em;
   color: #454545;
 }
+@media (max-width: 767px) {
+  p {
+    margin: 0 0 1.25em;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 29px;
+    font-family: Dosis;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6em;
+    color: #454545;
+  }
+}
 .dark p {
   line-height: 1.67em;
   font-size: 17px;
-
-  color: #d5d5d5d4 !important;
+  color: #ffffff !important;
 }
 
 @media (max-width: 767px) {
@@ -1267,4 +1279,16 @@ iframe {
   border-color: initial;
   border-image: initial;
   overflow: clip !important; */
+}
+
+.description {
+  margin: 0 0 1.25em;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 15px;
+  font-family: Dosis;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6em;
+  color: #454545;
 }

@@ -48,7 +48,7 @@ export default function ArtPage({ still }) {
         </div>
         <div
           id="direct"
-          className="relative mx-auto -mb-6 pr-2 sm:-mb-0 sm:px-24"
+          className="float-r relative mx-auto -mb-6 pr-2 sm:-mb-0 sm:px-24"
         >
           <DirectorCredentials />
         </div>

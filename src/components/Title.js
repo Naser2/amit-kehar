@@ -15,7 +15,7 @@ export const Title = ({ title, description, className }) => {
       >
         <span id="site-title">{title}</span>
       </h1>
-      <h2 className="subtitle px-6 text-center dark:text-slate-300">
+      <h2 className="logo-subtitle px-6 text-center dark:text-slate-300">
         {description}
       </h2>
     </div>

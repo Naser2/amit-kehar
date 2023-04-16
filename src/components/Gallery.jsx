@@ -176,7 +176,7 @@ export function WorkStatus({ ...props }) {
 }
 
 export const Galery = (
-  { contents, clicable, gap, imgMarginY, roundedMd, galleryId },
+  { contents, clicable, gap, imgMarginY, roundedMd, galleryId, mt },
   ...props
 ) => {
   console.log('PROPS GALLERY->', clicable)
@@ -184,7 +184,10 @@ export const Galery = (
     <>
       <section
         id="navigation-gallery"
-        className="xl:mx-34 relative mt-8 pb-4  dark:pb-0 lg:mx-20 lg:pb-12 "
+        className={clsx(
+          mt ? mt : 'mt-8',
+          'xl:mx-34 relative pb-4  dark:pb-0 lg:mx-20 lg:pb-12 '
+        )}
         aria-labelledby="gallery-heading"
       >
         <div className="max-w-10xl mx-3 lg:my-4 lg:mt-8  lg:pb-12 ">

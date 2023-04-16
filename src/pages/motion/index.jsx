@@ -25,7 +25,7 @@ export default function Art({ motions }) {
         containerMax={'lg:max-w-10xl'}
         className={'max-w-8xl  xl:mt-34  mt-14 sm:mx-4 sm:mt-20'}
       >
-        <div className="meta mx-4  my-24 text-center  sm:my-32  sm:px-20 ">
+        <div className="meta mx-4  mb-4 mt-24 text-center  sm:my-32  sm:px-20 ">
           <h1 style={{ fontSize: '37px' }} className="dark:text-white">
             MOTIONS
           </h1>
@@ -60,10 +60,10 @@ export default function Art({ motions }) {
               </div>
             </span>
           </div>
-        </div>{' '}
+        </div>
         <DirectorCredentials />
       </Container>
-      <Galery contents={motions} clicable />
+      <Galery contents={motions} clicable mt="m-0" />
     </>
   )
 }
