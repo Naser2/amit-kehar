@@ -12,7 +12,7 @@ export const PageAside = ({}) => {
   ]
   // relative  bottom-0 bg-slate-400 max-[1000px]:absolute"
   return (
-    <div className="relative  bottom-0 bg-slate-400 max-[1000px]:absolute">
+    <div className="sr-only relative bottom-0  bg-slate-400 max-[1000px]:absolute sm:not-sr-only">
       <div id="ASIDE-NAV" className="max-[1500px]  bg-zinc-50  ">
         {/* <div className="meta static"> */}
         {/* <h1 data-shrink-original-size="42">From Home to Anywhere</h1> */}

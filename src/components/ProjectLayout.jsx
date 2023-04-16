@@ -80,11 +80,11 @@ function ProjectMedias({ mediaContent, hosts, classN, aspect, defaultAspect }) {
 const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
   // const Dimension = useEffect(() => {
   let { width, height } = useWindowDimensions()
-
+  console.log('MEDIA  PROVIDER=', mediaContent)
   //  }
   const defaultAspectRatio = 'aspect-[953/882] w-creen/2 max-w-[853px]'
   return (
-    <div className="xl:w-[1000px]] gark:backdrop-blur dark:bg-dark relative -mt-20 rounded-md  bg-zinc-50 pb-20 pt-4  lg:-mt-20 lg:mb-64 lg:w-[500px] xl:mb-64 xl:px-4">
+    <div className="xl:w-[1000px]] gark:backdrop-blur dark:bg-dark sm:-mt-436 relative  -mt-24 rounded-md pb-20 pt-4 lg:mb-64 lg:w-[500px] xl:mb-64 xl:px-4">
       {mediaContent.map((media) => {
         return media.type !== 'video' ? (
           <div key={media.source} className={clsx(`w-${width}`, 'relative')}>
@@ -102,22 +102,43 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
               alt=""
               height={900}
               width={900}
-              sizes="(width:140px) 4rem, ( sm:max-width: 1024px) 20rem, (width: 140px) 16rem, 12rem"
+              // sizes="(width:140px) 4rem, ( max-width: 1024px) 20rem, (width: 140px) 16rem, 12rem"
               priority
             />
             {/* <div className="insetx-0 absolute rounded-md ring-1 ring-inset ring-black/10 dark:sm:rounded-xl dark:lg:rounded-2xl" /> */}
           </div>
         ) : (
-          <div
-            id={`${media.title}-ARTICLE_VIDEO`}
-            className="relative mx-auto mb-6 block w-[340px] max-w-[640px] overflow-hidden sm:mb-10 lg:w-auto "
-            // className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 dark:sm:rounded-xl lg:w-auto dark:lg:rounded-2xl"
-            aria-label="gallery-media-item"
-          >
-            <YoutubeVideo videoID={media.source} />
+          <>
+            {media.provider && media.provider === 'vimeo' ? (
+              <div
+                id="YOUTUBE_VIDEO"
+                className="relative mx-auto  h-[326px] w-[426px] rounded-md sm:w-[490px] lg:h-[600px] lg:w-[800]"
+              >
+                <iframe
+                  allow="autoplay; fullscreen"
+                  allowfullscreen=""
+                  src={media.source}
+                  width="640"
+                  frameborder="0"
+                  title="The Stillness Within You"
+                  height="360"
+                  id="yui_3_17_2_1_1681612016015_1250"
+                  style={{ opacity: 1 }}
+                ></iframe>
+              </div>
+            ) : (
+              <div
+                id={`${media.title}-ARTICLE_VIDEO`}
+                className="min-w-[359px;x]  relative mx-auto mb-6  block max-w-[840px] overflow-hidden   lg:w-auto "
+                // className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 dark:sm:rounded-xl lg:w-auto dark:lg:rounded-2xl"
+                // aria-label="gallery-media-item"
+              >
+                <YoutubeVideo videoID={media.source} />
 
-            {/* <div className="absolute inset-0 rounded-md ring-1 ring-inset ring-black/10 dark:sm:rounded-xl dark:lg:rounded-2xl" /> */}
-          </div>
+                {/* <div className="absolute inset-0 rounded-md ring-1 ring-inset ring-black/10 dark:sm:rounded-xl dark:lg:rounded-2xl" /> */}
+              </div>
+            )}
+          </>
         )
       })}
     </div>

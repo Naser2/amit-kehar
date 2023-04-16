@@ -30,6 +30,27 @@ import istaImgBaby from '../../public/amit-index-images/gallery-baby.png'
 
 export const siteArticles = [
   {
+    constent: `<div class="meta">
+    <h1 data-shrink-original-size="42">National Gallery of Canada</h1>
+    <div class="body"><p class="" style="white-space:pre-wrap;">In April 2019, I was brought into the National Gallery of Canada to create their video content strategy. I have had the pleasure to shoot, direct, edit and conceive ideas such as unique behind the scenes videos, web-series and exhibition related films.</p><p class="" style="white-space:pre-wrap;"> Shot, Directed and Edited by Amit Kehar</p></div>
+    <div class="share-like">
+      <span class="squarespace-social-buttons inline-style" data-system-data-id="5f4473e3b1aae94ee1337f7c" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1564583666871-CSHNS4103UGH9DN6VU3M/image-asset.jpeg" data-record-type="" data-full-url="/ngc" data-title="National Gallery of Canada"><div id="social-yui_3_17_2_1_1681420739230_2983" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681420739230_3146" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
+    </div>
+  </div>`,
+    id: 9,
+    name: 'National Gallery of Canada - Brand Film',
+    href: '#',
+    source: istaImg1,
+    type: 'motion',
+    medias: [
+      {
+        type: 'video',
+        source: 'rc_iQ7jwph8',
+        title: 'National Gallery of Canada - Brand Film',
+      },
+    ],
+  },
+  {
     id: 1,
     name: 'My Glimpses of India',
     href: '#',
@@ -39,42 +60,8 @@ export const siteArticles = [
     medias: [
       {
         type: 'video',
-        source: '2fUcyO7T8TA&t',
+        source: '2fUcyO7T8TA',
         title: 'My Glimpses of India',
-      },
-    ],
-  },
-  {
-    content: `<div class="body"><p class="" style="white-space:pre-wrap;">In October 2018, I had the pleasure to collaborate with the extremely talented Chalvar Monteiro from the legendary Alvin Ailey dance theater. This was also the first time that I featured my poetry to drive the narrative of a short film.</p></div>`,
-    id: 2,
-    name: 'The Stillness Within You',
-    href: '#',
-    source: istaImg3,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
-    type: 'motion',
-    medias: [
-      {
-        type: 'video',
-        source: 'UTbYyqAwvio',
-        title: 'The Stillness Within You',
-      },
-    ],
-  },
-  {
-    content: `<div class="body"><p style="white-space: pre-wrap;">The Canvas Of Our Minds is a cinematic series about unique stories that are worth sharing with the world.</p><p style="white-space: pre-wrap;">Director, Cinematographer and Editor: Amit Kehar</p></div>`,
-    id: 3,
-    name: 'The Canvas Of Our Minds',
-    href: '#',
-    source: istaImg4,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
-    type: 'motion',
-    medias: [
-      {
-        type: 'video',
-        source: 'UTbYyqAwvio',
-        title: 'The Canvas Of Our Minds',
       },
     ],
   },
@@ -91,11 +78,74 @@ export const siteArticles = [
     medias: [
       {
         type: 'video',
-        source: 'UTbYyqAwvio',
+        provider: 'vimeo',
+        source:
+          'https://player.vimeo.com/video/231746674?app_id=122963&wmode=opaque&autoplay=1',
         title: 'Piaget x Ryan Reynolds',
       },
     ],
   },
+  {
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">In October 2018, I had the pleasure to collaborate with the extremely talented Chalvar Monteiro from the legendary Alvin Ailey dance theater. This was also the first time that I featured my poetry to drive the narrative of a short film.</p></div>`,
+    id: 2,
+    name: 'The Stillness Within You',
+    href: '#',
+    source: istaImg3,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+
+    medias: [
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/312333906?app_id=122963&amp;wmode=opaque&amp;autoplay=1',
+        title: 'The Stillness Within You',
+      },
+    ],
+  },
+  {
+    content: `<div class="body"><p style="white-space: pre-wrap;">The Canvas Of Our Minds is a cinematic series about unique stories that are worth sharing with the world.</p><p style="white-space: pre-wrap;">Director, Cinematographer and Editor: Amit Kehar</p></div>`,
+    id: 3,
+    name: 'The Canvas Of Our Minds',
+    href: '#',
+    source: istaImg4,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/272699934?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'The Canvas Of Our Minds',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/340560171?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'The Canvas Of Our Minds',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/286907113?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'The Canvas Of Our Minds',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/292797924?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'The Canvas Of Our Minds',
+      },
+    ],
+  },
+
   {
     content: `<div class="body"><p style="white-space: pre-wrap;">Here are a few videos that combine two of my passions : Food &amp; Motion :)</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p></div>`,
     id: 5,
@@ -158,33 +208,50 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        // source:
+        //   https://player.vimeo.com/d10622d7-0613-45ac-b2a8-e172b500bff8',
+        source:
+          'https://player.vimeo.com/video/293177062?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Lifestyle',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/345581414?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Lifestyle',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/293180363?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Lifestyle',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/293180363?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Lifestyle',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/293175961?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Lifestyle',
+      },
+      {
+        type: 'video',
+        source: 'Bqs0z8MoxKc',
         title: 'Lifestyle',
       },
     ],
   },
-  {
-    constent: `<div class="meta">
-    <h1 data-shrink-original-size="42">National Gallery of Canada</h1>
-    <div class="body"><p class="" style="white-space:pre-wrap;">In April 2019, I was brought into the National Gallery of Canada to create their video content strategy. I have had the pleasure to shoot, direct, edit and conceive ideas such as unique behind the scenes videos, web-series and exhibition related films.</p><p class="" style="white-space:pre-wrap;"> Shot, Directed and Edited by Amit Kehar</p></div>
-    <div class="share-like">
-      <span class="squarespace-social-buttons inline-style" data-system-data-id="5f4473e3b1aae94ee1337f7c" data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1564583666871-CSHNS4103UGH9DN6VU3M/image-asset.jpeg" data-record-type="" data-full-url="/ngc" data-title="National Gallery of Canada"><div id="social-yui_3_17_2_1_1681420739230_2983" class="yui3-widget yui3-socialbutton"><div id="yui_3_17_2_1_1681420739230_3146" class="yui3-socialbutton-content"><div class="ss-social-button-wrapper"><div class="ss-social-button"><span class="ss-social-button-icon"></span>Share</div></div><div class="ss-social-list-wrapper"><div class="ss-social-button-list"></div></div></div></div></span>
-    </div>
-  </div>`,
-    id: 9,
-    name: 'National Gallery of Canada - Brand Film',
-    href: '#',
-    source: istaImg1,
-    type: 'motion',
-    medias: [
-      {
-        type: 'video',
-        source: 'UTbYyqAwvio',
-        title: 'National Gallery of Canada - Brand Film',
-      },
-    ],
-  },
+
   {
     content: `<div class="body"><p class="" style="white-space:pre-wrap;">A fashion film by Amit Kehar featuring Arfie Lalani's Fall 2019 collection</p></div>`,
     id: 10,
@@ -197,7 +264,7 @@ export const siteArticles = [
     medias: [
       {
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source: '36754c51',
         title: 'Arfie Laalani',
       },
     ],
