@@ -259,7 +259,11 @@ function checkObject(
                 {/* aspect-[4/3]  */}
                 {clicable && (
                   <Link
-                    href={`/${item.type + '/' + item.id}`}
+                    href={
+                      item.type === 'music'
+                        ? `/${item.type}`
+                        : `/${item.type + '/' + item.id}`
+                    }
                     type="button"
                     className="controlled-blur min-h-12 absolute left-1/2 top-1/2  block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center rounded-sm
                     px-2 py-4 text-sm font-bold 

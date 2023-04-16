@@ -82,16 +82,24 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
   //  }
   const defaultAspectRatio = 'aspect-[953/882] w-creen/2 max-w-[853px]'
   return (
-    <div className=" dark:bg-dark sm:-mt-436 relative -mt-14 rounded-md  pb-20 pt-4  lg:mb-64 lg:w-[500px] xl:-mt-24 xl:mb-64 xl:px-4">
+    <div className=" dark:bg-dark sm:-mt-436 relative -mt-14 -mt-6 rounded-md pb-20 pt-4 md:-mt-0  lg:mb-64 lg:w-[500px] xl:-mt-24 xl:mb-64 xl:px-4">
       {mediaContent.map((media) => {
         return media.type !== 'video' ? (
-          <div key={media.source} className={clsx(`w-${width}`, 'relative')}>
+          <div
+            key={media.source}
+            className={clsx(`w-${width}`, 'relative  md:pt-6')}
+          >
             <Image
+              // iframe
               className={clsx(
                 aspect && aspect,
                 defaultAspect && defaultAspectRatio,
-                'is-zoomed lg:w-[600px]lg:my-10 relative z-20 my-4 min-w-[340px] rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 dark:backdrop-blur min-[1267px]:min-w-[736px]  xl:my-14'
+                media.defaultAspect
+                  ? 'deafultAspect overflow-hiddden px-2'
+                  : 'aspect-[285/166] md:mx-4 md:aspect-[953/498]',
+                'md:w-creen/2 is-zoomed  relative z-20 mx-0.5 my-4    rounded-md shadow-xl  shadow-black/5 ring-slate-900/5 dark:backdrop-blur  md:max-w-[788px] md:px-0  xl:my-14'
               )}
+              // lg:w-[600px]lg:my-10  min-w-[340px] min-[1267px]:min-w-[736px]
               // sm:min-w-[640px]
               // className="gallery-item relative z-20 -mb-36 aspect-[953/882] w-full max-w-[853px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
               id={`${media.title}-_IMAGE-${media.title}`}
@@ -99,8 +107,8 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
               src={media.source}
               // src={media.source}
               alt=""
-              height={900}
-              width={900}
+              height={1900}
+              width={1900}
               // sizes="(width:140px) 4rem, ( max-width: 1024px) 20rem, (width: 140px) 16rem, 12rem"
               priority
             />
@@ -111,7 +119,10 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
             {media.provider && media.provider === 'vimeo' ? (
               <div
                 id="YOUTUBE_VIDEO"
-                className="relative mx-auto  mb-24 min-h-[326px] min-w-[200px] min-w-[300px]  rounded-md px-4  md:mb-14 lg:max-h-[600px] lg:max-w-[800]"
+                className={clsx(
+                  defaultAspectRatio,
+                  'relative mx-auto  min-h-[326px] min-w-[200px] min-w-[300px] rounded-md px-2 pt-4  sm:mb-14 md:mb-14  lg:mb-24 lg:max-h-[600px] lg:max-w-[800]'
+                )}
               >
                 {/* <img
                   dataLoad="false"

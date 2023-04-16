@@ -16,7 +16,7 @@ import istaImg14 from '../../public/amit-index-images/gallery-img-14.png'
 import istaImg15 from '../../public/amit-index-images/gallery-img-15.jpeg'
 import istaImg16 from '../../public/amit-index-images/gallery-img-16.png'
 import istaImg17 from '../../public/amit-index-images/gallery-img-17.jpg'
-import istaImg18 from '../../public/amit-index-images/gallery-img-18.jpeg'
+import garnier1 from '../../public/amit-index-images/gallery-img-18.jpeg'
 import istaImg19 from '../../public/amit-index-images/gallery-img-19.jpeg'
 import istaImg20 from '../../public/amit-index-images/gallery-img-20.png'
 import istaImg21 from '../../public/amit-index-images/gallery-img-21.jpeg'
@@ -27,7 +27,7 @@ import istaImg25 from '../../public/amit-index-images/gallery-img-25.jpeg'
 import istaImgChelsea from '../../public/amit-index-images/gallery-Img-chelsea.jpeg'
 import istaImgVelour from '../../public/amit-index-images/gallery-velour.png'
 import istaImgBaby from '../../public/amit-index-images/gallery-baby.png'
-import dancing1 from '../../public/dancing-with-the-sun.png'
+
 import dancing2 from '../../public/dancing-with-the-sun-2.png'
 
 export const siteArticles = [
@@ -254,6 +254,7 @@ export const siteArticles = [
         title: 'Dancing in the Sun',
       },
       {
+        defaultAspect: true,
         type: 'image',
         source: '/dancing-with-the-sun.png',
         title: 'Dancing in the Sun',
@@ -367,10 +368,73 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'k4oA-NdScbM',
+        // source:
+        //   'https://www.youtube.com/embed/k4oA-NdScbM?wmode=opaque&enablejsapi=1&autoplay=1',
+        title: 'National Gallery of Canada ',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'ZkFz_7qpx_k',
+        title: 'Those that need fire',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'fkTWYJt6nrg',
+        title: 'Gauguin Portraits - Installation of Suzanne Bambridge',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: '6UfvkP2q9ss',
+        title: 'Jordan Bennett – Under the Stars',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'YhMNPwEuEeg',
+        title: 'Gauguin: Portraits - A Creative Day on The Train',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'dEL_z5MKUjM',
+        title: 'Hanran: 20th Century Japanese Photography',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'JyuVzprTFUw',
+        title: 'Indigenous Languages',
+      },
+      {
+        // provider: 'vimeo',
+        type: 'video',
+        source: 'UK_BPvihR-0',
+        title: 'Meet The Experts - Manasiah Akpaliapik & John Houston',
+      },
+    ],
+  },
+  {
+    content: `Description content not found.`,
+    id: 13,
+    name: 'Knix',
+    href: '#',
+    source: istaImg14,
+    imageAlt:
+      'Black machined steel pen with hexagonal grip and small white logo at top.',
+    type: 'motion',
+    medias: [
+      {
         provider: 'vimeo',
         type: 'video',
-        source: 'National Gallery of Canada',
-        title: 'National Gallery of Canada ',
+        source:
+          'https://player.vimeo.com/video/350322608?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Knix',
       },
     ],
   },
@@ -461,25 +525,9 @@ export const siteArticles = [
       },
     ],
   },
+
   {
-    content: `Description content not found.`,
-    id: 13,
-    name: 'Knix',
-    href: '#',
-    source: istaImg14,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
-    type: 'motion',
-    medias: [
-      {
-        type: 'video',
-        source: 'UTbYyqAwvio',
-        title: 'Knix',
-      },
-    ],
-  },
-  {
-    contemt: `<div class="body"><p class="" style="white-space:pre-wrap;">The Human Touch is  A cinematic series that explores the world of different artisans and crafts-makers,</p><p class="" style="white-space:pre-wrap;">Co-Created by Max Rosenstein and Amit Kehar</p></div>`,
+    content: `<div class="body"><p class="" style="white-space:pre-wrap;">The Human Touch is  A cinematic series that explores the world of different artisans and crafts-makers,</p><p class="" style="white-space:pre-wrap;">Co-Created by Max Rosenstein and Amit Kehar</p></div>`,
     id: 14,
     name: 'Human Touch ',
     href: '#',
@@ -489,42 +537,36 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/202252353?app_id=122963&wmode=opaque&autoplay=1',
         title: 'Human Touch',
       },
-    ],
-  },
-  {
-    id: 15,
-    name: 'Fashion &  Beauty ',
-    href: '#',
-    source: istaImg15,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
-    type: 'still',
-    medias: [
       {
+        provider: 'vimeo',
+        source:
+          'https://player.vimeo.com/video/147407330?app_id=122963&wmode=opaque&autoplay=1',
         type: 'video',
-        source: 'UTbYyqAwvio',
+
         title: 'Human Touch',
       },
-    ],
-  },
-  {
-    id: 16,
-    name: 'Lifestyle / Still ',
-    href: '#',
-    source: istaImg15,
-    imageAlt:
-      'Black machined steel pen with hexagonal grip and small white logo at top.',
-    type: 'still',
-    medias: [
       {
+        provider: 'vimeo',
+        source:
+          'https://player.vimeo.com/video/136328314?app_id=122963&wmode=opaque&autoplay=1',
         type: 'video',
-        source: 'UTbYyqAwvio',
+
         title: 'Human Touch',
       },
+      {
+        provider: 'vimeo',
+        source:
+          'https://player.vimeo.com/video/131160077?app_id=122963&wmode=opaque&autoplay=1',
+        type: 'video',
+        title: 'Human Touch',
+      },
+      { type: 'image', source: '/human-feature.png', title: 'Human Touch' },
     ],
   },
 
@@ -540,20 +582,73 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/259731134?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shoper X',
+      },
+      {
+        // provider: 'vimeo',
+        defaultAspect: true,
+        type: 'image',
+        source: '/shoppers.jpeg',
         title: 'Shoper X',
       },
     ],
   },
+  // {
+  //   id: 15,
+  //   name: 'Fashion &  Beauty ',
+  //   href: '#',
+  //   source: istaImg15,
+  //   imageAlt:
+  //     'Black machined steel pen with hexagonal grip and small white logo at top.',
+  //   type: 'still',
+  //   medias: [
+  //     {
+  //       type: 'video',
+  //       source: 'UTbYyqAwvio',
+  //       title: 'Human Touch',
+  //     },
+  //   ],
+  // },
+  // {
+  //   id: 16,
+  //   name: 'Lifestyle / Still ',
+  //   href: '#',
+  //   source: istaImg15,
+  //   imageAlt:
+  //     'Black machined steel pen with hexagonal grip and small white logo at top.',
+  //   type: 'still',
+  //   medias: [
+  //     {
+  //       type: 'video',
+  //       source: 'UTbYyqAwvio',
+  //       title: 'Human Touch',
+  //     },
+  //   ],
+  // },
+
   {
     content: `<p style="white-space: pre-wrap;">Here's a fun fashion video that I shot, directed and editied, featuring model and photographer Chelsey Boll.</p>`,
     id: 18,
     name: 'Chelsey',
     href: '#',
     source: istaImgChelsea,
+    type: 'motion',
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
+
+    medias: [
+      {
+        provider: 'vimeo',
+        source:
+          'https://player.vimeo.com/video/284757334?app_id=122963&wmode=opaque&autoplay=1',
+        type: 'video',
+        title: 'Color of Love',
+      },
+    ],
   },
   {
     content: `<div class="body"><p class="" style="white-space:pre-wrap;">A series of video that I shot, directed and edited for Hudson’s Bay Company for their spring campaign.</p><p class="" data-rte-preserve-empty="true" style="white-space:pre-wrap;"></p></div>`,
@@ -561,6 +656,7 @@ export const siteArticles = [
     name: "Hudson's Bay Company",
     href: '#',
     source: istaImg17,
+    type: 'motion',
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
   },
@@ -570,9 +666,24 @@ export const siteArticles = [
     id: 20,
     name: 'Garnier Olia',
     href: '#',
-    source: istaImg18,
+    source: garnier1,
+    type: 'motion',
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
+    medias: [
+      {
+        defaultAspect: true,
+        source: garnier1,
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        defaultAspect: true,
+        source: '/garnier2.png',
+        type: 'image',
+        title: 'Video Private',
+      },
+    ],
   },
 
   {
@@ -580,14 +691,51 @@ export const siteArticles = [
     id: 21,
     name: 'Color Of Love',
     href: '#',
-    source: istaImg16,
+    source: '/color-of-love.jpeg',
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
+        source:
+          'https://player.vimeo.com/video/316447678?app_id=122963&wmode=opaque&autoplay=1',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-2.png',
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-3.png',
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-4.png',
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-6.png',
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-7.png',
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-1.png',
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        source: '/color-8.png',
+        type: 'image',
         title: 'Color of Love',
       },
     ],
@@ -598,13 +746,16 @@ export const siteArticles = [
     name: 'Col. Chris Hadfield',
     href: '#',
     source: istaImg19,
+
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/132997445?app_id=122963&wmode=opaque&autoplay=1',
         title: 'Col Chris',
       },
     ],
@@ -632,11 +783,11 @@ export const siteArticles = [
     name: 'Music Video',
     href: '#',
     source: istaImg21,
-    type: 'motion',
+    type: 'music',
     category: 'videos',
     medias: [
       {
-        type: 'video',
+        type: 'videos',
         source: 'UTbYyqAwvio',
         title: "Makin' A Pizza | Rap Recipe Music Video",
       },
@@ -656,7 +807,23 @@ export const siteArticles = [
     medias: [
       {
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source: 'vA_hZzO0Keg',
+        title: 'Velour Lashes',
+      },
+      {
+        type: 'video',
+        source: '9jLUYmfYd5o',
+        title: 'Velour Lashes',
+      },
+      {
+        type: 'video',
+        source: 'hjTS8mO2vFc',
+        title: 'Velour Lashes',
+      },
+      {
+        // defaultAspect: true,
+        type: 'image',
+        source: '/velour2.png',
         title: 'Velour Lashes',
       },
     ],
