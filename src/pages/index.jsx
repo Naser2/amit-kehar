@@ -221,10 +221,12 @@ export default function Home({ articles, allprojects, artprojects }) {
         </div>
       </section>
       <Galery
+        galleryId={'Landing'}
         contents={allprojects}
-        clicable
+        clicable={true}
         gap="gap-y-0"
-        imgMarginY="-my-4"
+        imgMarginY="-my-3"
+        roundedMd={false}
       />
       <p className="text-md mx-4 mt-2 rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0">
         Currently viewing [MVP] in native mobile screen as in in mobile app .

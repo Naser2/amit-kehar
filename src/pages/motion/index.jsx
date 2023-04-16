@@ -35,7 +35,6 @@ export default function Art({ motions }) {
             <span
               class="squarespace-social-buttons inline-style"
               data-system-data-id="5c3f565f4d7a9c53a5c8575a"
-              data-asset-url="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1547654389418-2RGWJAIWR1DQNAKHLG5K/10454227_10152184343750938_1474450006593014404_o.jpg"
               data-record-type=""
               data-full-url="/doodlesillustrations"
               data-title="Doodles/Illustrations"

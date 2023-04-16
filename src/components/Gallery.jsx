@@ -176,10 +176,10 @@ export function WorkStatus({ ...props }) {
 }
 
 export const Galery = (
-  { contents, clicable, gap, imgMarginY, roundedMd },
+  { contents, clicable, gap, imgMarginY, roundedMd, galleryId },
   ...props
 ) => {
-  console.log('PROPS IN MARGIINGY ->', imgMarginY)
+  console.log('PROPS GALLERY->', clicable)
   return (
     <>
       <section
@@ -206,18 +206,28 @@ export const Galery = (
   )
 }
 
-function checkObject(contents, clicable, imgMarginY, roundedMd, ...props) {
+function checkObject(
+  contents,
+  clicable,
+  imgMarginY,
+  roundedMd,
+  galleryId,
+  ...props
+) {
   // check if arr is array
   const result = Array.isArray(contents)
-
+  console.log('PROPS CHECK OBJ->', clicable)
   if (result) {
     console.log(`[${contents}] is an array.`)
     return (
       <>
-        {' '}
         {contents.map((item) => {
           return (
-            <li key={item.id} className={clsx(imgMarginY ?? 'relative')}>
+            <li
+              id={galleryId}
+              key={item.id}
+              className={clsx(imgMarginY && imgMarginY, 'relative')}
+            >
               <div
                 className={clsx(
                   item.current
@@ -230,7 +240,7 @@ function checkObject(contents, clicable, imgMarginY, roundedMd, ...props) {
                   src={item.source}
                   alt=""
                   className={clsx(
-                    'rounded-md' ?? roundedMd,
+                    roundedMd && 'rounded-md',
                     item.current ? '' : 'group-hover:opacity-100',
                     'pointer-events-none mt-2 h-full w-full  bg-slate-100 object-cover sm:mt-10 sm:aspect-[1216/940] md:mt-0 lg:aspect-[1516/940]  lg:flex-none'
                   )}
@@ -246,19 +256,18 @@ function checkObject(contents, clicable, imgMarginY, roundedMd, ...props) {
                 {/* aspect-[4/3]  */}
                 {clicable && (
                   <Link
-                    // href="/"
                     href={`/${item.type + '/' + item.id}`}
                     type="button"
-                    className="controlled-blur min-h-12 absolute left-1/2  top-1/2 block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center
-               rounded-sm px-2 text-sm font-bold 
-                tracking-tight text-white opacity-10 hover:text-white 
-                hover:opacity-100 group-hover:opacity-100 dark:text-black 
-                md:text-transparent"
+                    className="controlled-blur min-h-12 absolute left-1/2 top-1/2  block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center rounded-sm
+                    px-2 py-4 text-sm font-bold 
+                     tracking-tight text-white opacity-10 hover:text-white 
+                     hover:opacity-100 group-hover:opacity-100 dark:text-black 
+                     md:text-transparent "
                     id="TITLE_LINK_MOBILE_BTN"
                   >
                     <h2
-                      id="yui_3_17_2_1_1681192592262_2502"
-                      className="w-[80%] text-white"
+                      id={`${'CLICABLE' + '/' + item.id}`}
+                      className="gallery-clicable w-[80%] text-white"
                     >
                       {item.name}
                     </h2>
@@ -327,7 +336,7 @@ function checkObject(contents, clicable, imgMarginY, roundedMd, ...props) {
                 {/* aspect-[4/3]  */}
                 {clicable && (
                   <Link
-                    // href="/"
+                    id="NIOT ARRAY TITLE_LINK_MOBILE_BTN"
                     href={`/${item.type + '/' + item.id}`}
                     type="button"
                     className="controlled-blur min-h-12 absolute left-1/2  top-1/2 block flex inline-flex min-w-[77%] min-w-[88%] -translate-x-1/2 -translate-y-1/2 transform items-center
@@ -335,12 +344,8 @@ function checkObject(contents, clicable, imgMarginY, roundedMd, ...props) {
                 tracking-tight text-white opacity-10 hover:text-white 
                 hover:opacity-100 group-hover:opacity-100 dark:text-black 
                 md:text-transparent"
-                    id="TITLE_LINK_MOBILE_BTN"
                   >
-                    <h2
-                      id="yui_3_17_2_1_1681192592262_2502"
-                      className="w-[80%] text-white"
-                    >
+                    <h2 id="not-array" className="w-[80%] py-4 text-white ">
                       {item.name}
                     </h2>
 
