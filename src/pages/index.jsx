@@ -29,7 +29,8 @@ import { Galery } from '@/components/Gallery'
 import { SocialMedia } from '@/components/SocialMedia'
 import { getAllArts } from '@/lib/getAllArts'
 import { Title } from '@/components/Title'
-
+const showOnlyAt500Px = 'max-[500px]:hidden'
+const HideAt500Px = 'min-[500px]:hidden'
 function MailIcon(props) {
   return (
     <svg
@@ -172,7 +173,10 @@ export default function Home({ articles, allprojects, artprojects }) {
               <div className="row">
                 <div className="background-container large-12  small-order-1">
                   {/* <figure className="sm:rounded-3xl sm:px-2"> */}
-                  <div className="w-full flex-none " id="FEATURED VIDEO">
+                  <div
+                    className="realtive w-full flex-none"
+                    id="FEATURED VIDEO"
+                  >
                     <Image
                       alt="Featured Project Image"
                       sizes="100vw"
@@ -184,7 +188,10 @@ export default function Home({ articles, allprojects, artprojects }) {
                       // loading="lazy"
                       style={{ color: 'transparent' }}
                       priority
-                    />
+                    />{' '}
+                    <div class="featured-tag absolute right-3 top-3 ml-2 rounded-full px-2 py-0.5 text-xs text-white ring-1 ring-pink-100/20 max-[800px]:hidden sm:block">
+                      Featured
+                    </div>
                   </div>
                   {/* </figure> */}
                 </div>
@@ -217,9 +224,6 @@ export default function Home({ articles, allprojects, artprojects }) {
                 </div>
               </div>
             </div>
-          </div>
-          <div class="featured-tag absolute  right-6 top-2 ml-2 rounded-full px-2 py-0.5 text-xs text-white sm:block">
-            Featured
           </div>
         </div>
       </section>
