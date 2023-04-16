@@ -41,7 +41,7 @@ export function ProjectLayout({ project, hosts, aspect, defaultAspect }) {
           </div>
           <div
             id="PROJECT_MEDIA"
-            className="meta flex-block relative mb-64  px-4 sm:-mt-4 sm:mb-10"
+            className="meta flex-block relative sm:mb-10  md:-mt-4 md:px-0 xl:mb-64"
             //  sm:max-w-[600%] lg:max-w-[75%]
           >
             <ProjectMedias
@@ -65,9 +65,7 @@ function ProjectMedias({ mediaContent, hosts, classN, aspect, defaultAspect }) {
   return (
     <div
       id="PAGE-MEDIA-ASIDE-CONTENT"
-      className={clsx(
-        ' dark::bg-black lg:grid-cols-start  relative h-full lg:pb-44 '
-      )}
+      className={clsx(' dark::bg-black lg:grid-cols-start  relative lg:pb-44 ')}
     >
       {/* dark::bg-black relative h-full bg-slate-50 lg:fixed  lg:right-0 lg:flex lg:items-start lg:overflow-y-auto lg:pb-44 */}
       <div className="gallery-media-item z-10 mt-20">
@@ -92,7 +90,7 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
               className={clsx(
                 aspect && aspect,
                 defaultAspect && defaultAspectRatio,
-                'is-zoomed lg:w-[600px]lg:my-10 relative z-20 my-4 w-[340px] rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 sm:w-[440px] xl:my-14'
+                'is-zoomed lg:w-[600px]lg:my-10 relative z-20 my-4 min-w-[340px] rounded-xl shadow-xl shadow-black/5 ring-slate-900/5 sm:w-[440px] xl:my-14'
               )}
               // className="gallery-item relative z-20 -mb-36 aspect-[953/882] w-full max-w-[853px] rounded-xl bg-slate-200 shadow-xl shadow-black/5 ring-1 ring-slate-900/5 sm:-mb-16 lg:-mb-8 xl:-mb-16"
               id={`${media.title}-_IMAGE-${media.title}`}
@@ -112,18 +110,47 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
             {media.provider && media.provider === 'vimeo' ? (
               <div
                 id="YOUTUBE_VIDEO"
-                className="relative mx-auto  h-[326px] w-[426px] rounded-md sm:w-[490px] lg:h-[600px] lg:w-[800]"
+                className="relative mx-auto  min-h-[326px] min-w-[426px] rounded-md sm:w-[490px] lg:max-h-[600px] lg:max-w-[800]"
               >
+                {/* <img
+                  dataLoad="false"
+                  data-src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1549894044362-48VZ634FW28NDHX8CLUU/image-asset.jpeg"
+                  data-image-dimensions="640x360"
+                  data-image-focal-point="0.5,0.5"
+                  data-parent-ratio="1.8"
+                  style={{
+                    left: '0px',
+                    top: '-0.03125px',
+                    width: '681px',
+                    height: '383.062px',
+                    position: 'relative',
+                    opacity: dataLoad ? 0 : 1,
+                  }}
+                  className="loaded"
+                  data-image-resolution="2500w"
+                  src="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1549894044362-48VZ634FW28NDHX8CLUU/image-asset.jpeg?format=2500w"
+                ></img>
+                <div
+                  className="sqs-video-icon"
+                  tabindex="0"
+                  role="button"
+                  aria-label="Play"
+                  id="yui_3_17_2_1_1681670889054_4501"
+                  style={{ opacity: 1 }}
+                  // style=""
+                ></div> */}
                 <iframe
-                  allow="autoplay; fullscreen"
+                  allow="utoplay: fullscreen"
                   allowfullscreen=""
                   src={media.source}
                   width="640"
                   frameborder="0"
                   title="The Stillness Within You"
                   height="360"
-                  id="yui_3_17_2_1_1681612016015_1250"
-                  style={{ opacity: 1 }}
+                  thumbnail="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1549894044362-48VZ634FW28NDHX8CLUU/image-asset.jpeg"
+                  placeholder="https://images.squarespace-cdn.com/content/v1/54f7714de4b06065f8a0bfcd/1538581105184-M12M7SO3XFD4985BJA2M/image-asset.jpeg"
+                  id={media.title}
+                  style={{ opacity: 1, width: '681px', height: '383.062px' }}
                 ></iframe>
               </div>
             ) : (

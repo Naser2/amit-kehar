@@ -4,11 +4,11 @@ import istaImg3 from '../../public/amit-index-images/gallery-img-3.jpeg'
 import istaImg4 from '../../public/amit-index-images/gallery-img-4.png'
 import istaImg5 from '../../public/amit-index-images/gallery-img-5.jpeg'
 import istaImg6 from '../../public/amit-index-images/gallery-img-6.jpeg'
-import istaImg7 from '../../public/amit-index-images/gallery-img-7.png'
+import dancingMain from '../../public/amit-index-images/gallery-img-7.png'
 import istaImg8 from '../../public/amit-index-images/gallery-img-8.png'
 import istaImg9 from '../../public/amit-index-images/gallery-img-9.jpg'
 import istaImg10 from '../../public/amit-index-images/gallery-img-10.jpeg'
-import istaImg11 from '../../public/amit-index-images/gallery-img-11.jpg'
+import arfieLalany from '../../public/amit-index-images/gallery-img-11.jpg'
 import istaImg12 from '../../public/amit-index-images/gallery-img-12.jpeg'
 import istaImg13 from '../../public/amit-index-images/gallery-img-13.jpeg'
 import istaImg14 from '../../public/amit-index-images/gallery-img-14.png'
@@ -27,6 +27,8 @@ import istaImg25 from '../../public/amit-index-images/gallery-img-25.jpeg'
 import istaImgChelsea from '../../public/amit-index-images/gallery-Img-chelsea.jpeg'
 import istaImgVelour from '../../public/amit-index-images/gallery-velour.png'
 import istaImgBaby from '../../public/amit-index-images/gallery-baby.png'
+import dancing1 from '../../public/dancing-with-the-sun.png'
+import dancing2 from '../../public/dancing-with-the-sun-2.png'
 
 export const siteArticles = [
   {
@@ -157,9 +159,80 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/340560171?app_id=122963&wmode=opaque&autoplay=1',
+        title: '1-The Canvas of Our Minds - Jehangir Mehta',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/494656142?h=b3dba51eef&app_id=122963&wmode=opaque&autoplay=1',
+        title: '2-Choco Bisou',
+      },
+
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/457822082?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Culture Days - Food to Palette - Trailer',
+      },
+      {
         type: 'video',
         source: 'UTbYyqAwvio',
-        title: 'Food in motion',
+        title: "Makin' A Pizza | Rap Recipe Music Video",
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/149658372?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Fun and Easy Kale Salad',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/160737887?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Fun and Easy Kale Salad',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/292732914?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Food To Palette ',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/292727648?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Food To Palette ',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/292839043?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Food To Palette ',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/292797924?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Food To Palette ',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/312196326?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Food To Palette ',
       },
     ],
   },
@@ -168,14 +241,26 @@ export const siteArticles = [
     id: 6,
     name: 'Dancing With The Sun',
     href: '#',
-    source: istaImg7,
+    source: dancingMain,
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/266802356?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Dancing in the Sun',
+      },
+      {
+        type: 'image',
+        source: '/dancing-with-the-sun.png',
+        title: 'Dancing in the Sun',
+      },
+      {
+        type: 'image',
+        source: '/dancing-with-the-sun-2.png',
         title: 'Dancing in the Sun',
       },
     ],
@@ -191,8 +276,10 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/407983485?h=413d662250&app_id=122963&wmode=opaque&autoplay=1',
         title: 'Google Maps',
       },
     ],
@@ -257,15 +344,33 @@ export const siteArticles = [
     id: 10,
     name: 'Arfie Lalani',
     href: '#',
-    source: istaImg11,
+    source: arfieLalany,
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: '36754c51',
+        source:
+          'https://player.vimeo.com/video/368076918?app_id=122963&wmode=opaque&autoplay=1',
         title: 'Arfie Laalani',
+      },
+    ],
+  },
+  {
+    constent: `<div class="body"><p class="" style="white-space:pre-wrap;">In April 2019, I was brought into the National Gallery of Canada to create their video content strategy. I have had the pleasure to shoot, direct, edit and conceive ideas such as unique behind the scenes videos, web-series and exhibition related films.</p><p class="" style="white-space:pre-wrap;"> Shot, Directed and Edited by Amit Kehar</p></div>`,
+    id: 100,
+    name: 'National Gallery of Canada',
+    href: '#',
+    source: istaImg10,
+    type: 'motion',
+    medias: [
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source: 'National Gallery of Canada',
+        title: 'National Gallery of Canada ',
       },
     ],
   },
@@ -280,8 +385,10 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/188836650?app_id=122963&wmode=opaque&autoplay=1',
         title: 'Arfie Laalani',
       },
     ],
@@ -297,8 +404,59 @@ export const siteArticles = [
     type: 'motion',
     medias: [
       {
+        provider: 'vimeo',
         type: 'video',
-        source: 'UTbYyqAwvio',
+        source:
+          'https://player.vimeo.com/video/316551177?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/302573330?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/287054851?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/287054841?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/281953529?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/281908871?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/281953511?app_id=122963&wmode=opaque&autoplay=1',
+        title: 'Shopping with Channel',
+      },
+      {
+        provider: 'vimeo',
+        type: 'video',
+        source:
+          'https://player.vimeo.com/video/281953502?app_id=122963&wmode=opaque&autoplay=1',
         title: 'Shopping with Channel',
       },
     ],
@@ -369,6 +527,7 @@ export const siteArticles = [
       },
     ],
   },
+
   {
     content: `<div class="body"><p style="white-space: pre-wrap;">In November 2017, I Directed and filmed a series of 15 interactive spots that displayed on Canada’s longest horizontal full-motion digital display (26 x 188 ft). Each spot was coordinated with real-time data from the Weather Network displaying content in relation to changing weather conditions.</p><p style="white-space: pre-wrap;">Director &amp; Cinematographer: Amit Kehar</p><p style="white-space: pre-wrap;">Production: Orange (Jason Gileno and Jono Nemethy)</p><p data-rte-preserve-empty="true" style="white-space: pre-wrap;"></p></div>`,
 
