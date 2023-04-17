@@ -176,7 +176,7 @@ export function WorkStatus({ ...props }) {
 }
 
 export const Galery = (
-  { contents, clicable, gap, imgMarginY, roundedMd, galleryId, mt },
+  { contents, clicable, gap, imgMarginY, roundedMd, galleryId, mt, mx },
   ...props
 ) => {
   console.log('PROPS GALLERY->', clicable)
@@ -190,7 +190,12 @@ export const Galery = (
         )}
         aria-labelledby="gallery-heading"
       >
-        <div className="max-w-10xl mx-3 lg:my-4 lg:mt-8  lg:pb-12 ">
+        <div
+          className={clsx(
+            mx ? mx : 'mx-3',
+            'max-w-10xl  lg:my-4 lg:mt-8  lg:pb-12 '
+          )}
+        >
           <div role="list" className="">
             <ul
               role="list"

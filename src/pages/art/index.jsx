@@ -65,7 +65,15 @@ export default function Art({ artprojects }) {
         <DirectorCredentials />
       </Container>
 
-      <Galery contents={artprojects} clicable roundedMd mt="m-0 xl:mx-44 " />
+      <Galery
+        contents={artprojects}
+        clicable
+        roundedMd
+        mt="m-0 xl:mx-24"
+        gap="gap-y-4 gap-x-2"
+        imgMarginY="my-[-0.85rem] mx-0"
+        mx="mx-0"
+      />
     </>
   )
 }

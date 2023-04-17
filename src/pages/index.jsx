@@ -234,7 +234,8 @@ export default function Home({ articles, allprojects, artprojects }) {
         contents={allprojects}
         clicable={true}
         gap="gap-y-0"
-        imgMarginY="-my-3"
+        imgMarginY="my-[-0.85rem] mx-0"
+        mx="mx-0"
         roundedMd={false}
       />
 
