@@ -27,7 +27,7 @@ export default function Art({ motions }) {
       >
         <div className="meta mx-4  mb-4 mt-24 text-center  sm:my-32  sm:px-20 ">
           <h1 style={{ fontSize: '37px' }} className="dark:text-white">
-            MOTIONS
+            MOTION
           </h1>
           <h2 class="logo-subtitle">A collection of motions</h2>
 

@@ -1285,14 +1285,14 @@ iframe {
 }
 @media (min-width: 767px) {
   iframe {
-    width: 670px;
-    height: 590px;
+    width: 757px;
+    height: 449px;
   }
 }
 @media (min-width: 1267px) {
   iframe {
-    width: 736px;
-    height: 482px;
+    width: 799px;
+    height: 449.438px;
   }
 }
 @media (min-width: 1467px) {

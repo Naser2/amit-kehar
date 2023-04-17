@@ -41,7 +41,7 @@ export default function Art({ artprojects }) {
           </div>
         </div>
       </div> */}
-      <div id="wrap" className="my-14 sm:my-32 ">
+      <div id="wrap" className="my-14 sm:mt-32  ">
         {' '}
         <Title title="ART" />
         <h2 className="logo-subtitle  text-center">
@@ -49,15 +49,14 @@ export default function Art({ artprojects }) {
         </h2>
       </div>
       <Container
-        containerPadding="mt-6 "
+        containerPadding="mt-6 xl:mt-0 "
         containerMax={'lg:max-w-10xl'}
-        className={'xl:mt-34 mt-14 sm:mx-4 sm:mt-20'}
+        className={'xl:mt-34 mt-14 sm:mx-4 sm:mt-20 xl:mx-24'}
       >
-        {' '}
         <DirectorCredentials />
       </Container>
 
-      <Galery contents={artprojects} clicable roundedMd mt="m-0" />
+      <Galery contents={artprojects} clicable roundedMd mt="m-0 xl:mx-44 " />
     </>
   )
 }

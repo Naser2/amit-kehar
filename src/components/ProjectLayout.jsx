@@ -93,10 +93,10 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
               // iframe
               className={clsx(
                 aspect && aspect,
-                defaultAspect && defaultAspectRatio,
+                // defaultAspect && defaultAspectRatio,
                 media.defaultAspect
                   ? 'deafultAspect overflow-hiddden px-2'
-                  : 'aspect-[285/166] md:mx-4 md:aspect-[953/498]',
+                  : 'aspect-[285/166] md:mx-4 ',
                 'md:w-creen/2 is-zoomed  relative z-20 mx-0.5 my-4    rounded-md shadow-xl  shadow-black/5 ring-slate-900/5 dark:backdrop-blur  md:max-w-[788px] md:px-0  xl:my-14'
               )}
               // lg:w-[600px]lg:my-10  min-w-[340px] min-[1267px]:min-w-[736px]
@@ -121,7 +121,7 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
                 id="YOUTUBE_VIDEO"
                 className={clsx(
                   defaultAspectRatio,
-                  'relative mx-auto  min-h-[326px] min-w-[200px] min-w-[300px] rounded-md px-2 pt-4  sm:mb-14 md:mb-14  lg:mb-24 lg:max-h-[600px] lg:max-w-[800]'
+                  'relative mx-auto  min-h-[326px] min-w-[200px] min-w-[300px] rounded-md px-1 pt-4  sm:mb-14 md:mb-14  lg:mb-24 lg:max-h-[600px] lg:max-w-[800]'
                 )}
               >
                 {/* <img
@@ -174,7 +174,7 @@ const ArticleMedias = (mediaContent, aspect, defaultAspect) => {
             ) : (
               <div
                 id={`${media.title}-ARTICLE_VIDEO`}
-                className="relative mx-auto mb-6  mt-4 block max-w-[840px] sm:mt-10 lg:mt-14 lg:w-auto xl:mt-10 "
+                className="relative mx-auto mb-6  mt-4 block  sm:mt-10 lg:mt-14 lg:w-auto xl:pt-10 "
                 // className="relative mx-auto mx-8 block overflow-hidden bg-black shadow-xl shadow-slate-200 dark:sm:rounded-xl lg:w-auto dark:lg:rounded-2xl"
                 // aria-label="gallery-media-item"
               >

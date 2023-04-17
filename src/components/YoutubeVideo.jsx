@@ -12,7 +12,7 @@ export default class YoutubeVideo extends React.Component {
     }
 
     return (
-      <div id="YOUTUBE_VIDEO" className="iframe  relative rounded-md">
+      <div id="YOUTUBE_VIDEO" className=" relative rounded-md">
         {/* min-w-[426px] min-w-[426px] sm:w-[490px] lg:min-h-[600px] lg:min-w-[800]  */}
         {/* <h3>GeeksforGeeks - Youtube</h3> */}
         <YouTube
