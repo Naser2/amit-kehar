@@ -109,8 +109,8 @@ function Photos({ artprojects }) {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
 
   return (
-    <div className="mt-16 sm:mt-20">
-      <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
+    <div className="sm:mt-50 mt-16">
+      <div className="-my-4 flex justify-center gap-5 py-4 sm:gap-8">
         {artprojects.map((image, imageIndex) => (
           <div
             key={image.name + imageIndex.id}
@@ -124,6 +124,8 @@ function Photos({ artprojects }) {
               alt=""
               sizes="(min-width: 640px) 18rem, 11rem"
               className="absolute inset-0 h-full w-full object-cover"
+              height={1400}
+              width={1700}
             />
           </div>
         ))}
@@ -235,25 +237,79 @@ export default function Home({ articles, allprojects, artprojects }) {
         imgMarginY="-my-3"
         roundedMd={false}
       />
-      <p className="text-md mx-4 mt-2 rounded-lg bg-slate-200 px-8 py-2 leading-6 text-slate-700 dark:text-gray-700 sm:px-0">
-        Currently viewing [MVP] in native mobile screen as in in mobile app .
-      </p>
-      <Container>
-        <div
-          data-content-field="site-title"
-          className=" relative mx-auto -mt-14  max-w-7xl items-center sm:-mt-0"
-        >
-          {/* <span id="site-title" className="dark:text-white"> */}
-          <Title title="Art" />
-          {/* </span> */}
 
-          <h2 className="logo-subtitle text-center">
-            Drawing and doodling have always been my passion
-          </h2>
+      <div className="max-w-8xl relative mx-auto   overflow-hidden sm:px-8 lg:px-8 xl:min-h-[400px]">
+        <div className="relative mx-auto -mt-14 flex  max-w-7xl max-w-[700px] items-center sm:-mt-0 ">
+          <div
+            className="group relative z-20 mt-24 flex items-center 
+             justify-center rounded-sm
+              bg-transparent px-2 px-3 px-4 py-2 
+              text-sm font-medium shadow-lg
+              shadow-zinc-400/5 backdrop-blur 
+              hover:shadow-zinc-200/5 dark:text-zinc-200 dark:ring-white/10"
+          >
+            <div class="group relative mx-auto mx-auto mt-20 max-w-7xl max-w-7xl items-center items-center  pt-44"></div>
+            <div class="content-container large-12 small-order-0">
+              <div class="content-wrapper  sm:not-sr-only">
+                <Link
+                  href="/art"
+                  className="inline-flex px-6 group-hover:ml-10 group-hover:rounded-lg group-hover:bg-white group-hover:px-2 group-hover:py-0.5"
+                >
+                  <span class="art-headline h1-custom  site-title tile-headline large-12 ">
+                    Art
+                  </span>
+                  <span>
+                    <svg
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      aria-hidden="true"
+                      className=" h-10 w-10 rotate-[100%] font-bold  md:h-14 md:w-14"
+                    >
+                      <path
+                        stroke="black"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="m11.5 6.5 3 3.5m0 0-3 3.5m3-3.5h-9"
+                      ></path>
+                    </svg>
+                  </span>
+                </Link>{' '}
+                <h2 className="art-secondary px-6 py-2 text-left group-hover:rounded-xl   group-hover:bg-slate-100/40 dark:rounded-xl dark:bg-slate-100/60 dark:text-slate-600">
+                  Drawing and doodling have always been my passion.
+                  <div id="WHITE_BTN" class="guided-tours-triggers">
+                    {/* <Link
+                    class="icon-wrapper film-link"
+                    data-films-modal-link=""
+                    role="button"
+                    data-analytics-id="art"
+                  >
+                    <span class="icon-copy">See all</span>
+                    <span class="icon icon-after icon icon-playcircle"></span>
+                  </Link> */}
+                  </div>
+                </h2>
+              </div>
+            </div>
+          </div>
         </div>
-      </Container>
-
-      <Photos artprojects={artprojects} />
+        <Image
+          src="/warm-hug/warm-hug-1-copy.jpeg"
+          alt=""
+          sizes="(min-width: 640px) 18rem, 11rem"
+          className="inset-0  h-full w-full object-cover"
+          height={1400}
+          width={1700}
+        />
+        <Image
+          src="/warm-hug/warm-hug-1-copy.jpeg"
+          alt=""
+          sizes="(min-width: 640px) 18rem, 11rem"
+          className="absolute inset-0  h-full w-full object-cover"
+          height={1400}
+          width={1700}
+        />
+        <Photos artprojects={artprojects} />
+      </div>
 
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">

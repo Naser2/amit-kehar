@@ -1378,3 +1378,22 @@ iframe {
   margin-top: -24px;
   cursor: pointer;
 }
+
+.art-headline {
+  font-size: 48px;
+  line-height: 1.0834933333;
+  font-weight: 600;
+  letter-spacing: -0.003em;
+  font-family: var(--font-family);
+}
+.art-secondary {
+  font-size: 31px !important;
+  font-family: Dosis;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.03em;
+  letter-spacing: 0px;
+  text-transform: none;
+  color: #222;
+  margin-top: 0;
+}

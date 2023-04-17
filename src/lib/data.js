@@ -664,6 +664,20 @@ export const siteArticles = [
     type: 'motion',
     imageAlt:
       'Black machined steel pen with hexagonal grip and small white logo at top.',
+    medias: [
+      {
+        defaultAspect: true,
+        source: garnier1,
+        type: 'image',
+        title: 'Color of Love',
+      },
+      {
+        defaultAspect: true,
+        source: '/garnier2.png',
+        type: 'image',
+        title: 'Video Private',
+      },
+    ],
   },
 
   {
