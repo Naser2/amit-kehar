@@ -23,9 +23,11 @@ export function Footer() {
             <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
               <div className="flex gap-6 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/about">About</NavLink>
-                <NavLink href="/projects">Projesscts</NavLink>
-                <NavLink href="/speaking">Speaking</NavLink>
-                <NavLink href="/uses">Uses</NavLink>
+                <NavLink href="/motion">Motion</NavLink>
+                <NavLink href="/still">Stills</NavLink>
+                <NavLink href="/art">Art</NavLink>
+                <NavLink href="/music">Videos</NavLink>
+                <NavLink href="/contact">Contacts</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
                 &copy; {new Date().getFullYear()} Amit Kehar. All rights
