@@ -200,8 +200,9 @@ export const Galery = (
             <ul
               role="list"
               className={clsx([
-                gap ??
-                  'gap-x-4 sm:gap-x-6 sm:gap-y-4 md:gap-x-4  md:gap-y-4 md:gap-y-8 xl:gap-x-4',
+                gap
+                  ? gap
+                  : 'gap-x-4 sm:gap-x-6 sm:gap-y-4 md:gap-x-4  md:gap-y-4 md:gap-y-8 xl:gap-x-4',
                 'xxl:grid-cols-3 grid grid-cols-1 lg:grid-cols-2  ',
               ])}
             >

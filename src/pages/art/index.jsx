@@ -50,7 +50,7 @@ export default function Art({ artprojects }) {
           </div>
         </div>
       </div> */}
-      <div id="wrap" className="my-14 sm:mt-32  ">
+      <div id="wrap" className="my-14 px-2 sm:mt-32 ">
         {' '}
         <Title title="ART" />
         <h2 className="logo-subtitle  text-center">
@@ -58,9 +58,9 @@ export default function Art({ artprojects }) {
         </h2>
       </div>
       <Container
-        containerPadding="mt-6 xl:mt-0 "
+        containerPadding="mt-6 mb-20 xl:mt-0 "
         containerMax={'lg:max-w-10xl'}
-        className={'xl:mt-34 mt-14 sm:mx-4 sm:mt-20 xl:mx-24'}
+        className={'xl:mt-34 mb-8 mt-14 sm:mx-4 sm:mt-20 xl:mx-24'}
       >
         <DirectorCredentials />
       </Container>
@@ -69,7 +69,7 @@ export default function Art({ artprojects }) {
         contents={artprojects}
         clicable
         roundedMd
-        mt="m-0 xl:mx-24"
+        mt="mx-2 md:mx-0  xl:mx-24"
         gap="gap-y-4 gap-x-2"
         imgMarginY="my-[-0.85rem] mx-0"
         mx="mx-0"

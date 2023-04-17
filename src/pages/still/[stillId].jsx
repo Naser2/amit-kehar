@@ -53,7 +53,15 @@ export default function ArtPage({ still }) {
           <DirectorCredentials />
         </div>
 
-        <Galery contents={still} clicable={false} gap="gay-x-0 gap-y-0" />
+        <Galery
+          contents={still}
+          clicable={false}
+          gap="gap-y-0"
+          imgMarginY="my-[-0.85rem] mx-0"
+          mx="mx-0"
+          // gap="gay-x-0 gap-y-0"
+          // imgMarginY="my-[-0.85rem] mx-0"
+        />
       </article>
     </>
   )
