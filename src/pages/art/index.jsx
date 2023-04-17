@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { Title } from '@/components/Title'
 import { DirectorCredentials } from '@/components/DirectorCredentials'
 import { Container } from '@/components/Container'
+import Image from 'next/image'
 
 export default function Art({ artprojects }) {
   return (
@@ -21,6 +22,14 @@ export default function Art({ artprojects }) {
           content="Amit Kehar art's Director videographer and filmaker and artist"
         />
       </Head>
+      {/* <Image
+        src="/stillsMain.png"
+        alt=""
+        sizes="(min-width: 640px) 18rem, 11rem"
+        className="absolute inset-0 h-full w-full object-cover"
+        height={2900}
+        width={2700}
+      /> */}
       {/* <div class="mx-auto  mt-20 max-w-7xl px-6   md:px-14  lg:px-44  xl:px-24">
         <div class="relative px-4 sm:px-8 lg:px-12">
           <div class=" mx-auto max-w-2xl lg:max-w-5xl  ">

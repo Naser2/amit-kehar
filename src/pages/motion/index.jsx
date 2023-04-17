@@ -10,6 +10,7 @@ import { Container } from '@/components/Container'
 import Link from 'next/link'
 import { SocialMedia } from '@/components/SocialMedia'
 import { DirectorCredentials } from '@/components/DirectorCredentials'
+import Image from 'next/image'
 
 export default function Art({ motions }) {
   return (
@@ -21,6 +22,14 @@ export default function Art({ motions }) {
           content="Amit Kehar art's Director videographer and filmaker and artist"
         />
       </Head>
+      <Image
+        src="/stillsMain.png"
+        alt=""
+        sizes="(min-width: 640px) 18rem, 11rem"
+        className="absolute inset-0 h-full w-full object-cover"
+        height={1400}
+        width={1700}
+      />
       <Container
         containerMax={'lg:max-w-10xl'}
         className={'max-w-8xl  xl:mt-34  mt-14 sm:mx-4 sm:mt-20'}
