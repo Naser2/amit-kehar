@@ -275,7 +275,10 @@ export default function Home({ articles, allprojects, artprojects }) {
                     </svg>
                   </span>
                 </Link>{' '}
-                <h2 className="art-secondary px-6 py-2 text-left group-hover:rounded-xl   group-hover:bg-slate-100/40 dark:rounded-xl dark:bg-slate-100/60 dark:text-slate-600">
+                <h2
+                  className="art-secondary px-6 py-2 text-left group-hover:rounded-xl 
+                  group-hover:bg-slate-100/40 dark:rounded-xl dark:bg-slate-100/60 dark:text-slate-600"
+                >
                   Drawing and doodling have always been my passion.
                   <div id="WHITE_BTN" class="guided-tours-triggers">
                     {/* <Link

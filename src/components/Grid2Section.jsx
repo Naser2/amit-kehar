@@ -32,11 +32,19 @@ export function TwoGridSection({ right, left, socialMedia }) {
         src={imageContent.props.src}
         className="md::w-[20rem] max-[766px]:hidden w-full  rounded-lg rounded-xl bg-slate-100 shadow-xl md:w-[30.1666666rem] lg:sr-only lg:ml-8 lg:block lg:flex-none"
       /> */}
-      <Container>
+      <div>
         <div id="CONTENT-1" className="relative px-4 ">
           {/* <p className="headline typography-headline  large-centered max-w-2xl pb-4 dark:text-slate-100 sm:pb-10 sm:pl-4 ">
           {title1}
-        </p> */}
+        </p> */}{' '}
+          <img
+            id="SM"
+            alt=""
+            loading="lazy"
+            decoding="async"
+            src={imageContent.props.src}
+            className="md::w-[20rem] w-full    bg-slate-100 shadow-xl sm:mb-14 sm:mt-10 md:w-[33.1666666rem] lg:sr-only lg:ml-8 lg:block lg:flex-none "
+          />
           <p className="col-start-1 row-start-3 mt-4 max-w-lg py-3 text-xl font-bold text-slate-700 dark:text-slate-200 sm:pl-4">
             {title1}
             <br class="small" />
@@ -51,14 +59,6 @@ export function TwoGridSection({ right, left, socialMedia }) {
           <p className="amits-paragraph col-start-1 row-start-3 mt-4 max-w-lg  pb-6 dark:text-slate-200 sm:pb-0 sm:pl-4">
             {content2}
           </p>
-          <img
-            id="SM"
-            alt=""
-            loading="lazy"
-            decoding="async"
-            src={imageContent.props.src}
-            className="md::w-[20rem] w-full    bg-slate-100 shadow-xl sm:mb-14 sm:mt-10 md:w-[33.1666666rem] lg:sr-only lg:ml-8 lg:block lg:flex-none "
-          />
           <p className="col-start-1 row-start-3 mt-14  max-w-lg text-xl font-bold text-slate-700 dark:text-slate-200 sm:mt-10  sm:pl-4">
             {artist}
             <span className="px-1"></span> {bio}
@@ -71,7 +71,7 @@ export function TwoGridSection({ right, left, socialMedia }) {
             {content4}
           </p>
         </div>{' '}
-      </Container>
+      </div>
 
       <div id="CONTENT-2" className="relative sm:mt-6">
         {/* <imageContent /> */}
